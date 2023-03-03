@@ -2,22 +2,9 @@
 
 Esse projeto visa aproximar as instituições e ONG's dos apoiadores, doadores a aqueles que desejam receber alguma doação de produtos.
 
-**__Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.__**
-
 ## Problema
 
 Aonde aqueles que desejam realizar uma doação ou receber doações podem encontrar informações? Normalmente, procura-se em redes sociais, com contatos que conhecemos e já realizam doações e em sites do governo. Considerando a indisponibilidade de encontrar-se facilmente informações sobre instituições de doação, esse projeto será desenvolvido. 
-
-**Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-**Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
