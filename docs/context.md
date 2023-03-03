@@ -8,7 +8,9 @@ Aonde aqueles que desejam realizar uma doação ou receber doações podem encon
 
 ## Objetivos
 
-Esse projeto foi desenvolvido com o objetivo de facilitar e aproximar as instituições de seus contribuintes e aqueles que recebem doações.
+Esse projeto tem o objetivo de facilitar e aproximar as instituições de seus contribuintes e aqueles que recebem doações. 
+Tem como objetivo disponibilizar facilmente informações pertinentes a doação para os usuarios para agilizar o 
+
 
 **Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 
