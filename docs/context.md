@@ -2,7 +2,7 @@
 
 Esse projeto visa aproximar as instituições e ONG's dos apoiadores, doadores a aqueles que desejam receber alguma doação de produtos.
 
-**Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.**
+**__Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.__**
 
 ## Problema
 
