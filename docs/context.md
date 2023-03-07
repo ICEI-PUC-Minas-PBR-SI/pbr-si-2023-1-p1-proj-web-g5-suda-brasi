@@ -8,14 +8,12 @@ Aonde aqueles que desejam realizar uma doação ou receber doações podem encon
 
 ## Objetivos
 
-Esse projeto tem o objetivo de facilitar e aproximar as instituições de seus contribuintes e aqueles que recebem doações. 
-Tem como objetivo disponibilizar facilmente informações pertinentes a doação para os usuarios para agilizar o 
-
-
-**Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
+O objetivo do trabalho é desenvolver uma aplicação web e conectar instituições de maneira a facilitar a gestão de doações alcançando o maior número de pessoas carentes da sociedade brasileira. 
 
 ## Justificativa
+
+Segundo dados publicados no site oficial do FGV (Fundação Getúlio Vargas) 29,6% dos brasileiros têm renda familiar inferior a R$ 497 mensais, isto é um fato onde indica que é necessário combatermos a desigualdade social no Brasil. Através de um projeto de doação em andamento junto a uma instituição de doações, analisamos que seria necessário um melhor controle entre as instituições de caridade, doadores e receptores. 
+
 
 **Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
