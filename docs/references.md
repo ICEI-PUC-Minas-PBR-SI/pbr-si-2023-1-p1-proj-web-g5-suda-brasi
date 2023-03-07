@@ -17,4 +17,4 @@ Exemplos de referências bibliográficas:
 
 **[5]** - _RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial**. Rio de Janeiro: Elsevier, c2013. xxi, 988 p. ISBN 9788535237016._
 
-**[6]** - FUNDAÇÃO GETÚLIO VARGAS (Brasil). FGV. Mapa da nova pobreza: Estudo revela que 29,6% dos brasileiros têm renda familiar inferior a R$ 497 mensais: O estado com menor taxa de pobreza em 2021 foi Santa Catarina (10,16%). No extremo oposto está o Maranhão, com a maior proporção de pobres (57,90%). FGV, [S. l.], p. 1, 18 jul. 2022.
+**[6]** - FUNDAÇÃO GETÚLIO VARGAS (Brasil). FGV. Mapa da nova pobreza: Estudo revela que 29,6% dos brasileiros têm renda familiar inferior a R$ 497 mensais: O estado com menor taxa de pobreza em 2021 foi Santa Catarina (10,16%). No extremo oposto está o Maranhão, com a maior proporção de pobres (57,90%). FGV, [S. l.], p. 1, 18 jul. 2022. Disponível em: https://portal.fgv.br/noticias/mapa-nova-pobreza-estudo-revela-296-brasileiros-tem-renda-familiar-inferior-r-497-mensais. Acesso em: 6 mar. 2023.
