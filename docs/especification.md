@@ -6,7 +6,9 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+João Guilherme tem 34 anos, é formado em ciências contábeis. Por uma necessidade no passado, onde dependia de doações procurou uma instituição que melhor lhe atendia, porem encontrou dificuldades e falta de informações sobre como se candidatar para receber essas doações. E agora com melhores condições ele visa encontrar um meio mais seguro para fazer suas doações. 
+
+Nathyelle Silva tem 21 anos, tem dois filhos e é mãe solteira. Tem ensino fundamental completo, mas abandonou a educação por uma necessidade de sustento a família por motivos financeiros. Por esses motivos ela depende de doações para alimentar sua família e desde então Nathyelle estava em busca de doações.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
@@ -26,7 +28,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
+|Usuário do sistema beneficente (Nathyelle)|Se cadastrar no sistema web como pessoa, famílias e grupos em situações de vulnerabilidade.| Buscar e receber informativos sobre doações.|
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
