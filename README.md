@@ -18,7 +18,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Lucas Braga Reis Da Fonseca
 * Lucas Eduardo Almeida Guimarães
 * Nicolas Henrique Fonseca de Oliveira
-*Rafael Costa Lopes
+* Rafael Costa Lopes
 
 
 ## Orientador
