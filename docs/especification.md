@@ -8,7 +8,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 João Guilherme tem 34 anos, é formado em ciências contábeis. Por uma necessidade no passado, onde dependia de doações procurou uma instituição que melhor lhe atendia, porem encontrou dificuldades e falta de informações sobre como se candidatar para receber essas doações. E agora com melhores condições ele visa encontrar um meio mais seguro para fazer suas doações. 
 
-Nathyelle Silva tem 21 anos, tem dois filhos e é mãe solteira. Tem ensino fundamental completo, mas abandonou a educação por uma necessidade de sustento a família por motivos financeiros. Por esses motivos ela depende de doações para alimentar sua família e desde então Nathyelle estava em busca de doações.
+Nathyelle Silva tem 21 anos, tem dois filhos e é mãe solteira. Tem ensino fundamental completo, mas abandonou a educação por uma necessidade de sustento a família por motivos financeiros. Por esses motivos ela depende de doações para alimentar sua família e desde então esteve em busca de doações.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
