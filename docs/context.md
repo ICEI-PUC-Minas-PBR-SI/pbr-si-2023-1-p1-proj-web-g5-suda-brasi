@@ -4,11 +4,11 @@ Esse projeto visa aproximar as instituições e ONG's dos apoiadores, doadores a
 
 ## Problema
 
-Aonde aqueles que desejam realizar uma doação ou receber doações podem encontrar informações? Normalmente, procura-se em redes sociais, com contatos que conhecemos e já realizam doações e em sites do governo. Considerando a indisponibilidade de encontrar-se facilmente informações sobre instituições de doação, esse projeto será desenvolvido. 
+Aonde aqueles que desejam realizar uma doação ou receber doações podem encontrar informações? Normalmente, procura-se em redes sociais, com contatos que conhecemos e já realizam doações e em sites do governo, mas com um número elevado de informações entregues de forma desordenada muitas vezes se torna difícil adquirir a informação que buscamos. Também observamos que algumas instituições encontram dificuldade em gerenciar a distribuição das suas doações, com essas defasagens na gestão acabam por realizando uma dupla doação para um mesmo Beneficiário e deixando de atender outro que também necessita, por este e outros motivos esse projeto será desenvolvido. 
 
 ## Objetivos
 
-O objetivo do trabalho é desenvolver uma aplicação web e conectar instituições de maneira a facilitar a gestão de doações alcançando o maior número de pessoas carentes da sociedade brasileira. 
+A finalidade do nosso trabalho e desenvolver uma aplicação web onde conectamos tanto o doador quanto as instituições aos Beneficiário trazendo uma facilidade na gestão de doações podendo alcançar um número maior de pessoas carentes que necessitam de doações assim alcançando toda a sociedade brasileira trazendo mais segurança para realizar essas doações sabendo qual será o seu destinatário. 
 
 ## Justificativa
 
