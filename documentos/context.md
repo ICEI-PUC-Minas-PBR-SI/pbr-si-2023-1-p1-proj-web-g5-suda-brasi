@@ -24,6 +24,8 @@ Segundo dados publicados no site oficial do FGV (Fundação Getúlio Vargas) 29,
 
 ## Público-Alvo
 
+Através do projeto, desejamos alcançar aqueles que se encontram curiosos e propícios a entrar no meio das doações, mas por possuírem duvidas sobre como começar ou se conectar com instituições, grupos e doadores acaba por desistir pela falta de informação.  Além de receptores e doadores, queremos alcançar grupos e instituições que se encontram com alguma defasagem na gestão de suas distribuições, dando a elas mais confiança e gerando mais controle sobre suas uma distribuição. 
+
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
 
