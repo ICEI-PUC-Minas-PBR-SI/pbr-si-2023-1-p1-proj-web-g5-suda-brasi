@@ -10,6 +10,9 @@ João Guilherme tem 34 anos, é formado em ciências contábeis. Por uma necessi
 
 Nathyelle Silva tem 21 anos, tem dois filhos e é mãe solteira. Tem ensino fundamental completo, mas abandonou a educação por uma necessidade de sustento a família por motivos financeiros. Por esses motivos ela depende de doações para alimentar sua família e desde então esteve em busca de doações.
 
+Juliana Fernandes tem 29 anos, tem 3 filhos e é mãe solteira. Seu marido era a principal fonte de renda familiar porém faleceu a dois anos. Com a necessidade de sustentar a familia, Juliana conseguiu um trabalho como recepcionista, porém, recebe um salario muito baixo, sendo insuficiente para o sustento de sua familia. Devido a esses fatores, ela tem procurado por instituições ou doadores de onde pode receber auxilio alimenticio para sua familia.
+
+
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
 > **Links Úteis**:
