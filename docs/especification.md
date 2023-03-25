@@ -18,13 +18,13 @@ Com o cadastro concluído como instituição, os mesmos terão acesso a ferramen
 
 ## Personas
 
-João Guilherme tem 34 anos, é formado em ciências contábeis. Por uma necessidade no passado, onde dependia de doações procurou uma instituição que melhor lhe atendia, porem encontrou dificuldades e falta de informações sobre como se candidatar para receber essas doações. E agora com melhores condições ele visa encontrar um meio mais seguro para fazer suas doações. 
+Persona 01 - João Guilherme tem 34 anos, é formado em ciências contábeis. Por uma necessidade no passado, onde dependia de doações procurou uma instituição que melhor lhe atendia, porem encontrou dificuldades e falta de informações sobre como se candidatar para receber essas doações. E agora com melhores condições ele visa encontrar um meio mais seguro para fazer suas doações. 
 
-Nathyelle Silva tem 21 anos, tem dois filhos e é mãe solteira. Tem ensino fundamental completo, mas abandonou a educação por uma necessidade de sustento a família por motivos financeiros. Por esses motivos ela depende de doações para alimentar sua família e desde então esteve em busca de doações.
+Persona 02 - Nathyelle Silva tem 21 anos, tem dois filhos e é mãe solteira. Tem ensino fundamental completo, mas abandonou a educação por uma necessidade de sustento a família por motivos financeiros. Por esses motivos ela depende de doações para alimentar sua família e desde então esteve em busca de doações.
 
-Juliana Fernandes tem 29 anos, tem 3 filhos e é mãe solteira. Seu marido era a principal fonte de renda familiar porém faleceu a dois anos. Com a necessidade de sustentar a familia, Juliana conseguiu um trabalho como recepcionista, porém, recebe um salario muito baixo, sendo insuficiente para o sustento de sua familia. Devido a esses fatores, ela tem procurado por instituições ou doadores de onde pode receber auxilio alimenticio para sua familia.
+Persona 03 - Juliana Fernandes tem 29 anos, tem 3 filhos e é mãe solteira. Seu marido era a principal fonte de renda familiar porém faleceu a dois anos. Com a necessidade de sustentar a familia, Juliana conseguiu um trabalho como recepcionista, porém, recebe um salario muito baixo, sendo insuficiente para o sustento de sua familia. Devido a esses fatores, ela tem procurado por instituições ou doadores de onde pode receber auxilio alimenticio para sua familia.
 
-Jorge Alvaro tem 55 anos, tem 3 filhos e é formado em engenharia eletrica.Veio de origem humilde e durante parte de sua vida passou por dificuldades financeiras, tendo passado fome algumas vezes. Iniciou como microempreendedor no ramo de energia fotovoltaica e a medida em que seu negocio foi crescendo e sua condição financeira foi melhorando, sentiu um desejo de estar ajudando outras pessoas que passam pelas dificuldades que passou. Ele conversou com alguns de seus amigos e familiares mas achou muito pouca informação sobre lugares que poderia estar doando. Por essa razão, Jorge decidiu abrir uma ONG visando ajudar pessoas com dificuldade de sustento, que perderam tudo em enchentes, incendios e entre outros. Porém, deseja divulgar sua instituição e busca um local onde possa estar compartilhando informações e entrando em contato com aqueles que estão necessitanto de algo.
+Persona 04 - Jorge Alvaro tem 55 anos, tem 3 filhos e é formado em engenharia eletrica.Veio de origem humilde e durante parte de sua vida passou por dificuldades financeiras, tendo passado fome algumas vezes. Iniciou como microempreendedor no ramo de energia fotovoltaica e a medida em que seu negocio foi crescendo e sua condição financeira foi melhorando, sentiu um desejo de estar ajudando outras pessoas que passam pelas dificuldades que passou. Ele conversou com alguns de seus amigos e familiares mas achou muito pouca informação sobre lugares que poderia estar doando. Por essa razão, Jorge decidiu abrir uma ONG visando ajudar pessoas com dificuldade de sustento, que perderam tudo em enchentes, incendios e entre outros. Porém, deseja divulgar sua instituição e busca um local onde possa estar compartilhando informações e entrando em contato com aqueles que estão necessitanto de algo.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
@@ -44,9 +44,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema beneficente (Nathyelle)|Se cadastrar no sistema web como pessoa, famílias e grupos em situações de vulnerabilidade.| Buscar e receber informativos sobre doações.|
-|Usuário do sistema beneficiário (João Guilherme) |Se cadastrar no sistema web como doador, instituição e organizações doadoras. | Destinar suas doações para uma instituição confiável. |
-|Administrador       |Alterar permissõe                   |Gerenciar o Sitema de Doações           |
+|Nathyelle(Usuário Beneficiario)|Me cadastrar no sistema web como pessoa, família e/ou grupo em situação de vulnerabilidade.| Buscar e receber informativos sobre doações.|
+|João Guilherme (Usuário Doador) |Me cadastrar no sistema web como doador, instituição e/ou organização doadora. | Destinar minhas doações para uma instituição confiável.|
+|Juliana(Usuário Beneficiario)|Me cadastrar no sistema web como pessoa, família e/ou grupo em situação de vulnerabilidade. | Buscar por instituições que realizem doações.|
+|Jorge(Usuário Instituição)|Me cadastrar no sistema web como doador, instituição e/ou organização doadora| Divulgar minha instituição e buscar pessoas em situação de vulnerabilidade.|
+|Jorge(Usuário Instituição)|Utilizar a função de gerenciamento de doações do sistema | Para ter rastreabilidade das doações realizada pela minha instituição.| 
+|Administrador       |Alterar permissões                   |Gerenciar o Sistema de Doações           |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
