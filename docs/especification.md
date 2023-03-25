@@ -1,8 +1,20 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Nesta parte do projeto iremos demonstrar como seria o perfil dos nossos usuários e suas funcionalidades.  
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
+Beneficiário: 
+
+Os usuários serão responsáveis por se cadastrar pelo site web e fazer Login, durante o cadastro do login haverá um campo onde o usuário irá selecionar qual o “cargo” ele deseja ter, como Instituição, doador ou beneficiário.  
+
+Tendo acesso ao site como beneficiário o mesmo irá relatar, durante o preenchimento dos formulários para se cadastrar nas instituições, as suas motivações para ser um beneficiário, acessar o site além de relatar suas necessidades, outro benefício que possuirão é a visualização das ONG’s que atendam a sua preferência, podendo acompanhar seu processo de entrega de doação e situação em que se encontra por meio do site ou email.  
+
+Doador: 
+
+Através do “cargo” escolhido durante o cadastro, o usuário cadastrado como doador fara o Login e terá ferramentas que o auxiliará na escolha tanto de intuições quanto do beneficiário que melhor lhe atenda, podendo entrar em contato direto com os beneficiários. Acompanhar o processo da sua doação até o momento da entrega. 
+
+Instituição: 
+
+Com o cadastro concluído como instituição, os mesmos terão acesso a ferramentas especificas que somente aqueles cadastrados como instituições possuem. Dentre estas ferramentas se encontram a possibilidade de gerenciar os cadastros dos beneficiários e doadores que desejam se inscrever ou colaborar nas doações da instituição, alinhado a isso haverá ferramentas que possibilita administrar os pedidos já concluídos ou que estão em andamento.
 
 ## Personas
 
@@ -52,31 +64,26 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
+|RF-001| Permitir que o usuário se cadastre no site. | ALTA ||
+|RF-002| Permitir o Login do usuário. | ALTA ||
+|RF-003| Preencher o formulário de doação |ALTA ||
+|RF-004| Apresentar ao usuário os doadores compatíveis com sua necessidade.|MÉDIA||
+|RF-005| Permitir ao usuário gerar um relatório mensal referente as doações realizadas.|BAIXA||
+|RF-006| Apresentar ao usuário um serie de perguntas e respostas pertinentes a doação.|MÉDIA||
+|RF-007| Permitir o acompanhamento do processo de doação.|MÉDIA||
+|RF-008| Gerenciamento de cadastro dos beneficiários e doadores que desejam se inscrever ou colaborar nas doações da instituição. |ALTA| 
+| RF-009|Apresentar os termos de contrato durante o cadastro. |ALTA||
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivo móvel | MÉDIA ||
+|RNF-002| Deve processar requisições do usuário em no máximo 3s. | BAIXA ||
+|RNF-003| Deve apresentar uma verificação de duas etapas ao usuário logar. | ALTA ||
+|RNF-004| Deve apresentar uma opção para recuperação de senha. | BAIXA ||
+|RNF-005| Deve haver apenas um cadastro por CPF. |MÉDIA||
 
 ## Restrições
 
@@ -86,7 +93,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
+|03| Não serão feitas transferências monetárias            |
+|04| Não seremos responsáveis pela entrega das doações. Seremos somente um intermedio entre os usuários|
+|05| Não será possível o compartilhamento de dados pessoais dos usuários, exceto para as instituições|
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.  canditado
 
