@@ -77,7 +77,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-007 |Permitir o acompanhamento do processo de doação|MÉDIA||
 | RF-008 |Gerenciamento de cadastro dos beneficiários e doadores|ALTA| 
 | RF-009 |Apresentar os termos de contrato durante o cadastro|ALTA||
-
+| RF-010 |Notificar o doador/instituição sobre interesse de um beneficiario por uma doação.|ALTA||
+| RF-011 |Retornar a resposta a requisição de doação ao beneficiario|ALTA|
 
 ### Requisitos não Funcionais
 
