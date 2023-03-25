@@ -6,7 +6,7 @@ Beneficiário:
 
 Os usuários serão responsáveis por se cadastrar pelo site web e fazer Login, durante o cadastro do login haverá um campo onde o usuário irá selecionar qual o “cargo” ele deseja ter, como Instituição, doador ou beneficiário.  
 
-Tendo acesso ao site como beneficiário o mesmo irá relatar, durante o preenchimento dos formulários para se cadastrar nas instituições, as suas motivações para ser um beneficiário, acessar o site além de relatar suas necessidades, outro benefício que possuirão é a visualização das ONG’s que atendam a sua preferência, podendo acompanhar seu processo de entrega de doação e situação em que se encontra por meio do site ou email.  
+Tendo acesso ao site como beneficiário o mesmo irá relatar, durante o preenchimento dos formulários para se cadastrar nas instituições, as suas motivações para ser um beneficiário. Acessar o site além de relatar suas necessidades, outro benefício que possuirão é a visualização das ONG’s que atendam a sua preferência, podendo acompanhar seu processo de entrega de doação e situação em que se encontra por meio do site ou email.  
 
 Doador: 
 
