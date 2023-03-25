@@ -69,7 +69,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-003 |Preencher o formulário de doação |ALTA ||
 | RF-004 |Apresentar ao usuário os doadores compatíveis com sua necessidade|MÉDIA||
 | RF-005 |Permitir ao usuário gerar um relatório mensal referente as doações realizadas|BAIXA||
-| RF-006 |Apresentar ao usuário um serie de perguntas e respostas pertinentes a doação|MÉDIA||
+| RF-006 |Apresentar ao usuário uma serie de perguntas e respostas pertinentes a doação|MÉDIA||
 | RF-007 |Permitir o acompanhamento do processo de doação|MÉDIA||
 | RF-008 |Gerenciamento de cadastro dos beneficiários e doadores|ALTA| 
 | RF-009 |Apresentar os termos de contrato durante o cadastro|ALTA||
