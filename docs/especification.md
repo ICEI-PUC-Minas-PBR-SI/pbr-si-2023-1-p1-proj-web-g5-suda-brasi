@@ -24,6 +24,7 @@ Nathyelle Silva tem 21 anos, tem dois filhos e é mãe solteira. Tem ensino fund
 
 Juliana Fernandes tem 29 anos, tem 3 filhos e é mãe solteira. Seu marido era a principal fonte de renda familiar porém faleceu a dois anos. Com a necessidade de sustentar a familia, Juliana conseguiu um trabalho como recepcionista, porém, recebe um salario muito baixo, sendo insuficiente para o sustento de sua familia. Devido a esses fatores, ela tem procurado por instituições ou doadores de onde pode receber auxilio alimenticio para sua familia.
 
+Jorge Alvaro tem 55 anos.Veio de origem humilde e durante parte de sua vida passou por dificuldades financeiras, tendo passado fome algumas vezes. Montou o seu negocio no ramo de agropecuaria e a medida em que sua condição financeira foi melhorando, sentiu um desejo de estar ajudando outras pessoas que passam pelas dificuldades que passou. Ele conversou com alguns de seus amigos e familiares mas achou muito pouca informação sobre lugares que poderia estar doando. Por essa razão, Jorge decidiu abrir uma ONG visando ajudar pessoas com dificuldade de sustento, que perderam tudo em enchentes, incendios e entre outros. Porém, deseja divulgar sua instituição e busca um local onde possa estar compartilhando informações e entrando em contato com aqueles que estão necessitanto de algo.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
