@@ -63,7 +63,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos Funcionais
 
 |   ID   | Descrição do Requisito  | Prioridade | Responsável |
-|--------|-----------------------------------------|----| ----|
+|--------|----------------------------------------------------------------------------------|----| ----|
 | RF-001 |Permitir que o usuário se cadastre no site | ALTA ||
 | RF-002 |Permitir o Login do usuário| ALTA ||
 | RF-003 |Preencher o formulário de doação |ALTA ||
@@ -71,7 +71,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-005 |Permitir ao usuário gerar um relatório mensal referente as doações realizadas|BAIXA||
 | RF-006 |Apresentar ao usuário um serie de perguntas e respostas pertinentes a doação|MÉDIA||
 | RF-007 |Permitir o acompanhamento do processo de doação|MÉDIA||
-| RF-008 |Gerenciamento de cadastro dos beneficiários e doadores|ALTA| 
+| RF-008 |Gerenciamento de cadastro dos beneficiários e doadores que desejam se inscrever ou colaborar nas doações da instituição|ALTA| 
 | RF-009 |Apresentar os termos de contrato durante o cadastro|ALTA||
 
 
