@@ -4,7 +4,7 @@ Esse projeto visa aproximar as instituições e ONG's dos apoiadores, doadores a
 
 ## Problema
 
-Aonde aqueles que desejam realizar uma doação ou receber doações podem encontrar informações? Normalmente, procura-se em redes sociais, com contatos que conhecemos e já realizam doações e em sites do governo, mas com um número elevado de informações entregues de forma desordenada muitas vezes se torna difícil adquirir a informação que buscamos. Também observamos que algumas instituições encontram dificuldade em gerenciar a distribuição das suas doações, com essas defasagens na gestão acabam por realizando uma dupla doação para um mesmo Beneficiário e deixando de atender outro que também necessita, por este e outros motivos esse projeto será desenvolvido. 
+Onde aqueles que desejam realizar uma doação ou receber doações podem encontrar informações? Normalmente, procura-se em redes sociais, com contatos que conhecemos e já realizam doações e em sites do governo, mas com um número elevado de informações entregues de forma desordenada muitas vezes se torna difícil adquirir a informação que buscamos. Também observamos que algumas instituições encontram dificuldade em gerenciar a distribuição das suas doações, com essas defasagens na gestão acabam por realizando uma dupla doação para um mesmo Beneficiário e deixando de atender outro que também necessita, por este e outros motivos esse projeto será desenvolvido. 
 
 ## Objetivos
 
