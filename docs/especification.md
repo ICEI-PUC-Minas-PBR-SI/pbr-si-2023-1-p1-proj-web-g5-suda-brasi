@@ -26,18 +26,6 @@ Persona 03 - Juliana Fernandes tem 29 anos, tem 3 filhos e é mãe solteira. Seu
 
 Persona 04 - Jorge Alvaro tem 55 anos, tem 3 filhos e é formado em engenharia eletrica.Veio de origem humilde e durante parte de sua vida passou por dificuldades financeiras, tendo passado fome algumas vezes. Iniciou como microempreendedor no ramo de energia fotovoltaica e a medida em que seu negocio foi crescendo e sua condição financeira foi melhorando, sentiu um desejo de estar ajudando outras pessoas que passam pelas dificuldades que passou. Ele conversou com alguns de seus amigos e familiares mas achou muito pouca informação sobre lugares que poderia estar doando. Por essa razão, Jorge decidiu abrir uma ONG visando ajudar pessoas com dificuldade de sustento, que perderam tudo em enchentes, incendios e entre outros. Porém, deseja divulgar sua instituição e busca um local onde possa estar compartilhando informações e entrando em contato com aqueles que estão necessitanto de algo.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
-
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -51,14 +39,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Jorge(Usuário Instituição)|Utilizar a função de gerenciamento de doações do sistema | Para ter rastreabilidade das doações realizada pela minha instituição.| 
 |Administrador       |Alterar permissões                   |Gerenciar o Sistema de Doações           |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
@@ -102,8 +82,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |04| Não seremos responsáveis pela entrega das doações. Seremos somente um intermedio entre os usuários|
 |05| Não será possível o compartilhamento de dados pessoais dos usuários, exceto para as instituições|
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.  canditado
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
