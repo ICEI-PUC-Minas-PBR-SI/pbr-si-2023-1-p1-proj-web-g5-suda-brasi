@@ -50,7 +50,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----| ----| 
 | RF-001 |Criar e permitir que o usuário se cadastre no site | ALTA |Rafael| 
 | RF-002 |Criar e permitir o Login do usuário| ALTA |Gustavo| 
-| RF-003 |Criar e permitir o preenchimento o formulário de doação | ALTA |Gabriel| 
+| RF-003 |Criar e permitir o preenchimento do formulário de doação | ALTA |Gabriel| 
 | RF-004 |Apresentar ao usuário os doadores compatíveis com sua necessidade | MÉDIA |Nicolas| 
 | RF-005 |Permitir ao usuário gerar um relatório mensal referente as doações realizadas |BAIXA |Nicolas| 
 | RF-006 |Criar e apresentar ao usuário uma serie de perguntas e respostas pertinentes a doação |MÉDIA |Ademar| 
