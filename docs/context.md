@@ -16,4 +16,4 @@ Segundo dados publicados no site oficial do FGV (Fundação Getúlio Vargas) 29,
 
 ## Público-Alvo
 
-Através do projeto, desejamos alcançar aqueles que se encontram curiosos e propícios a entrar no meio das doações, mas por possuírem duvidas sobre como começar ou se conectar com instituições, grupos e doadores acaba por desistir pela falta de informação.  Além de beneficiário e doadores, queremos alcançar grupos e instituições que se encontram com alguma defasagem na gestão de suas distribuições, dando a elas mais confiança e gerando mais controle sobre suas uma distribuição. 
+Através do projeto, desejamos alcançar aqueles que se encontram curiosos e propícios a entrar no meio das doações, mas por possuírem duvidas sobre como começar ou se conectar com instituições, grupos e doadores acaba por desistir pela falta de informação.  Além de beneficiário e doadores, queremos alcançar grupos e instituições que se encontram com alguma defasagem na gestão de suas distribuições, dando a elas mais confiança e gerando mais controle sobre sua distribuição. 
