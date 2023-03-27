@@ -12,7 +12,7 @@ A finalidade do nosso trabalho e desenvolver uma aplicação web onde conectamos
 
 ## Justificativa
 
-Segundo dados publicados no site oficial do FGV (Fundação Getúlio Vargas) 29,6% dos brasileiros têm renda familiar inferior a R$ 497 mensais, isto é um fato onde indica que é necessário combatermos a desigualdade social no Brasil. Através de um projeto de doação em andamento junto a uma instituição de doações, analisamos que seria necessário um melhor controle entre as instituições de caridade, doadores e receptores. 
+Segundo dados publicados no site oficial do FGV (Fundação Getúlio Vargas) 29,6% dos brasileiros têm renda familiar inferior a R$ 497 mensais, isto é um fato onde indica que é necessário combatermos a desigualdade social no Brasil. Através de um projeto de doação em andamento junto a uma instituição de doações, analisamos que seria necessário um melhor controle entre as instituições de caridade, doadores e Beneficiários. 
 
 ## Público-Alvo
 
