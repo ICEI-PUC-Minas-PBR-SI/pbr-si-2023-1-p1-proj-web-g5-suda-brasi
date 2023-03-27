@@ -46,19 +46,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|   ID   | Descrição do Requisito  | Prioridade | Responsável |
-|--------|----------------------------------------------------------------------------------|----| ----|
-| RF-001 |Permitir que o usuário se cadastre no site | ALTA ||
-| RF-002 |Permitir o Login do usuário| ALTA ||
-| RF-003 |Preencher o formulário de doação |ALTA ||
-| RF-004 |Apresentar ao usuário os doadores compatíveis com sua necessidade|MÉDIA||
-| RF-005 |Permitir ao usuário gerar um relatório mensal referente as doações realizadas|BAIXA||
-| RF-006 |Apresentar ao usuário uma serie de perguntas e respostas pertinentes a doação|MÉDIA||
-| RF-007 |Permitir o acompanhamento do processo de doação|MÉDIA||
-| RF-008 |Gerenciamento de cadastro dos beneficiários e doadores|ALTA| 
-| RF-009 |Apresentar os termos de contrato durante o cadastro|ALTA||
-| RF-010 |Notificar o doador/instituição sobre interesse de um beneficiario por uma doação.|ALTA||
-| RF-011 |Retornar a resposta a requisição de doação ao beneficiario|ALTA|
+|   ID   | Descrição do Requisito  | Prioridade | Responsável | 
+
+|--------|----------------------------------------------------------------------------------|----| ----| 
+
+| RF-001 |Criar e permitir que o usuário se cadastre no site | ALTA |Rafael| 
+| RF-002 |Criar e permitir o Login do usuário| ALTA |Gustavo| 
+| RF-003 |Criar e permitir o preenchimento o formulário de doação | ALTA |Gabriel| 
+| RF-004 |Apresentar ao usuário os doadores compatíveis com sua necessidade | MÉDIA |Nicolas| 
+| RF-005 |Permitir ao usuário gerar um relatório mensal referente as doações realizadas |BAIXA |Nicolas| 
+| RF-006 |Criar e apresentar ao usuário uma serie de perguntas e respostas pertinentes a doação |MÉDIA|Ademar| 
+| RF-007 |Permitir o acompanhamento do processo de doação |MÉDIA |Lucas Braga| 
+| RF-008 |Gerenciamento de cadastro dos beneficiários e doadores |ALTA |José| 
+| RF-009 |Apresentar os termos de contrato durante o cadastro |ALTA |Lucas Eduardo| 
+| RF-010 |Notificar o doador/instituição sobre interesse de um beneficiário por uma doação |ALTA |José| 
+| RF-011 |Retornar a resposta a requisição de doação ao beneficiário |ALTA |Gustavo| 
 
 ### Requisitos não Funcionais
 
