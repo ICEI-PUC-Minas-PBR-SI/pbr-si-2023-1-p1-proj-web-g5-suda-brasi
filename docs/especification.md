@@ -4,13 +4,13 @@ Nesta parte do projeto iremos demonstrar como seria o perfil dos nossos usuário
 
 Beneficiário: 
 
-Os usuários serão responsáveis por se cadastrar pelo site web e fazer Login, durante o cadastro do login haverá um campo onde o usuário irá selecionar qual o “cargo” ele deseja ter, como Instituição, doador ou beneficiário.  
+Os usuários serão responsáveis por se cadastrar pelo site web e fazer Login, durante o cadastro do login haverá um campo onde o usuário irá selecionar qual o papel ele deseja ter, como Instituição, doador ou beneficiário.  
 
 Tendo acesso ao site como beneficiário o mesmo irá relatar, durante o preenchimento dos formulários para se cadastrar nas instituições, as suas motivações para ser um beneficiário. Acessar o site além de relatar suas necessidades, outro benefício que possuirão é a visualização das ONG’s que atendam a sua preferência, podendo acompanhar seu processo de entrega de doação e situação em que se encontra por meio do site ou email.  
 
 Doador: 
 
-Através do “cargo” escolhido durante o cadastro, o usuário cadastrado como doador fara o Login e terá ferramentas que o auxiliará na escolha tanto de intuições quanto do beneficiário que melhor lhe atenda, podendo entrar em contato direto com os beneficiários. Acompanhar o processo da sua doação até o momento da entrega. 
+Através do papel escolhido durante o cadastro, o usuário cadastrado como doador fara o Login e terá ferramentas que o auxiliará na escolha tanto de intuições quanto do beneficiário que melhor lhe atenda, podendo entrar em contato direto com os beneficiários. Acompanhar o processo da sua doação até o momento da entrega. 
 
 Instituição: 
 
