@@ -7,7 +7,7 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Esse projeto visa aproximar as instituições e ONG's dos apoiadores, doadores a aqueles que desejam receber alguma doação de produtos.
 
 ## Integrantes
 
