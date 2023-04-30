@@ -3,7 +3,7 @@
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Ao discutir o grupo entrou em concesso de definir três telas principais a de beneficiário, doador e instituição. Além disso também definimos a tela home que terá um atrelamento para a tela de cadastro onde haverá um formulário para ser preenchido que terá duas vertentes uma de beneficiário e outra de instituição/doador que terá necessidades distintas ao terminar o cadastro e posteriormente o usuário será redimensionado a tela definida para ele de acordo com a “função” selecionada. 
 
 ## User Flow
 
