@@ -40,6 +40,7 @@ body{
 main{
   margin: 0px auto 40px;
   height: 100%;
+  width: 100%;
 }
 
 /*Estilização SIDEBAR*/
@@ -143,6 +144,7 @@ main{
   margin-left: 8px;
 }
 
+
 #distance{
   color:black;
   scale: 1.2;
@@ -160,9 +162,18 @@ main{
   margin-right: auto;
 }
 
-#rating{
+.avaliacao{
   display: flex;
   flex-direction: column;
+  justify-content: start;
+}
+
+#filtros1{
+  font-size: 24px;
+}
+
+#filtros{
+  font-size: 18px;
 }
 
 /*FIM SIDEBAR*/

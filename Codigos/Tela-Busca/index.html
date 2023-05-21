@@ -50,63 +50,82 @@
       </div>
     </nav>
   </header>
+  <!--Fim do cabeçalho-->
 
-  <!--Sidebar-->
-  <aside class="sidebar-container">
-    <div class="topo">
-      <img src="Imagens/Lucas.jpg" id="perfil">
-      <h5 class="nome">Lucas Braga</h5>
-    </div>
-    <div class="toggle">
-      <span class="lines"></span>
-      <span class="lines"></span>
-      <span class="lines"></span>
-    </div>
-    <span class="divisao"></span>
-    <!-- MENU -->
-    <div class="menu">
-      <ul>
-        <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Historico</a></li>
-        <li><a href="#"><img src="Imagens/donation.png"> Buscar Doações</a></li>
-        <li><a href="#"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
-      </ul>
-    </div>
-    <span class="divisao"></span>
-    <!--Filtros-->
-    <div class="filtros">
-      <span id="filtros">Filtros:</span>
-      <div class="distancia">
-        <span class="distancia" id="filtros">Distancia:</span>
-        <input type="range" name="distance" id="distance">
-        <div class="distancia-label">
-          <label for="distance" class="distancias" id="filtros">0km</label>
-          <label for="distance" class="distancias" id="filtros">300km</label>
+  <main>
+    <!--Sidebar-->
+    <aside class="sidebar-container">
+      <div class="topo">
+        <img src="Imagens/Lucas.jpg" id="perfil">
+        <h5 class="nome">Lucas Braga</h5>
+      </div>
+      <div class="toggle">
+        <span class="lines"></span>
+        <span class="lines"></span>
+        <span class="lines"></span>
+      </div>
+      <span class="divisao"></span>
+      <!-- MENU -->
+      <div class="menu">
+        <ul>
+          <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Historico</a></li>
+          <li><a href="#"><img src="Imagens/donation.png"> Buscar Doações</a></li>
+          <li><a href="#"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
+        </ul>
+      </div>
+      <span class="divisao"></span>
+      <!--Filtros-->
+      <div class="filtros">
+        <span id="filtros1">Filtros:</span>
+        <div class="distancia">
+          <span class="distancia" id="filtros">Distancia:</span>
+          <input type="range" name="distance" id="distance">
+          <div class="distancia-label">
+            <label for="distance" class="distancias" id="filtros">0km</label>
+            <label for="distance" class="distancias" id="filtros">300km</label>
+          </div>
+        </div>
+        <div class="categorias">
+          <span id="filtros">Categorias:</span>
+          <ul>
+            <li><input type="checkbox" name="categoria1">Sangue</li>
+            <li><input type="checkbox" name="categoria2">Brinquedo</li>
+            <li><input type="checkbox" name="categoria3">Mantimentos</li>
+            <li><input type="checkbox" name="categoria4">Roupas</li>
+            <li><input type="checkbox" name="categoria5"></li>
+          </ul>
+        </div>
+        <div class="avaliacao">
+          <span id="filtros">Avaliação:</span>
+          <ul>
+            <li>
+                <input type="checkbox" name="rating5">
+            <label for="rating5">5.0</label>
+            </li>
+            <li>
+                <input type="checkbox" name="rating4">
+            <label for="rating4">4.0</label>
+            </li>
+            <li>
+                <input type="checkbox" name="rating3">
+            <label for="rating3">3.0</label>
+            </li>
+            <li>
+                <input type="checkbox" name="rating2">
+            <label for="rating2">2.0</label>
+            </li>
+            <li>
+                <input type="checkbox" name="rating1">
+            <label for="rating1">1.0</label>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="categorias">
-        <span id="filtros">Categorias:</span>
+      <div class="signout">
+        <a href=""><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
       </div>
-      <div class="avaliacao">
-        <span id="filtros">Avaliação:</span>
-        <input type="checkbox" name="rating5" id="rating">
-        <label for="rating5">5.0</label>
-        <input type="checkbox" name="rating4" id="rating">
-        <label for="rating4">4.0</label>
-        <input type="checkbox" name="rating3" id="rating">
-        <label for="rating3">3.0</label>
-        <input type="checkbox" name="rating2" id="rating">
-        <label for="rating2">2.0</label>
-        <input type="checkbox" name="rating1" id="rating">
-        <label for="rating1">1.0</label>
-      </div>
-    </div>
-    <div class="signout">
-      <a href=""><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
-    </div>
-  </aside>  
-   
-  <main>
+    </aside> 
     <!--Cards-->
     <div class="container-fluid" id="cards">
       <div class="doadores-favoritos">
