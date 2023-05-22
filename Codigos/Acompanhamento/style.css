@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500&display=swap');
+
+/* Estilização geral do site */
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E2E2E2;
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Estilização Header padrão*/
+.navbar {
+  height: 100%;
+}
+
+#nav_item {
+  height: 100%;
+}
+
+/* Configurações do footer padrão da pagina*/
+#footer_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  background-color: #989898;
+  padding: 3rem 3.5rem;
+}
+
+#footer-socialmedia {
+  margin-top: 1.45rem;
+  display: flex;
+  gap: 1.15rem;
+}
+
+#logo {
+  width: 45%;
+}
+
+#footer-socialmedia .footer-link {
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+#footer-socialmedia .footer-link i {
+  font-size: 1.20rem;
+  color: #DCDCE4;
+
+}
+
+#footer-socialmedia .footer-link :hover {
+  opacity: 75%;
+}
+
+#instagram {
+  background: linear-gradient(#7f37e9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background: linear-gradient(#3B91EA, #5777EB);
+}
+
+#whatsapp {
+  background: #38B82F;
+}
+
+#footer_list {
+  gap: 0.75rem;
+  list-style: none;
+}
+
+#footer_list .footer-link {
+  text-decoration: none;
+  color: #DCDCE4;
+  transition: all 0.35s;
+}
+
+#footer_list .footer-link:hover {
+  opacity: 75%;
+  color: #7f37e9;
+}
+
+
+.input-group {
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  color: #DCDCE4;
+}
+
+.input-group input {
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+  background: #D9D9D9;
+  padding: 0.65rem;
+}
+
+.input-group button {
+  background-color: #38B82F;
+  color: #DCDCE4;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  height: 100%;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.input-group button :hover {
+  opacity: 80%;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #7D7D7D;
+  color: #D9D9D9;
+}
+
+.card {
+  z-index: 0;
+  background-color: #ECEFF1;
+  padding-bottom: 20px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border-radius: 10px;
+}
+
+.top {
+  padding-top: 40px;
+  padding-left: 13% !important;
+  padding-right: 13% !important;
+}
+
+/* Ícone da barra de progresso */
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: #455A64;
+  padding-left: 0px;
+  margin-top: 30px;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 13px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar .step0:before {
+  font-family: FontAwesome;
+  content: "\f10c";
+  color: #fff;
+}
+
+#progressbar li:before {
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  background: #C5CAE9;
+  border-radius: 50%;
+  margin: auto;
+  padding: 0px;
+}
+
+/* Conectores da barra de progresso */
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 12px;
+  background: #C5CAE9;
+  position: absolute;
+  left: 0;
+  top: 16px;
+  z-index: -1;
+}
+
+#progressbar li:last-child:after {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  left: -50%;
+}
+
+#progressbar li:nth-child(2):after,
+#progressbar li:nth-child(3):after {
+  left: -50%;
+}
+
+#progressbar li:first-child:after {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  left: 50%;
+}
+
+#progressbar li:last-child:after {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#progressbar li:first-child:after {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #651FFF;
+}
+
+#progressbar li.active:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.icon-content {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .icon-content {
+    width: 50%;
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 30px;
+}
+
+.progress {
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  width: 0%;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.icon-content {
+  padding-bottom: 20px;
+}
+
+.row.icon-row {
+  align-items: center;
+}
+
+.btn {
+  background-color: blue;
+  margin-bottom: 4px;
+}
+
+.btn-duvidas:hover{
+  background-color: #989898;
+  transition: all 0.4s;
+}
+
+.btn-ver:hover{
+  background-color: #989898;
+  transition: all 0.4s;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 30px;
+}
+
+.progress {
+  height: 20px;
+  background-color: #6fb1e4;
+  border-radius: 5px;
+  width: 0%;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.icon-content {
+  padding-bottom: 20px;
+}
+
+.row.icon-row {
+  align-items: center;
+}
+
+.progress-bar-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.progress-bar-image {
+  flex: 1;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.progress-bar-image.active {
+  opacity: 1;
+  filter: none;
+}
+
+.delivery-details {
+  margin-top: 30px;
+}
+
+.delivery-details p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #6fb1e4;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.content-frame {
+  border: 1px solid #6fb1e4;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.frame-header {
+  background-color: #6fb1e4;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 20px;
+}
