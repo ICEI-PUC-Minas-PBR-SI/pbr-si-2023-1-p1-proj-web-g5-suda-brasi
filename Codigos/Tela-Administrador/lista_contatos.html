@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>SUDA Brasil</title>
+</head>
+<body>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid w-100 h-100"s>
+        <a class="navbar-brand mx-auto" href="#"><img id="logo" src="Imagens/SUDA-Logo.ico" alt=""></a>
+          <form class="d-flex mx-auto p-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+            <li class="nav-item" id="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house" style="color: #201f6b;"></i>Inicio</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a class="nav-link" href="#"><img src="Imagens/donation.png" alt="" style="width: 20px;"> Doações</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-user" style="color: #201f6b;"></i>
+                Perfil
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Meus Pedidos</a></li>
+                <li><a class="dropdown-item" href="#">Chat</a></li>
+                <li><a href="#" class="dropdown-item">Configurações</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <main style="height: 1000px;overflow-y: scroll;">
+        <body onload="ListaContatos()">
+            <h1>Listagem de Contatos</h1>
+        
+            <div class="container">
+                <div class="row">
+                    <div id="msg" class="col-sm-10 offset-sm-1 ">
+                        <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div id="msg" class="col-sm-2 offset-sm-10 ">
+                        <a href="index.html"><input type="button" class="btn btn-warning" id="btnClear" value="Cadastro"></a>
+                    </div>
+                </div>        
+                
+                <form id="form-contato">            
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <select name="filtro_cidade" id="filtro_cidade" onchange="ListaContatos()" class="form-control">
+                                <option value="">Selecione a Cidade</option>
+                                <option value="Betim">Betim</option>
+                                <option value="Belo Horizonte">Belo Horizonte</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Goiânia">Goiânia</option>
+                            </select>                    
+                        </div>
+                        <div class="col-sm-8">
+                            <select name="filtro_categoria" id="filtro_categoria" onchange="ListaContatos()"  class="form-control">
+                                <option value="">Selecione a Categoria</option>
+                                <option value="Doador">Doador</option>
+                                <option value="Benificiario">Benediciario</option>
+                                <option value="Instituição">Instituição</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+        
+        
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="grid-contatos" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Telefone</th>
+                                    <th scope="col">E-mail</th>
+                                    <th scope="col">Cidade</th>
+                                    <th scope="col">Categoria</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-contatos">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <script src="app.js"></script>
+            <script>
+                // função para listar na tabela os contatos que estão associados aos filtros 
+                function ListaContatos() {
+                    
+                    // Obtem os dados informados pelo usuário nos filtros
+                    let fc = document.getElementById('filtro_cidade').value;
+                    let fcg = document.getElementById('filtro_categoria').value;
+        
+                    // limpa a lista de contatos apresentados
+                    $("#table-contatos").empty();
+        
+                    // Popula a tabela com os registros do banco de dados
+                    for (let index = 0; index < db.data.length; index++) {
+                        const contato = db.data[index];
+        
+                        // Verifica se os dados do contato batem com os filtros
+                        if (((contato.cidade == fc) || (fc == '')) &&
+                            ((contato.categoria == fcg) || (fcg == ''))) {
+                            
+                            // Inclui o contato na tabela    
+                            $("#table-contatos").append(`<tr><td scope="row">${contato.id}</td>
+                                                            <td>${contato.nome}</td>
+                                                            <td>${contato.telefone}</td>
+                                                            <td>${contato.email}</td>
+                                                            <td>${contato.cidade}</td>
+                                                            <td>${contato.categoria}</td>
+                                                        </tr>`);
+                        }
+                    }
+        
+                }
+            </script>
+        
+        </body>
+    </main>
+
+
+    <footer>
+      <div id="footer_content">
+        <div id="footer_contacts">
+          <img id="logo" src="Imagens/SUDA-Logo.ico">
+          <div id="footer-socialmedia">
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="flex-column" id="footer_list">
+          <li><h3>Sobre nós</h3></li>
+          <li><a href="#" class="footer-link">Quem Somos</a></li>
+          <li><a href="#" class="footer-link">Politicas de privacidade</a></li>
+          <li><a href="#" class="footer-link">Termos de uso</a></li>
+        </ul>
+        <div class="flex-column g-1" id="footer_subscribe">
+          <h3>Inscreva-se</h3>
+          <div class="input-group">
+            <p>Digite seu email para enviarmos as novidades: </p>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>          
+        </div>
+      </div>
+      <div id="footer_copyright">
+        <p>&#0169 2023 all rights reserved</p>
+        
+      </div>
+    </footer>
+
+</body>
+</html>
