@@ -1,0 +1,160 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500&display=swap');
+/* Estilização geral do site */
+*{
+    font-family: 'Inter',sans-serif;
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing:border-box
+}
+
+body{
+  background-color: #E2E2E2;
+}
+
+/* Estilização Header padrão*/
+.navbar{
+  height: 100%;
+}
+
+#nav_item{
+  height: 100%;
+}
+
+
+/* Configurações do footer padrão da pagina*/
+#footer_content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  background-color: #989898;
+  padding: 3rem 3.5rem;
+}
+
+#footer-socialmedia{
+  margin-top: 1.45rem;
+  display: flex;
+  gap: 1.15rem;
+}
+
+#logo{
+  width: 45%;
+}
+
+#footer-socialmedia .footer-link{
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+#footer-socialmedia .footer-link i{
+  font-size: 1.20rem;
+  color: #DCDCE4 ;
+
+}
+
+#footer-socialmedia .footer-link :hover{
+  opacity: 75%;
+}
+
+#instagram{
+  background: linear-gradient(#7f37e9,#ff2992,#ff9807);
+}
+
+#facebook{
+  background: linear-gradient(#3B91EA,#5777EB);
+}
+
+#whatsapp{
+  background: #38B82F ;
+}
+
+#footer_list{
+  gap: 0.75rem;
+  list-style: none;
+}
+
+#footer_list .footer-link{
+  text-decoration: none;
+  color: #DCDCE4;
+  transition: all 0.35s;  
+}
+
+#footer_list .footer-link:hover{
+  opacity: 75%;
+  color: #7f37e9;
+}
+
+
+.input-group{
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  color: #DCDCE4;
+}
+
+.input-group input{
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+  background: #D9D9D9;
+  padding: 0.65rem;
+}
+
+.input-group button{
+  background-color: #38B82F;
+  color: #DCDCE4;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  height: 100%;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.input-group button :hover{
+  opacity: 80%;
+}
+
+#footer_copyright{
+  display: flex;
+  justify-content: center;
+  background-color: #7D7D7D;
+  color: #D9D9D9;
+}
+h1{
+  font-size: 30px;
+}
+#avatar{
+  width: 55px;
+  height: 50px;
+}
+div{
+  display: block;
+}
+#text-cabeçalho{
+  text-align: center;
+  background: #989898;
+  border-bottom: solid 2px rgb(19, 14, 14);
+  font-weight: bold;
+  width: 100%;
+}
+#text-cabeçalho-2{
+  text-align: start;
+  border-bottom: solid 2px rgb(19, 14, 14);
+  font-weight: bold;
+  width: 100%;
+}
+.main-content{
+  width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card{
+  background-color: #E2E2E2;
+}
