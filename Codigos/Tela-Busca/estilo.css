@@ -47,7 +47,7 @@ main{
 
 .sidebar-container {
   width: 220px;
-  height: 100%;
+  height: auto;
   background:linear-gradient(#19CAF0,#6898A3);
   display: flex;
   flex-direction: column;
@@ -56,6 +56,7 @@ main{
   z-index: 10;
   position: absolute;
   margin: auto;
+  left: auto;
 }
 
 .topo{
@@ -144,6 +145,9 @@ main{
   margin-left: 8px;
 }
 
+.categorias-checkbox li{
+  margin-bottom: 10px;
+}
 
 #distance{
   color:black;
@@ -170,10 +174,18 @@ main{
 
 #filtros1{
   font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #filtros{
   font-size: 18px;
+  font-weight: 450;
+}
+
+.categorias-checkbox img{
+  width: 48px;
+  height: 48px;
 }
 
 /*FIM SIDEBAR*/
