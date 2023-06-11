@@ -83,7 +83,11 @@
     height: 600px;
     padding: 12px;
     text-align: center;
+<<<<<<< Updated upstream
     background-color: #fafafa;
+=======
+    background-color: #ffffff;
+>>>>>>> Stashed changes
     filter: drop-shadow(0 0 5px rgb(48, 48, 48));
   }
 
@@ -98,9 +102,16 @@
   }
 
   .inputs_login {
+<<<<<<< Updated upstream
     display: flex;
     flex-direction: column;
     margin: 18px auto 16px;
+=======
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 18px auto 0px;
+>>>>>>> Stashed changes
     margin-top: 18px;
     width: auto;
     padding: 0px;
@@ -108,6 +119,47 @@
     font-family: 'Inter', sans-serif;
   }
 
+<<<<<<< Updated upstream
+=======
+  label{
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  .inputs_login label{
+    top: 15px;
+    left: 8px;
+  }
+
+  .input_Login:valid ~ label{
+    top: -5px;
+    left: 10px;
+    opacity: 1;
+    padding: 0px 6px;
+    background: #ffff;
+    transition: all 0.3s;
+  }
+
+  .input_Login:hover ~ label{
+    top: -5px;
+    left: 10px;
+    opacity: 1;
+    padding: 0px 6px;
+    background: #ffff;
+    transition: all 0.3s;
+  }
+
+  label:hover{
+    top: -5px;
+    left: 10px;
+    opacity: 1;
+    padding: 0px 6px;
+    background: #ffff;
+    transition: all 0.3s;
+  }
+
+
+>>>>>>> Stashed changes
   .input_Login {
     display: flex;
     align-items: center;
@@ -118,11 +170,15 @@
     height: 36px;
     margin-top: 8px;
     font-size: 18px;
+<<<<<<< Updated upstream
   }
 
   .input_Login:hover {
     border: 2px solid rgba(70, 203, 243, 0.836);
     filter: drop-shadow(0 0 1px rgb(62, 195, 236));
+=======
+    background: transparent;
+>>>>>>> Stashed changes
   }
 
   .input_Login:focus {
@@ -148,7 +204,11 @@
   .btn_arrow {
     display: flex;
     align-items: start;
+<<<<<<< Updated upstream
     background: #fafafa;
+=======
+    background: #ffffff;
+>>>>>>> Stashed changes
   }
 
   .btn_arrow:hover {
@@ -166,6 +226,10 @@
 
   #cadastrar_Login{
     display: none;
+<<<<<<< Updated upstream
+=======
+    height: 760px;
+>>>>>>> Stashed changes
   }
 
 
@@ -365,4 +429,8 @@
     justify-content: center;
     background-color: #000000;
     color: #D9D9D9;
+<<<<<<< Updated upstream
   }
+=======
+  }
+>>>>>>> Stashed changes

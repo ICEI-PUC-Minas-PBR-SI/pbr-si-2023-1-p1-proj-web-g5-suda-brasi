@@ -34,6 +34,111 @@
     background: #dfdfdf;
   }
 
+<<<<<<< Updated upstream
+=======
+  /* Estilização do MAIN*/
+  main{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .dados{
+    margin-top: 0.45rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-doacao{
+    display: block;
+    padding: 25px;
+    border-radius: 5px;  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  /* Nota em rating */
+  .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+  }
+  .rate:not(:checked) > input {
+      position:absolute;
+      top:-9999px;
+  }
+  .rate:not(:checked) > label {
+      float:right;
+      width:1em;
+      overflow:hidden;
+      white-space:nowrap;
+      cursor:pointer;
+      font-size:30px;
+      color:#ccc;
+  }
+  .rate:not(:checked) > label:before {
+      content: '★ ';
+  }
+  .rate > input:checked ~ label {
+      color: #ffc700;    
+  }
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+      color: #deb217;  
+  }
+  .rate > input:checked + label:hover,
+  .rate > input:checked + label:hover ~ label,
+  .rate > input:checked ~ label:hover,
+  .rate > input:checked ~ label:hover ~ label,
+  .rate > label:hover ~ input:checked ~ label {
+      color: #c59b08;
+  }
+
+  /* FIM RATING*/
+
+  .nota{
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .titulos{
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .informacoes{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+  }
+
+  .titulo-detalhes{
+    margin-bottom: 0.5rem;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+
+  }
+
+  .informacoes #contato{
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .informacoes #contato .contato-titulo{
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+
+  }
+
+  /* FIM MAIN*/
+
+>>>>>>> Stashed changes
   /* Configurações do footer padrão da pagina*/
   #footer_content {
     display: grid;
@@ -140,8 +245,11 @@
     color: #D9D9D9;
   }
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
   .conteudo {
     margin-left: 15px;
     margin-right: 15px;
@@ -155,6 +263,7 @@
     margin-right: 15px;
 
   }
+<<<<<<< Updated upstream
   main{
     width: 100%;
     height: 100%;
@@ -166,6 +275,8 @@
 
 
 
+=======
+>>>>>>> Stashed changes
 
   .imagem-usuario {
     margin-left: 100px;

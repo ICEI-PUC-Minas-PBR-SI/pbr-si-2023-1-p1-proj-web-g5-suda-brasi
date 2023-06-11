@@ -9,6 +9,7 @@
 }
 
 body{
+<<<<<<< Updated upstream
   background-color: #E2E2E2;
 }
 
@@ -114,6 +115,15 @@ body{
 .botaoEnviar:hover{
   background: #ff8482;
   transition: 1s;
+=======
+  display: flex;
+  flex-direction: column;
+  background-color: #E2E2E2;
+  height: 100%;
+  width: 100%;
+  /*background: linear-gradient(#C76508,#FA9F10);*/
+  background: linear-gradient(#030917,#0C2B6E,#0F3780);
+>>>>>>> Stashed changes
 }
 
 /* Estilização Header padrão*/
@@ -125,6 +135,131 @@ body{
   height: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+.nav-link{
+  color: #D9D9D9;
+}
+
+.cabecalho-titulo{
+  color: #D9D9D9;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilização da Main*/
+
+
+main{
+  width: 100%;
+  height: 100%;
+}
+
+label{
+  margin-top: 0.3rem;
+  font-weight: 500;
+  text-decoration: dotted;
+}
+
+input{
+  text-align: center;
+}
+
+.campo-geral input,select{
+  background-color: #d4d4d4;
+  border-color: black;
+}
+
+.campo-geral{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-geral form{
+  margin-top:3rem;
+}
+
+.campo-geral h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main input{
+  border-radius: 15px;
+  line-height: 2.5rem;
+}
+
+.dados-pessoais .linha-um{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dados-pessoais .linha-dois{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 0.8rem;
+}
+
+.dados-pessoais .linha-dois div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+}
+
+#input-telefone::placeholder{
+  color: black;
+  text-align: center;
+}
+
+.endereco .endereco-dados{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+}
+
+.endereco .endereco-dados div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.informacoes-adicionais div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.informacoes-adicionais .opcao{
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.botaoEnviar{
+  margin-top: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.8rem;
+  border-radius: 15px;
+  background-color: #29b31f;
+  color: white;
+}
+
+/*Fim da Main*/
+>>>>>>> Stashed changes
 
 /* Configurações do footer padrão da pagina*/
 #footer_content{

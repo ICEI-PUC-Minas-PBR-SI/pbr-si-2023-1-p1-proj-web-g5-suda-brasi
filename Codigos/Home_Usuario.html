@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Tela-Home-Usuario/style.css">
+    <title>SUDA Brasil</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid w-100 h-100" s>
+                <a class="navbar-brand mx-auto" href="#"><img id="logo" src="Tela-Home-Usuario/Imagens/logo" alt=""></a>
+                <form class="d-flex mx-auto p-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link active" id="nav-link" aria-current="page" href="#"><i
+                                    class="fa-solid fa-house"></i>Inicio</a>
+                        </li>
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link" id="nav-link" href="#"><img src="Tela-Home-Usuario/Imagens/donation.png" alt=""
+                                    style="width: 20px;color: #ffffff;"> Doações</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="nav-link" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user"
+                                    style="color: #ffffff;"></i>
+                                Perfil
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Meus Pedidos</a></li>
+                                <li><a class="dropdown-item" href="#">Chat</a></li>
+                                <li><a href="#" class="dropdown-item">Configurações</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="image"></section>
+        <section class="text">
+            <h2 class="usuario">Beneficiario</h2>
+            <p>
+                É com grande satisfação que nos dirigimos a você neste momento para expressar nossa gratidão e
+                compartilhar
+                algumas informações importantes. Sabemos que você é um beneficiário valioso e desejamos reforçar nosso
+                compromisso em fornecer o melhor suporte
+                possível.
+            </p>
+            <p>
+                Primeiramente, gostaríamos de expressar nossa sincera gratidão por sua confiança em nossos serviços.
+                Sabemos
+                que existem várias opções disponíveis, e é uma honra para nós ter sido escolhidos como seu parceiro.
+                Nosso
+                objetivo sempre foi garantir sua satisfação
+                e atender às suas necessidades com eficiência e dedicação.
+            </p>
+        </section>
+        <section class="image image-2"></section>
+        <!-- Barra de Pesquisa -->
+        <div class="form-container">
+            <div class="d-flex p-2" role="search">
+                <input class="form-control1 me-2" type="search" placeholder="Digite o nome da Instituiçao ou Doador"
+                    aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <!--Fim Barra de Pesquisa-->
+
+        <div class="favoritos" style="text-align:center">
+            <img id="icone-favoritos" src="https://cdn-icons-png.flaticon.com/128/2967/2967188.png" alt=""
+                style="width: 50px">
+            <span class="favoritas">Suas Instituições Favoritas</span>
+        </div>
+        <div class="row w-100">
+            <div class="card" data-state="#about">
+                <div class="card-header">
+                    <img class="card-avatar"
+                        src="https://colegiomarillac.files.wordpress.com/2020/04/campanha-juntos-somos-mais-fortes-post-2020-01.jpg"
+                        style="width: 100%;" alt="avatar" />
+                    <h1 class="card-fullname">Juntos</h1>
+                    <p class="card-jobtitle">Belo Horizonte</p>
+                </div>
+                <div class="card-main">
+                    <div class="card-section is-active" id="about">
+                        <div class="card-content">
+                            <div class="card-subtitle">Sobre Nós</div>
+                            <div id="conteudo" style="height: 200px; overflow-y: scroll;">
+                                <p class="card-desc">
+                                    O Projeto Juntos, unindo esforços com o INBRAC (Instituto Brasileiro de Comunicação
+                                    Cristã), quer captar recursos para contribuir com a REDEVIDA na rede do bem e na
+                                    difusão
+                                    de conceitos como respeito, solidariedade e valorização à vida pelo Brasil. A
+                                    sua colaboração no Projeto Juntos é parte importante para construir e manter essa
+                                    ponte
+                                    que nos conecta ao nosso público, e contribui para levar a fé e a esperança aos
+                                    lugares
+                                    mais remotos do país.
+                                </p>
+                            </div>
+                            <button class="btn1">Mais informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-state="#about">
+                <div class="card-header">
+                    <img class="card-avatar"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifNNAACQKxTuMxQLHnkfqMyyioi02kdrcZw&usqp=CAU"
+                        alt="avatar" />
+                    <h1 class="card-fullname">Desiderata</h1>
+                    <p class="card-jobtitle">Belo Horizonte</p>
+                </div>
+                <div class="card-main">
+                    <div class="card-section is-active" id="about">
+                        <div class="card-content">
+                            <div class="card-subtitle">Sobre Nós</div>
+                            <div id="conteudo" style="height: 200px; overflow: auto;">
+                                <p class="card-desc">
+                                    tO Instituto Desiderata é fruto de uma grande ambição: contribuir para que crianças
+                                    e
+                                    adolescentes tenham garantido seu direito a uma saúde pública de qualidade.Para
+                                    isso,
+                                    criamos diálogos com o setor de saúde e qualificamos profissionais para tratar
+                                    de temas delicados como o câncer e a obesidade em crianças e adolescentes.
+                                </p>
+                            </div>
+                            <button class="btn1">Mais informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-state="#about">
+                <div class="card-header">
+                    <img class="card-avatar" src="https://www.payplace.com.br/assets/images/logotipo.png"
+                        alt="avatar" />
+                    <h1 class="card-fullname">Payplace.</h1>
+                    <p class="card-jobtitle">Belo Horizonte</p>
+                </div>
+                <div class="card-main">
+                    <div class="card-section is-active" id="about">
+                        <div class="card-content">
+                            <div class="card-subtitle">Sobre Nós</div>
+                            <div id="conteudo" style="height: 200px; overflow: auto;">
+                                <p class="card-desc">
+                                    Ferramenta Digital para arrecadação de recursos financeiros PayPlace é uma solução
+                                    completa, de implementação imediata e ideal para manter suas arrecadações
+                                    funcionando em
+                                    tempos de isolamento social.
+                                </p>
+                            </div>
+                            <button class="btn1">Mais informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-state="#about">
+                <div class="card-header">
+                    <img class="card-avatar"
+                        src="https://amigosdobem.org/wp-content/uploads/2020/03/logo-ADB-230x230.png" alt="avatar" />
+                    <h1 class="card-fullname">Amios do bem </h1>
+                    <p class="card-jobtitle">Belo Horizonte</p>
+                </div>
+                <div class="card-main">
+                    <div class="card-section is-active" id="about">
+                        <div class="card-content">
+                            <div class="card-subtitle">Sobre Nós</div>
+                            <div id="conteudo" style="height: 200px; overflow: auto;">
+                                <p class="card-desc">
+                                    Contribua para mudar a realidade das famílias que enfrentam dificuldades em meio à
+                                    crise
+                                    econômica, social e sanitária no Brasil. Infelizmente, as regiões mais carentes e
+                                    isoladas, como o Nordeste, têm sido as mais afetadas, com mais de 20% da população
+                                    sofrendo diariamente com a fome.
+                                </p>
+                            </div>
+                            <button class="btn1">Mais informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <a href="" id="logo" class="">
+                <img id="logo" src="https://cdn-icons-png.flaticon.com/128/2967/2967188.png" alt="" style="width: 50px">
+            </a>
+            <font size="7">Ultimos Doadores escolhidos</font> <br />
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="solucoes">
+                    <button class="favorite-button">
+                        <div class="icon">
+                            <div class="star"></div>
+                        </div>
+                        <span>Favorite</span>
+                    </button>
+                    <div class="solucoes-content">
+                        <div class="personal-image">
+                            <label class="label">
+                                <figure class="personal-figure">
+                                    <img src="https://pps.whatsapp.net/v/t61.24694-24/143417897_447894479898015_8326250572992330702_n.jpg?ccb=11-4&oh=01_AdQhXrYtOT2xZpnIftSjE0H93QU_Jt9WFirJS7dwD1dexA&oe=6474DF34"
+                                        class="personal-avatar" alt="avatar">
+
+                                </figure>
+                            </label>
+                            <p class="s-descricao text-center">
+                                <font size="7">Gabriel Santos</font> <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="solucoes">
+                    <button class="favorite-button">
+                        <div class="icon">
+                            <div class="star"></div>
+                        </div>
+                        <span>Favorite</span>
+                    </button>
+                    <div class="solucoes-content">
+                        <div class="solucoes-content">
+                            <div class="personal-image">
+                                <label class="label">
+                                    <figure class="personal-figure">
+                                        <img src="https://pps.whatsapp.net/v/t61.24694-24/324010860_2434002916776644_1718054070456497973_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdTo1Q4S3tfDraNPGgfNEreAOxD5nTYkH-jkI_CjuoFQ7w&oe=647503E4"
+                                            class="personal-avatar" alt="avatar">
+
+                                    </figure>
+                                </label>
+                                <p class="s-descricao text-center">
+                                    <font size="7">Lucas Eduardo</font> <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="solucoes">
+                    <button class="favorite-button">
+                        <div class="icon">
+                            <div class="star"></div>
+                        </div>
+                        <span>Favorite</span>
+                    </button>
+                    <div class="solucoes-content">
+                        <div class="personal-image">
+                            <label class="label">
+                                <input type="file" />
+                                <figure class="personal-figure">
+                                    <img src="https://pps.whatsapp.net/v/t61.24694-24/322277620_2355493967959833_9043607100509256149_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdTt6oPvMxio_z-HP2hMPQCebVcuJRXh-hxLZaBwspg2hg&oe=6475069D"
+                                        class="personal-avatar" alt="avatar">
+
+                                </figure>
+                            </label>
+                            <p class="s-descricao text-center">
+                                <font size="7">Rafael Costa</font> <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="solucoes">
+                    <button class="favorite-button">
+                        <div class="icon">
+                            <div class="star"></div>
+                        </div>
+                        <span>Favorite</span>
+                    </button>
+                    <div class="solucoes-content">
+                        <div class="personal-image">
+                            <label class="label">
+                                <input type="file" />
+                                <figure class="personal-figure">
+                                    <img src="https://pps.whatsapp.net/v/t61.24694-24/184102098_316654663157955_3989327591278029066_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdRyT1BoyN0BWZDDxwjC8juZc4snlnxYBtVIMCG4f2Yt0Q&oe=6474F761"
+                                        class="personal-avatar" alt="avatar">
+                                </figure>
+
+                            </label>
+                            <p class="s-descricao text-center">
+                                <font size="7">Nicolas Fonseca</font> <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="solucoes">
+                    <div class="solucoes-content">
+                        <div class="personal-image">
+                            <label class="label">
+                                <input type="file" />
+                                <figure class="personal-figure">
+                                    <img src="https://pps.whatsapp.net/v/t61.24694-24/312286826_834668324308473_4255697504838440325_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdSLd5TJjTd-7ADArZVtXCPDnIn2QHThp6Qqm1UWXPqNkQ&oe=6474DF82"
+                                        class="personal-avatar" alt="avatar">
+                                </figure>
+
+                            </label>
+                            <p class="s-descricao text-center">
+                                <font size="7">Jose Eduardo</font> <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="solucoes">
+                    <div class="solucoes-content">
+                        <div class="personal-image">
+                            <label class="label">
+                                <input type="file" />
+                                <figure class="personal-figure">
+                                    <img src="https://pps.whatsapp.net/v/t61.24694-24/293406547_1414994105648839_4956831775714924531_n.jpg?ccb=11-4&oh=01_AdQyWpM-rYIy7xwYcj9AxZ-v4RHnCJeUbfnFI6GGiDBpYg&oe=64750735"
+                                        class="personal-avatar" alt="avatar">
+                                </figure>
+
+                            </label>
+                            <p class="s-descricao text-center">
+                                <font size="7">Lucas Braga</font> <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="solucoes">
+                    <div class="solucoes-content">
+                        <div class="personal-image">
+                            <label class="label">
+                                <input type="file" />
+                                <figure class="personal-figure">
+                                    <img src="https://pps.whatsapp.net/v/t61.24694-24/343321408_196219856149311_5396606218291106727_n.jpg?ccb=11-4&oh=01_AdSNy-FPM8ofVcHZ1BO7rGAxn3OLqS3asUtn9xExAmCVGQ&oe=64773BA5"
+                                        class="personal-avatar" alt="avatar">
+                                </figure>
+
+                            </label>
+                            <p class="s-descricao text-center">
+                                <font size="7">Ademar Junior</font> <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="solucoes">
+                    <div class="solucoes-content">
+                        <div class="personal-image">
+                            <label class="label">
+                                <input type="file" />
+                                <figure class="personal-figure">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAABWVBMVEUAAAABt/8AAQUAtv8BuP4Auv8AAQYBvP8AAwsAAw8AAwwBAAMABBMBAQAABRcAABMABRoBBiAAABAABhwBADUAADEAACIBAB8ACCYFsv8BCSkBCDIBACoBABYBACUBCDAABTwAAEUAAD8AAEkGnvEAAFMGrPIDABsETZUIZqMDrv8BEVYACFkDG3ICIXUCJ34AHXcEM4sDSKgDXrsFdNEFgdoEofMGi+AESaIBE2ICBFsDQKIGjt8EaL4DPZMFf9EFc8YFWasFWLsGl+8CLowAE24BI28ELHIIZ7IFOXQGVJUHl9sFo+0IPGwGIE4GV4sEKmsFFjYFJ0oGbqEEHzkFeMEFLUsFeLUDPowEHkwFdtsDGFEFUI4DLV4HSI0EpfwHT3gDGkQIjs4Fc7sGQ2kDXasFRpADG2EDmPoCa+EBP68DjPsBPrwFU8gAStYDbdsBKJYBdfoAXuoJCUYrAAAOc0lEQVR4nO1d+1vTSBeeJpPrhLTpBXovLVDksoCiiIqLijekCooIin4K7Mp+rq5+/v8/fOckvYGZNKwXOpBXH5fVpE/m7bmfMxNCIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIogExljrp1N9jr4B8OEx0ealQ9G5Ai7aWzmTmCodA+sWnfMC1oJLgQowTVXVdfjBpUQCps4bK4wMwLIlIEA1TNOwLMu2bcuFoZsmcIOsSOSc0OJ+/ZLLiA5k2AnHyZbzxWIhUykUK+WhrJNCfpAYuIqR88ALWFRUF103bDuRylcyw9WR6enfZmYRMzPXxkZq6UIlm0qAyKAqnQMVcm0ISkgqlS2kq9fnLl6av3xlZWEyN4lYGL26PL948dpYLZ13bNtALQL7cnZ5cc0mA1tq2I5TqV2fuzF/ZSGnaJqmKLQJBf5XyS0s3fz9Wm247NhgX9DqnllSwJ+AjJhGIptPT89durIgt8mItQA/wi8gRl5YXrxfTWdTFloWdlbdEANHo1qJbKV678bl0ZiCTMgeE7FuUrz/KhpduHVxbDjvWEldPZOUoCFRdct2CiP37lzNaUqXcHAAtOSWLkynyynbBDbPHCtAiaqblpOvzs2PUo32ZgRFBuwLHb09nc7aaFbOmqyAtzGtVL52784oVULw0SUsyujOSAasrRvEnfY6fhzQ/4KQVMZurCghlOaYtCix5bnhfMo4W8GK623yw/cuyxo6lhORAhdTbfLmdRAV04tszwDQuuqGUxm5C0JyIhHplpWlmXQWItuzwonEIEgrXJ/PaSfTmiOkaLnbVTC1blgrPtCUZNP3rig09h2cgLG9NVJMWbrg6uOVSFTTztdmV7QQK2//8S1kEJWla+mE8JbWC9SMbO3uQlhLwhUlEBVt9H7GcUk57YV9B5ATsCXVG5O9KaExLwnkaRj+rdZ4kHZMsUmBMEsHxVnM9VYcKoPFoPVccEQHpGSQFIGjNwxes7XFSV6cRr0A3sXoSq7xML36aE0JokUBUlICqw8W1Cwn8/sk30ZAKlhvrDXq9XrjQfHxk6xJiLm+1pAVLi1KY6OYMkQtHaB9NZz07AJHcSDtrS/tPyokiRkfzz818B4dow+VPNusc1MAZeGwmECbctrr+1dgkukUflvxN69Ui9U3n8XhMhUL0RJxrY9by8d7n2+ucVQIQtrqkN28TDDAAg07P3bFX0qo0ng03rwMjYPb0PHKaRL+JqS0XufEvdpWxrFUAXMfRiQd7Ou8vwpQZWuYoA1utf06bbBmRRrE4MX2gq+oUOVCIWGCRJ3yEk8MtK+J9MVJX06AkqLb5fHao6xdbu3QwlCd3iz5Kp7SOCxbkmjaw4iqqnb+3qiv+FPlcq2rQfotJ16vC9b8wC/+hSh/Oe0YotVovfLA8GXN73sGK3nRCBwfaPf/Cpc5qrdTSJmCpchoYBOZi7KvlNSXX7JuhfG7v/lvG7dlv08A7RnJGpJQkgIGFgLYsRVfzVFe/VkhITnZfZTzkxM5ph1kbFOs4QOmmqnMol9ZDTL+V1ee9G6Nu5aWPLuz4K88NDc9aItVS5FUKz/mF60pVH68Mx5mWsCTgZ23nHhW24IQXxzlgZieGQ6IiU/aT5V1L6UNxQkjxYYc8zMpkEdfw2j256/mxwBHB6zsCIjJ8dVA+vuahFyHx0lyzVdKUOIOMuh6fu5SfhggODFt1+kcExNKFTAlIedsPN15k+MlyFpuKm+JUzTA2KR261unA6bh9xJeEGIhnpjEH3ILdFR5WLB1VQxK0BEnir/5VE2odnXKIUE+uP0ZTU+dXgmozzaq2bgqRsENzImZSPsmf9rD1nJ7foZ31dM6X04o/U/Z1sXwPIypljN21S82eXsfqyUhjQmuVm3wOMGGz1IGi0siSAq4Yrt40c82arcyXlWg92d42TEhWwEFf5qbGhejNMtUiGGLN/3Wos0nXa8T4kO81HiAvA6o4oPyDFq6CIkgmhOn6ltx1K6GnKZvlwvQFwcU8Q+KQmTHDGfWBmd9l0JzWD/rGZ90F9zG1wIa77RRcwwRwjb0OsXb/uW1emsgtOeHtD326yA5qW8MGiLE95Kkp9K3fE0jzQ2G34nSJCXD9TxoUC4IYVCwmuSM+NdRY8rwCTlBzxPQV1UOClhF+clL+n5A/jd0zb/1R7V1Em6zRcukDPTwxm6E0vfOGLvm5R1O5qZtE3cHSrhCgXdZICeN6rjR/0Gby8kiZwnaGpFYGPXp1O+LQcM8NLcxZPV9yoMFe7v4J6cfqjS8/X+hOSHkcU7hzulQKq8CJ/2uO2BidTt9i9cQzSVJqG1tHTl5FzSPApEscvJLVvYdAE4Sab8E0F2CtkdImP04HXuSrAdxojwatPp+xADlJFXjuGIwso+IFL757V62GTTjpB2UBXDGkmqkqqNcC9AwjRNwwsB1OwEllJi2Vbb7PWjD8rSZGhnlVj2UVXISTuDjAi2KslTse06weKIDJ1x5VxqD4beCNm3KPn8kXVnufzlx7UmiepXHCaXKw5ClNtLm5Jlv29mFtiQAJzjqmKpy/I5LSm7Ym9QKAdbcpP+OUy+goDuDAnDCgJPh5aC8bYuwkJLinmqAPbJtjVMxAE4S/e93GNNTGd/KY+vLld+QkCPzrGVmn/I40baGBCgWMIzZgjiJaY0iCVu8d7etM5LlKY9yUBaBE6Zb5dtB8+EUtCdEXbYrNQbd4XyUtj0OnPyCZX0XMAcc3OF7ClxJbD1EM7DDyR/73AFibaIkgpxIICc9OFHqT0Od+uJxsqnxgzblddzo/wYPDpQPPuBOAzS/3gMS5mCGFid8duXVuCkCJ5Lh8BOe5lrqz08iJ/zPyb2J93/tEc9pMLCAErhhlioT4ce33vFHC5RGsaT2PyeYBNqFCz02ESv74TnZ5gfF2nbJ7vvyCWka2ftBLU13dmQoHCegOnwLS5V1t4n+K5b1XXB37Yz47x7orKb+ohcnLVf8PGDbpPwmrovRG5Ugul/uwQn9IxQnYJ/yfIlTGmnIANVftLDvAUb3xT97HF6hvQtVlAUxWQuoKG2JELEhUHnG3/fYcq5NhBqRRU8cMFfwOmmIICWtARRu+bHJyXYYTuDXH3zVobnh8f5Pdjzg8NbQchAnlNKtkHJCGtR3jjqGqhO3TXE4MeLvg5wxpa92egQo7RRwjWOZgNfVpCEIJTiqpJdqQScU4Ih5rxJKkxOH0/OiWIdJiKI67sZiq+QzR91ZUG6VDATu8mppVmm/IyZHdQjyg6QlwpCSB1Se0mGOf96JslALMift9PD5ZoNbOgELm+z/UmwHGN+PL/MFRVsiPU1s/MXmmsw/kYpqW0lT7f/+eQcScwWFu6diK6imZLzb3N6vxxSlm1T5mPehsZdxMeK1FlxBuelf+MBDPR65F/neOkD2NQA9eqzdMUpkoFU3hBITnLk37Jr/7mL4jv+aCdKcusvGUUaOcUJpLl0yBBgX7oLreuI7vo1e7I8Oce8jZOjbYu63nGgTqmCUEHc2B4JZH+0BnZDXeXfhIp9/cxjkcUpoTFkbjAuyTaUD7N8lx6cnjwehuMXk7X93wWrwbiMv3Lql3E3IcSlRYk/iAh6BgmUUq/T+mPLIoDhvP4wY3Luw/qp1bIks+1FCtXXVEPEEFDyYLVFsBSly80+gZLEccBMbIBNyW+NkPykBY7I/JJgfboLhGFfpjax0USLL2sqNIcLvyMA/JMiLRmv8009MQNIaw+PiGVgPEoO052HbouDmafrX3SE1IIRlRLUIeVJHUlpCclxKsKljCUqJqz3x8nbHzNLc53toaIL8hW7gTqaGxjMmGPDF+39OmAP3mHIzXtxv2kxK336a8s4LCtId1/c8a9AYR0y07UExivV+cE+OUq3knrtVC/XmQzVOJCIFbc1ghkqYaQ8+qVM/RiCl3h5K6kxQzXGB3eP4yy086lT+++MIfsH4HpWgyN6yB4i+e/fTJP028cNdDJm4Ll5k0g23fVyens8p8t//zOUxqMBXywRwMkDsrE7Mwt3PuZiP4qztGbrgh6ViMqjahet3Jv/++mU4ZbKmnARCf+kQI5E5UHwCk0zSEP71GRjjq8nCq//982Uqb+mBBraDvT07O35wNAaGuESeKCeNE8zr9ync9qbz+evHud2KpashOSH54andRtdbNCAnoFpjNRk3RQzpjwEJcD5//DKVzttG69S+3rCmavvaESGh2lY6bulMfEoQzqcvtUolge/SCbtllDilfa2r14XHD08k44awcckRMJL9MFfJJnTdfbdQyEF7dzNGd5VBWXuZtA2ViW5Kmpg5LNl6j4D+GJhEHsuQPKKkUM/flMets/MWhFQaiyUnDbKeliaUttoo9XUSN8Q6jC0QFQPCsBOv5sFqobl/jir17T3ivWrmpzzgr4dh/Zu7Up8uvdzJua/3ahw8IUlDFfqo8qMYMHmV10CM3/h0qbqsKfLaxB4woosfp/0AHH79+vv7he3HQ0Q33HdKnvYD9QHSH75+2t0YiifxRV4RIy5SICiLL5PGGX4L3olhFu5+/biRImHO1Dk3yFY+fLyRDTHzdm4ACY89/OHLg9N+jv6CXokffph9etqP0U8YIE4ieXd2Q4yJ4F8GSyp8mdqLDEoXVMgKDmd37dN+jn6CmVX11Ozh3mk/R1/hqaGb6ZnD1Gk/Rz/BtJiqHl7bPe3n6CtIRBpwDmcSp/0cfYQBfDcL2Z3a3TjtJ+kjQO6nEnP3/oMoSGmCDcBvIIVkS5GZbYJJA9iBB1lxUv+qVncW4bWDJEIMhzsmed7AVLdFxhiEb1HNoAncr+TtMTYiRprAzdRe5VGc3Vw/F8x7waR30FTkjT0w1j7G7UxME/wAYLG+3cSI5KQJ1pGPSHmaYKzd/xuI2l4eus+tjiiJECFChAgRIkSIECFChAgRfhX+D7gsRitF6tyKAAAAAElFTkSuQmCC"
+                                        class="personal-avatar" alt="avatar">
+                                </figure>
+
+                            </label>
+                            <p class="s-descricao text-center">
+                                <font size="7">Cristiano </font> <br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img id="logo"
+                    src="https://pps.whatsapp.net/v/t61.24694-24/325956469_259171209775190_5393916226743032116_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdQv2-h3377mzkr5Wnbc782hUcFJQXc3QtHAVj6evezC4g&oe=6474D4BA">
+                <div id="footer-socialmedia">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="flex-column" id="footer_list">
+                <li>
+                    <h3>Sobre nós</h3>
+                </li>
+                <li><a href="#" class="footer-link">Quem Somos</a></li>
+                <li><a href="#" class="footer-link">Politicas de privacidade</a></li>
+                <li><a href="#" class="footer-link">Termos de uso</a></li>
+            </ul>
+            <div class="flex-column g-1" id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <div class="input-group">
+                    <p>Digite seu email para enviarmos as novidades: </p>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            <p>&#0169 2023 all rights reserved</p>
+
+        </div>
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js'></script>
+    <script src="Tela-Home-Usuario/script.js"></script>
+</body>
+
+</html>
