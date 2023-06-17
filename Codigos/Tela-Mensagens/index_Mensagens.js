@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-$('#searsh').on('input', function () {
-=======
 // Barra Lateral
 let toggle = document.querySelector('.toggle');
 let sideBar = document.querySelector('.sidebar-container');
@@ -10,7 +7,6 @@ toggle.addEventListener('click', () => {
 });
 
 $('#search').on('input', function () {
->>>>>>> Stashed changes
     const val = $(this).val().toUpperCase()
     $('.posts-title').each(function () {
         if ($(this).html().toUpperCase().indexOf(val) !== -1) {
@@ -20,8 +16,4 @@ $('#search').on('input', function () {
             $(this).hide()
         }
     })
-<<<<<<< Updated upstream
 })
-=======
-})
->>>>>>> Stashed changes

@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
-body{
-  background-color: #E2E2E2;
-=======
 html{
   width: 100%;
 }
@@ -19,7 +15,6 @@ html{
 body{
   background-color: #E2E2E2;
   width: 100%;
->>>>>>> Stashed changes
 }
 
 /* Estilização Header padrão*/
@@ -31,77 +26,6 @@ body{
   height: 100%;
 }
 
-<<<<<<< Updated upstream
-
-/* Configurações do footer padrão da pagina*/
-#footer_content{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  width: 100%;
-  background-color: #989898;
-  padding: 3rem 3.5rem;
-}
-
-#footer-socialmedia{
-  margin-top: 1.45rem;
-  display: flex;
-  gap: 1.15rem;
-}
-
-#logo{
-  width: 45%;
-}
-
-#footer-socialmedia .footer-link{
-  width: 2.15rem;
-  height: 2.15rem;
-  border-radius: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  transition: all 0.4s;
-}
-
-#footer-socialmedia .footer-link i{
-  font-size: 1.20rem;
-  color: #DCDCE4 ;
-
-}
-
-#footer-socialmedia .footer-link :hover{
-  opacity: 75%;
-}
-
-#instagram{
-  background: linear-gradient(#7f37e9,#ff2992,#ff9807);
-}
-
-#facebook{
-  background: linear-gradient(#3B91EA,#5777EB);
-}
-
-#whatsapp{
-  background: #38B82F ;
-}
-
-#footer_list{
-  gap: 0.75rem;
-  list-style: none;
-}
-
-#footer_list .footer-link{
-  text-decoration: none;
-  color: #DCDCE4;
-  transition: all 0.35s;  
-}
-
-#footer_list .footer-link:hover{
-  opacity: 75%;
-  color: #7f37e9;
-}
-
-=======
 /*Estilização SIDEBAR*/
 
 .sidebar-container {
@@ -250,7 +174,6 @@ body{
 /*FIM SIDEBAR*/
 
 /*ESTILIZAÇÃO DO MAIN*/
->>>>>>> Stashed changes
 
 .input-group{
   display: flex;
@@ -360,9 +283,6 @@ input:focus{
 }
 a{
   text-decoration: none;
-<<<<<<< Updated upstream
-}
-=======
 }
 /* FIM DA ESTILIZAÇÃO DO MAIN*/
 
@@ -434,4 +354,3 @@ a{
   color: #7f37e9;
 }
 
->>>>>>> Stashed changes

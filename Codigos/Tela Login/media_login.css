@@ -20,14 +20,11 @@
     font-size: 20px;
   }
 
-<<<<<<< Updated upstream
-=======
   #cadastrar_Login{
     display: none;
     height: 760px;
   }
 
->>>>>>> Stashed changes
   .titulo_login{
     height: auto;
     font-size: 50px;
@@ -80,8 +77,6 @@
   }
 }
 
-<<<<<<< Updated upstream
-=======
 @media (max-width:1592px) and (min-width:1442px) {
   #cadastrar_Login{
     display: none;
@@ -89,7 +84,6 @@
   }
 }
 
->>>>>>> Stashed changes
 /*Media query Laptop L*/
 @media (max-width:1439px) and (min-width:1025px) {
 
@@ -102,14 +96,11 @@
     width: 40vw;
   }
 
-<<<<<<< Updated upstream
-=======
   #cadastrar_Login{
     display: none;
     height: 680px;
   }
 
->>>>>>> Stashed changes
   .input_Login {
     width: 30vw;
   }
@@ -131,11 +122,6 @@
     width: 50vw;
   }
 
-<<<<<<< Updated upstream
-  .input_Login {
-    width: 36vw;
-  }
-=======
   #cadastrar_Login{
     display: none;
     height: 680px;
@@ -162,7 +148,6 @@
   .flex-column{
     margin: 0px 16px;
   }
->>>>>>> Stashed changes
 }
 
 /*Media query main tablet*/
@@ -174,14 +159,11 @@
     margin: 60px 20px;
   }
 
-<<<<<<< Updated upstream
-=======
   #cadastrar_Login{
     display: none;
     height: 680px;
   }
 
->>>>>>> Stashed changes
   #label_description {
     flex-direction: column;
     align-items: center;
@@ -232,24 +214,17 @@
     height: 620px;
   }
 
-<<<<<<< Updated upstream
-=======
   #cadastrar_Login{
     display: none;
     height: 680px;
   }
 
->>>>>>> Stashed changes
   .input_Login{
     width: 72vw;
   }
 
   .btn_Login{
-<<<<<<< Updated upstream
-    font-size: 12px;
-=======
     font-size: 20px;
->>>>>>> Stashed changes
   }
 
   #label_description {
@@ -295,8 +270,4 @@
   #email_box {
     justify-content: center;
   }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
