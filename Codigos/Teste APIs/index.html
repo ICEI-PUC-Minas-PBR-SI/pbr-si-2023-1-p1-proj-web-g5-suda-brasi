@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.7.0.min.js">
+    <title>Teste de API's</title>
+</head>
+<body>
+    <div id="contatos">
+        
+    </div>
+
+    <script src="main.js"></script>
+    <script type="module">
+        import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
+      
+        // Caitlyn Kerluke
+        const randomName = faker.person.fullName();
+      
+        // Rusty@arne.info
+        const randomEmail = faker.internet.email();
+      </script>
+</body>
+</html>
