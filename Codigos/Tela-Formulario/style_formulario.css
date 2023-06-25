@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500&display=swap');
+/* Estilização geral do site */
+*{
+    font-family: 'Inter',sans-serif;
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #E2E2E2;
+  height: 100%;
+  width: 100%;
+  /*background: linear-gradient(#C76508,#FA9F10);*/
+  background: linear-gradient(#030917,#0C2B6E,#0F3780);
+}
+
+/* Estilização Header padrão*/
+.navbar{
+  height: 100%;
+}
+
+#nav_item{
+  height: 100%;
+}
+
+.nav-link{
+  color: #D9D9D9;
+}
+
+.cabecalho-titulo{
+  color: #D9D9D9;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilização da Main*/
+
+
+main{
+  width: 100%;
+  height: 100%;
+}
+
+label{
+  margin-top: 0.3rem;
+  font-weight: 500;
+  text-decoration: dotted;
+}
+
+input{
+  text-align: center;
+}
+
+.campo-geral input,select{
+  background-color: #d4d4d4;
+  border-color: black;
+}
+
+.campo-geral{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-geral form{
+  margin-top:3rem;
+}
+
+.campo-geral h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main input{
+  border-radius: 15px;
+  line-height: 2.5rem;
+}
+
+.dados-pessoais .linha-um{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.endereco{
+  text-align: center;
+}
+
+.dados-pessoais .linha-dois{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2,1fr);
+  gap: 0.8rem;
+}
+
+.dados-pessoais .linha-dois div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+}
+
+#input-telefone::placeholder{
+  color: black;
+  text-align: center;
+}
+
+.endereco .endereco-dados{
+  width: 45%;
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+}
+
+.endereco .endereco-dados div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.informacoes-adicionais div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.informacoes-adicionais .opcao{
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.botaoEnviar{
+  margin-top: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.8rem;
+  border-radius: 15px;
+  background-color: #29b31f;
+  color: white;
+}
+
+/*Fim da Main*/
+
+/* Configurações do footer padrão da pagina*/
+#footer_content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  background-color: #989898;
+  padding: 3rem 3.5rem;
+}
+
+#footer-socialmedia{
+  margin-top: 1.45rem;
+  display: flex;
+  gap: 1.15rem;
+}
+
+#logo{
+  width: 45%;
+}
+
+#footer-socialmedia .footer-link{
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+#footer-socialmedia .footer-link i{
+  font-size: 1.20rem;
+  color: #DCDCE4 ;
+
+}
+
+#footer-socialmedia .footer-link :hover{
+  opacity: 75%;
+}
+
+#instagram{
+  background: linear-gradient(#7f37e9,#ff2992,#ff9807);
+}
+
+#facebook{
+  background: linear-gradient(#3B91EA,#5777EB);
+}
+
+#whatsapp{
+  background: #38B82F ;
+}
+
+#footer_list{
+  gap: 0.75rem;
+  list-style: none;
+}
+
+#footer_list .footer-link{
+  text-decoration: none;
+  color: #DCDCE4;
+  transition: all 0.35s;  
+}
+
+#footer_list .footer-link:hover{
+  opacity: 75%;
+  color: #7f37e9;
+}
+
+#confirmacao{
+  border-radius: 50%;
+}
+
+.input-group{
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  color: #DCDCE4;
+}
+
+.input-group input{
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+  background: #D9D9D9;
+  padding: 0.65rem;
+}
+
+.input-group button{
+  background-color: #38B82F;
+  color: #DCDCE4;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  height: 100%;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.input-group button :hover{
+  opacity: 80%;
+}
+
+#footer_copyright{
+  display: flex;
+  justify-content: center;
+  background-color: #7D7D7D;
+  color: #D9D9D9;
+}
+
+@media (max-width: 653px) {
+  .endereco .endereco-dados{
+    width: 100%;
+    
+  }
+}
