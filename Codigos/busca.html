@@ -9,7 +9,7 @@
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
-    <link rel="stylesheet" href="estilo.css">    
+    <link rel="stylesheet" href="Tela-Busca/estilo.css">    
     <title>SUDA Brasil</title>
 </head>
 
@@ -18,7 +18,7 @@
   <header>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid w-100 h-100"s>
-        <a class="navbar-brand mx-auto" href="#"><img id="logo" src="Imagens/SUDA-Logo.ico" alt=""></a>
+        <a class="navbar-brand mx-auto" href="Home Usuarios.html"><img id="logo" src="Tela-Busca/Imagens/SUDA-Logo.ico" alt=""></a>
           <form class="d-flex mx-auto p-2" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -26,27 +26,6 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
-            <li class="nav-item" id="nav-item">
-              <a class="nav-link active" id="nav-link" aria-current="page" href="#"><i class="fa-solid fa-house"></i>Inicio</a>
-            </li>
-            <li class="nav-item" id="nav-item">
-              <a class="nav-link" id="nav-link" href="#"><img src="Imagens/donation.png" alt="" style="width: 20px;color: #ffffff;"> Doações</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user" style="color: #ffffff;"></i>
-                Perfil
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Meus Pedidos</a></li>
-                <li><a class="dropdown-item" href="#">Chat</a></li>
-                <li><a href="#" class="dropdown-item">Configurações</a></li>
-              </ul>
-            </li>
-          </ul>
-
-        </div>
       </div>
     </nav>
   </header>
@@ -56,7 +35,7 @@
     <!--Sidebar-->
     <aside class="sidebar-container">
       <div class="topo">
-        <img src="Imagens/Lucas.jpg" id="perfil">
+        <img src="Tela-Buscar/Imagens/Lucas.jpg" id="perfil">
         <h5 class="nome">Lucas Braga</h5>
       </div>
       <div class="toggle">
@@ -68,10 +47,10 @@
       <!-- MENU -->
       <div class="menu">
         <ul>
-          <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
-          <li><a href="#"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Historico</a></li>
-          <li><a href="#"><img src="Imagens/donation.png"> Buscar Doações</a></li>
-          <li><a href="#"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
+          <li><a href="Home Usuarios.html"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+          <li><a href="Meus-Pedidos.html"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Pedidos</a></li>
+          <li><a href="busca.html"><img src="Tela-Buscar/Imagens/donation.png"> Buscar Doações</a></li>
+          <li><a href="Minha Conta.html"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
         </ul>
       </div>
       <span class="divisao"></span>
@@ -122,7 +101,7 @@
         </div>
       </div>
       <div class="signout">
-        <a href=""><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
+        <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
       </div>
     </aside> 
     <!--Cards-->
@@ -137,7 +116,7 @@
             <div class="carousel-item active">
               <ul class="cards">
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="Imagens/Lucas.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -153,7 +132,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -169,7 +148,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -185,75 +164,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-              </ul>
-            </div>
-            <div class="carousel-item">
-              <ul class="cards">
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -273,7 +184,7 @@
             <div class="carousel-item">
               <ul class="cards">
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -289,7 +200,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -305,7 +216,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -321,7 +232,75 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <ul class="cards">
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -359,7 +338,7 @@
             <div class="carousel-item active">
               <ul class="cards">
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -375,7 +354,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -391,7 +370,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -407,75 +386,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-              </ul>
-            </div>
-            <div class="carousel-item">
-              <ul class="cards">
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -495,7 +406,7 @@
             <div class="carousel-item">
               <ul class="cards">
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -511,7 +422,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -527,7 +438,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -543,7 +454,75 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <ul class="cards">
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -581,7 +560,7 @@
             <div class="carousel-item active">
               <ul class="cards">
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -597,7 +576,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -613,7 +592,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -629,75 +608,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-              </ul>
-            </div>
-            <div class="carousel-item">
-              <ul class="cards">
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
-                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
-                          <span class="card__status">1 hour ago</span>
-                        </div>
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>      
-                </li>
-                <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -717,7 +628,7 @@
             <div class="carousel-item">
               <ul class="cards">
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -733,7 +644,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -749,7 +660,7 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -765,7 +676,75 @@
                   </a>      
                 </li>
                 <li>
-                  <a href="" class="card">
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <ul class="cards">
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
+                    <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
+                    <div class="card__overlay">
+                      <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
+                        <img class="card__thumb" src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" alt="" />
+                        <div class="card__header-text">
+                          <h3 class="card__title">Nome do Usuario/Instituição</h3>            
+                          <span class="card__status">1 hour ago</span>
+                        </div>
+                      </div>
+                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="card.html" class="card">
                     <img src="https://static.demilked.com/wp-content/uploads/2020/08/digital-illustrations-of-animals-maxim-shkret-3.jpg" class="card__image" alt="" />
                     <div class="card__overlay">
                       <div class="card__header">
@@ -800,7 +779,7 @@
   <footer>
       <div id="footer_content">
         <div id="footer_contacts">
-          <img id="logo" src="Imagens/SUDA-Logo.ico">
+          <img id="logo" src="Tela-Busca/Imagens/SUDA-Logo.ico">
           <div id="footer-socialmedia">
             <a href="#" class="footer-link" id="instagram">
               <i class="fa-brands fa-instagram"></i>
@@ -839,6 +818,6 @@
   <!--Script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js'></script>
-  <script src="script.js"></script>
+  <script src="Tela-Busca/script.js"></script>
 </body>
 </html>
