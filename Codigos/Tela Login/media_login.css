@@ -1,4 +1,4 @@
-@media (min-width:1441px) {
+@media (max-width:1592px) and (min-width:1442px) {
 
   #logo {
     width: 220px;
@@ -15,31 +15,30 @@
   }
 
   .cards_login {
-    width: 28vw;
-    height: 700px;
-    font-size: 20px;
-  }
-
-  #cadastrar_Login{
-    display: none;
-    height: 760px;
+    width: 40%;
+    height: 600px;
+    font-size: 16px;
   }
 
   .titulo_login{
     height: auto;
-    font-size: 50px;
+    font-size: 34px;
   }
 
   .label_login{
-    font-size: 28px;
+    font-size: 20px;
   }
 
   i.fa-solid.fa-circle-user {
-    font-size: 180px;
+    font-size: 160px;
   }
 
-  .input_Login {
-    width: 22vw;
+  .inputs_login{
+    width: 80%;
+  }
+
+  .dados_Login {
+    width: 100%;
   }
 
   #btn_arrow {
@@ -49,6 +48,10 @@
   #label_description {
     font-size: 24px;
     margin: 0px 40px;
+  }
+
+  #cadastrar_Login{
+    display: none;
   }
 
   /*Footer*/
@@ -65,7 +68,7 @@
   }
 
   .flex-column{
-    font-size: 20px;
+    font-size: 16px;
   }
 
   #email {
@@ -73,19 +76,12 @@
   }
 
   #footer_copyright {
-    font-size: 20px;
-  }
-}
-
-@media (max-width:1592px) and (min-width:1442px) {
-  #cadastrar_Login{
-    display: none;
-    height: 840px;
+    font-size: 16px;
   }
 }
 
 /*Media query Laptop L*/
-@media (max-width:1439px) and (min-width:1025px) {
+@media (max-width:1441px) and (min-width:1241px) {
 
   .login {
     align-items: center;
@@ -101,13 +97,51 @@
     height: 680px;
   }
 
-  .input_Login {
+  .dados_Login {
     width: 30vw;
   }
 }
 
+@media (max-width:1240px)and (min-width:1025px){
+  .login {
+    align-items: center;
+    margin: 60px 10px;
+  }
+
+  .cards_login {
+    width: 40vw;
+  }
+
+  #cadastrar_Login{
+    display: none;
+    height: 680px;
+  }
+
+  .dados_Login {
+    width: 30vw;
+  }
+
+  #btn_cadastro{
+    width: 100%;
+  }
+
+  #btn_Doações{
+    width: 140px;
+    font-size: 16px;
+  }
+
+  #btn_Doar{
+    width: 140px;
+    font-size: 16px;
+  }
+
+  .modal-content{
+    margin: 10% 20%;
+  }
+}
+
 /*Media query main Laptop*/
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 810px) {
 
   .login {
     align-items: center;
@@ -124,11 +158,21 @@
 
   #cadastrar_Login{
     display: none;
-    height: 680px;
+    height: 640px;
   }
 
-  .input_Login {
+  .dados_Login {
     width: 36vw;
+  }
+
+  #btn_Doações{
+    width: 140px;
+    font-size: 16px;
+  }
+
+  #btn_Doar{
+    width: 140px;
+    font-size: 16px;
   }
 
   #footer_content {
@@ -151,17 +195,12 @@
 }
 
 /*Media query main tablet*/
-@media (max-width: 768px) and (min-width: 611px) {
+@media (max-width: 810px) and (min-width: 611px) {
 
   .login {
     flex-direction: column;
     align-items: center;
     margin: 60px 20px;
-  }
-
-  #cadastrar_Login{
-    display: none;
-    height: 680px;
   }
 
   #label_description {
@@ -209,22 +248,41 @@
     margin: 60px 20px;
   }
 
+  #cadastrar_Login{
+    display: none;
+    height: 640px;
+  }
+
   .cards_login {
     width: 80vw;
     height: 620px;
   }
 
-  #cadastrar_Login{
-    display: none;
-    height: 680px;
-  }
-
-  .input_Login{
-    width: 72vw;
+  .dados_Login{
+    width: auto;
   }
 
   .btn_Login{
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .inputs_login {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 10% 0px;
+    margin-top: 18px;
+    width: auto;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #btn_Doações{
+    width: 140px;
+  }
+
+  #btn_Doar{
+    width: 140px;
   }
 
   #label_description {

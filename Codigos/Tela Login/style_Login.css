@@ -83,7 +83,7 @@
     height: 600px;
     padding: 12px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     filter: drop-shadow(0 0 5px rgb(48, 48, 48));
   }
 
@@ -97,8 +97,12 @@
     margin: 20px auto;
   }
 
+  .forms_login{
+    display: flex;
+    justify-content: center;
+  }
+
   .inputs_login {
-    position: relative;
     display: flex;
     flex-direction: column;
     margin: 18px auto 0px;
@@ -109,63 +113,78 @@
     font-family: 'Inter', sans-serif;
   }
 
-  label{
-    position: absolute;
-    opacity: 0.5;
-  }
-
-  .inputs_login label{
-    top: 15px;
-    left: 8px;
-  }
-
-  .input_Login:valid ~ label{
-    top: -5px;
-    left: 10px;
-    opacity: 1;
-    padding: 0px 6px;
-    background: #ffff;
-    transition: all 0.3s;
-  }
-
-  .input_Login:hover ~ label{
-    top: -5px;
-    left: 10px;
-    opacity: 1;
-    padding: 0px 6px;
-    background: #ffff;
-    transition: all 0.3s;
-  }
-
-  label:hover{
-    top: -5px;
-    left: 10px;
-    opacity: 1;
-    padding: 0px 6px;
-    background: #ffff;
-    transition: all 0.3s;
-  }
-
-
-  .input_Login {
+  .dados_Login {
+    position: relative;
     display: flex;
     align-items: center;
     border: solid 1px rgb(122, 122, 122);
     border-radius: 4px;
-    padding: 4px;
     width: 420px;
     height: 36px;
-    margin-top: 8px;
+    margin-top: 12px;
     font-size: 18px;
     background: transparent;
   }
 
-  .input_Login:focus {
+  .dados_Login:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
   }
 
-  /*Carde login*/
+  .inputs_Cards{
+    display: flex;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+
+  .inputs_Cards:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+
+  span{
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  .inputs_login span{
+    top: 6px;
+    left: 8px;
+  }
+
+  .inputs_Cards:valid ~ span{
+    top: -10px;
+    left: 6px;
+    opacity: 1;
+    padding: 0px 6px;
+    background: whitesmoke;
+    transition: all 0.3s;
+    font-size: 14px;
+  }
+
+  .inputs_Cards:hover ~ span{
+    top: -10px;
+    left: 6px;
+    opacity: 1;
+    padding: 0px 6px;
+    background: whitesmoke;
+    transition: all 0.3s;
+    font-size: 14px;
+  }
+
+  span:hover{
+    top: -10px;
+    left: 6px;
+    opacity: 1;
+    padding: 0px 6px;
+    background: whitesmoke;
+    transition: all 0.3s;
+    font-size: 14px;
+  }
+
+  /*Card login*/
 
   .link_login {
     display: flex;
@@ -177,13 +196,150 @@
     margin-top: 15px;
   }
 
+  .animation{
+    background: whitesmoke;
+    border-radius: 4px;
+    animation: error 1s ease-in-out;
+  }
+
+  @keyframes error{
+    0%{
+      transform: translateX(1.5px) scale(1.025);
+      border: 1px solid red;
+    }25%{
+      transform: translateX(3px) scale(1.025);
+      border: 1px solid red;
+    }
+    50%{
+      transform: translateX(-1.5px) scale(1.025);
+      border: 1px solid red;
+    }
+    50%{
+      transform: translateX(-3px) scale(1.025);
+      border: 1px solid red;
+    }100%{
+      transform: translateX(0px) scale(1.025);
+      border: 1px solid red;
+    }
+  }
+
+  /*Tela modal - Trocar Senha*/
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: whitesmoke;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 40%;
+    height: 300px;
+    font-family: 'Inter', sans-serif;
+    color: #474747;
+  }
+
+  .modal-content h2{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+  }
+
+  .modal-content p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  #ModalSpan{
+    display: flex;
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  #ModalEmailConfirmar{
+    display: flex;
+    width: 60%;
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 10px auto;
+    padding: 4px;
+  }
+
+  #ModalEmailConfirmar:hover{
+    transform: scaleX(1.025);
+    transition: 0.1s;
+  }
+
+  #ModalSenhaNova{
+    display: flex;
+    width: 60%;
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 10px auto;
+    padding: 4px;
+  }
+
+  #ModalSenhaNova:hover{
+    transform: scale(1.025);
+    transition: 0.1s;
+  }
+
+  #ModalSenhaNova:disabled{
+    background: #b8b8b888;
+  }
+
+  #btn_confirmar{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 6px;
+    background: #47525E;
+    color: white;
+    font-weight: 800;
+  }
+
+  #btn_confirmar:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.025);
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: -16px;
+    right: -6px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
   /*Card Cadastro*/
 
   .btn_arrow {
     display: flex;
     align-items: start;
-    background: #ffffff;
+    background-color: whitesmoke;
   }
 
   .btn_arrow:hover {
@@ -201,15 +357,21 @@
 
   #cadastrar_Login{
     display: none;
-    height: 760px;
+    height: 100%;
   }
 
+  .btn_Login:disabled{
+    background: #000000;
+    color:#727272;
+    opacity: 0.5;
+    transition: 1s;
+  }
 
-  /*Botoes login*/
-
-  #btn_entrar {
-    display: block;
-    margin: 10px 0px;
+  .btn_Login:disabled:hover{
+    transform: scale(1);
+    background: #000000;
+    color:#727272;
+    opacity: 0.5;
   }
 
   .btn_Login {
@@ -223,13 +385,15 @@
     border-radius: 4px;
     background-color: #47525E;
     color: white;
+    transition: 1s;
   }
 
   .btn_Login:hover {
     transform: scale(1.05);
     background-color: #727272;
+    cursor:pointer;
   }
-
+  
   #btn_cadastro {
     display: flex;
     margin: 20px 0px;
