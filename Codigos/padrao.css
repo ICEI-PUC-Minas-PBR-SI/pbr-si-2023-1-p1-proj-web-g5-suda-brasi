@@ -43,7 +43,7 @@ body{
 
 #footer_content{
     display: flex
-    flex-direction: columns;
+    flex-direction: row wrap;
     width: 100%;
     background-color: #989898;
     padding: 3rem 3.5rem;
