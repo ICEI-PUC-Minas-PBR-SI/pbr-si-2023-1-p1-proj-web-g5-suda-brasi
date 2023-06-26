@@ -298,7 +298,7 @@ function PreencheItem(modo,tipo){
       if (k == 0){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
           <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo.id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
@@ -322,7 +322,7 @@ function PreencheItem(modo,tipo){
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
             <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo.id}" class="card">
             <img src="${usuarios[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
