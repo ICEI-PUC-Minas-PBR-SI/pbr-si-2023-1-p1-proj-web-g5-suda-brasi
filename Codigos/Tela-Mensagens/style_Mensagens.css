@@ -12,6 +12,9 @@ html{
   width: 100%;
 }
 
+h1,label{
+color: #FEFEFE;}
+
 body{
   background-color: #E2E2E2;
   width: 100%;
