@@ -1,5 +1,6 @@
 function GeraPagina(){
     var id = location.search.slice(1).split('=')
+    id = id[2]
     var usuarios = (JSON.parse(localStorage.getItem('db_usuario'))).dados
     var atual;
     
