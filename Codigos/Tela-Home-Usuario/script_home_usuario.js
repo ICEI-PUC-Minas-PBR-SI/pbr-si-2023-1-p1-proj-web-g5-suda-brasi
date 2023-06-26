@@ -165,6 +165,7 @@ function PreencheDoadores(){
     });
     for (let i=0; i < 3;i++){
         $("#carouselUltimos .carousel-inner .carousel-item").append(`
+        <a class="col-md-4 col-sm-6 col-xs" href="Card.html">
         <div class="solucoes">
             <div class="solucoes-content">
                 <div class="personal-image">
@@ -179,6 +180,7 @@ function PreencheDoadores(){
                 </div>
             </div>
         </div>
+</a>
         `)
     }
 }
