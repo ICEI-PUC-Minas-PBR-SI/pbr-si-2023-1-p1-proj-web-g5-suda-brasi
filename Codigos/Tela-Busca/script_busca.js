@@ -9,8 +9,6 @@ fetch("https://mocki.io/v1/06fe26cb-e261-496a-8f7c-547ef92a9390")
 let toggle = document.querySelector('.toggle');
 let sideBar = document.querySelector('.sidebar-container');
 
-localStorage.setItem('',JSON.stringify)
-
 toggle.addEventListener('click', () => {
   sideBar.classList.toggle('toggle-function');
 });
@@ -348,7 +346,7 @@ function PreencheItem(modo,tipo){
       if (k < 2){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
           <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo.id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
@@ -372,7 +370,7 @@ function PreencheItem(modo,tipo){
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
             <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo.id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
@@ -398,7 +396,7 @@ function PreencheItem(modo,tipo){
       if (k < 3){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
           <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo.id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
@@ -422,7 +420,7 @@ function PreencheItem(modo,tipo){
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
             <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo.id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
