@@ -30,7 +30,7 @@ function GeraPagina(){
     <p>
         CEP: ${atual.endereco.cep}
     </p>
-    `)
+    `) 
     $("#telefone").append(`
     Contato: ${atual.telefone}`)
     $("#email").append(`
