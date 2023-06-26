@@ -4,3 +4,13 @@ $(".topo").html(`
 <img src="${usuario_logado.pictures.medium}" id="perfil">
 <h5 class="nome">${usuario_logado.nome}</h5>
 `)
+
+
+let toggle = document.querySelector('.toggle');
+let sideBar = document.querySelector('.sidebar-container');
+
+localStorage.setItem('',JSON.stringify)
+
+toggle.addEventListener('click', () => {
+  sideBar.classList.toggle('toggle-function');
+});
