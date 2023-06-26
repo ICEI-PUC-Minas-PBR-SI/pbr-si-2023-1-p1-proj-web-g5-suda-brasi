@@ -33,7 +33,7 @@ function salvarInformacoes() {
 
     // Construir o objeto com os dados atualizados
 
-    localStorage.setItem('db_usuarios', JSON.stringify(usuarios));
+    localStorage.setItem('db_usuario', JSON.stringify(usuarios));
     console.log('Informações salvas no localStorage!');
     location.reload()
 }
