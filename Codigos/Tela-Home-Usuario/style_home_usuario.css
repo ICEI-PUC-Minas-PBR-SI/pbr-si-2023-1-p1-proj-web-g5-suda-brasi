@@ -626,10 +626,10 @@ section {
     top: 50%;
     left: 50%;
     width: 97%;
-    height: 125%;
+    height: 90%;
     background: #ffffff;
     rotate: -3deg;
-    translate: -50% -50%;
+    translate: -60% -50%;
 }
 
 /*Fim Estilização Main*/

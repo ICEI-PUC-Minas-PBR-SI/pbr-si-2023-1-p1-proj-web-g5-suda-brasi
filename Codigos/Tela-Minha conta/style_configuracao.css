@@ -21,12 +21,12 @@ h1{
   font-size: 30px;
 }
 
-h1,h2,h5,p,label{
+h1,h2,h5,p,label {
   
   color: #fefefe;
 }
 input{
-  color: black
+  color: black;
 }
 
 #avatar{
