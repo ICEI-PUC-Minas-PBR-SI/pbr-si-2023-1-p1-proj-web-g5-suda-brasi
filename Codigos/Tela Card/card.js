@@ -15,11 +15,22 @@ function GeraPagina(){
         <img src="${atual.pictures.medium}" class="imagem-usuario">
     `)
     $('#detalhes').append(`
-    Categoria: ${atual.categoria}
-    Endereco: ${atual.endereco.logradouro}
-    Bairro: ${atual.endereco.bairro}
-    Cidade: ${atual.endereco.cidade}
-    CEP: ${atual.endereco.cep}`)
+    <p>
+        Categoria: ${atual.categoria}
+    </p>
+    <p>
+        Endereco: ${atual.endereco.logradouro}
+    </p>
+    <p>
+        Bairro: ${atual.endereco.bairro}
+    </p>
+    <p>
+        Cidade: ${atual.endereco.cidade}
+    </p>
+    <p>
+        CEP: ${atual.endereco.cep}
+    </p>
+    `)
     $("#telefone").append(`
     Contato: ${atual.telefone}`)
     $("#email").append(`
