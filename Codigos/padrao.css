@@ -9,6 +9,10 @@
     list-style-type: none;
 }
 
+.nav-link{
+  color: #FEFEFE;
+}
+
 /*Variaveis gerais*/
 :root {
   --surface-color: #fff;
@@ -51,7 +55,7 @@ body{
   }
   
   #logo{
-    width: 45%;
+    width: 65%;
   }
   
   #footer-socialmedia .footer-link{

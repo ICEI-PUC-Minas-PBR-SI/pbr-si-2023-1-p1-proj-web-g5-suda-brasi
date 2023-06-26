@@ -1,79 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500&display=swap');
 
-/* Estilização geral do site */
-
-* {
-    font-family: 'Inter', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #E2E2E2;
-}
-
-.nav-item .nav-link.active {
-    /* Estilos para o elemento <a> com a classe "nav-link active" dentro do elemento <li> com a classe "nav-item" */
-    color: #212529;
-    /* Define a cor do texto para #212529 */
-    font-size: 24px;
-    /* Define o tamanho da fonte para 24 pixels */
-    /* Adicione aqui outros estilos desejados */
-}
-
-.navbar-nav .nav-link {
-    font-size: 24px;
-    /* Define o tamanho da fonte para 24 pixels */
-}
-
-
 /* Estilos personalizados para a barra de pesquisa */
 
-.navbar-brand img {
-    width: 200px;
-    /* Defina o valor desejado para a largura */
-    /* A altura será ajustada automaticamente proporcionalmente à largura */
+.navbar-nav{
+    right: 0;
+    margin-left: auto;
+    gap: 1.2rem;
 }
 
-.navbar-brand {
-    width: 100px;
-    font-size: 24px;
-    /* Defina a largura desejada para o logotipo */
+#pesquisa{
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.navbar-brand {
-    width: 100px;
-    /* Defina a largura desejada para o logotipo */
-}
-
-.form-control {
-    width: 300px;
-    /* Defina a largura desejada para o campo de pesquisa */
-}
-
-body {
-    background: #eee;
-    font-family: Tahoma;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    padding-top: 20px;
-}
-
-.d-block,
-h2 {
-    color: #33475c;
-    font-weight: 700;
-    font-size: 2.5rem;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
 
 /* ============= Begin Testimonial Flexbox ============ */
 
@@ -759,18 +697,13 @@ body {
     height: 2000px;
 }
 
-.texto_cards1 {
-    margin-top: 0px;
-    text-align: center;
-    margin-bottom: 40px;
-    background-color: rgb(231, 229, 229);
-}
-
 .texto_cards {
     margin-top: 20px;
     text-align: center;
     margin-bottom: 40px;
-    background-color: rgb(231, 229, 229);
+    color: #FEFEFE;
+    font-weight: 450;
+    font-size: 38px;
 }
 
 .btn {
@@ -778,7 +711,6 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
-    margin-top: 20px;
     text-decoration: none;
     background-color: #050505;
     color: #ffffff;
@@ -1020,16 +952,6 @@ button1:active {
 }
 
 .container .card .icon .fa {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
-}
-
-i {
     position: absolute;
     top: 50%;
     left: 50%;
