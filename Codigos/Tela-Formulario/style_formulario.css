@@ -90,7 +90,7 @@ main input{
 }
 
 .dados-pessoais .linha-um{
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
