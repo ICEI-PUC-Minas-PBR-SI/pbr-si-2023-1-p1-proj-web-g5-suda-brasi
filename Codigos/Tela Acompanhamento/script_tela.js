@@ -57,11 +57,12 @@ function exibirAcompanhamento() {
             <p>Endereço: ${iguais[i]}</p>
         </div>
         <div class="row justify-content-center top">
-            <a href="#" class="btn btn-duvidas">Dúvidas sobre Entrega</a>
-            <a href="#" class="btn btn-ver">Ver Detalhes do Pedido</a>
+            <a href="CaixadeMensagem.html" class="btn btn-duvidas">Dúvidas sobre Entrega</a>
+            <a href="Meus-Pedidos.html" class="btn btn-ver">Ver Detalhes do Pedido</a>
         </div>`;
       }
       document.getElementById('tela').innerHTML = str;
     }
 }
+
 window.onload = exibirAcompanhamento;

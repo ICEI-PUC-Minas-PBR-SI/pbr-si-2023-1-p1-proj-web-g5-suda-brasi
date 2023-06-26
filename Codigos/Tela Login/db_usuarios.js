@@ -1,14 +1,6 @@
 //CARREGAR API
 
-function carregarAPI() {
-    fetch('https://my-json-server.typicode.com/Okitemuri/fakedb/db')
-        .then(res => res.json())
-        .then(retorno => {
-            localStorage.setItem('db_usuario', JSON.stringify(retorno))
-        })
-}
-
-var buscadb = JSON.parse(localStorage.getItem("db_usuario"))
+var buscadb = JSON.parse(localStorage.getItem("db_usuario")).dados
 
 console.log(buscadb)
 
@@ -98,7 +90,6 @@ function habilitarBotaoCadastro() {
             cpf: "",
             email: email_Cadastro.value,
             senha: senha_Cadastrada.value,
-            username: "",
             imagem: "",
             tipo: "",
             categoria: "",
@@ -122,39 +113,40 @@ function habilitarBotaoCadastro() {
     }
 }
 
-btn_Doação.addEventListener('click', (e) => {
-    e.preventDefault
+$("#btn_Doar").on('click', function (e) {
+    console.log('clicou')
+    e.preventDefault()
 
     var loginValido = false;
 
     for (let i = 0; i < buscadb.length; i++) {
         if ((email_Cadastro.value === buscadb[i].email) && (senha_Cadastrada.value === buscadb[i].senha)) {
             alert("Email já cadastrado!")
-            location.reload();
             break;
         } else {
             loginValido = true;
+            break;
         }
+    }
 
-        if (loginValido) {
-            const validarEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (loginValido) {
+        const validarEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            if (validarEmail.test(email_Cadastro.value)) {
+        if (validarEmail.test(email_Cadastro.value)) {
 
-                if ((email_Cadastro.value === confirma_Email.value) && (senha_Cadastrada.value === confirmar_Senha.value)) {
+            if ((email_Cadastro.value === confirma_Email.value) && (senha_Cadastrada.value === confirmar_Senha.value)) {
 
-                    buscadb.push(dadosCadastrados)
+                buscadb.push(dadosCadastrados)
 
-                    localStorage.setItem('db_usuario', JSON.stringify(buscadb))
+                localStorage.setItem('db_usuario', JSON.stringify(buscadb))
 
-                    window.location.href = "Formulario.html";
+                window.location.href = "Formulario.html";
 
-                } else {
-                    alert("Email ou senha invalido")
-                }
             } else {
-                alert("Valor não é valido como email")
+                alert("Email ou senha invalido")
             }
+        } else {
+            alert("Valor não é valido como email")
         }
     }
 })

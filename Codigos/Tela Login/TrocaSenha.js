@@ -1,15 +1,3 @@
-function carregarAPI() {
-    fetch('https://my-json-server.typicode.com/Okitemuri/fakedb/db')
-        .then(res => res.json())
-        .then(retorno => {
-            localStorage.setItem('db_usuario', JSON.stringify(retorno))
-        })
-}
-
-var buscadb = JSON.parse(localStorage.getItem("db_usuario"))
-
-console.log(buscadb)
-
 const openModalBtn = document.getElementById('trocarSenha');
 var closeModalBtn = document.getElementById('closeModalBtn');
 var modal = document.getElementById('modal');

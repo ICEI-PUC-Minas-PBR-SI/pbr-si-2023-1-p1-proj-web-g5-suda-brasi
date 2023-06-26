@@ -11,6 +11,7 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="Tela-Minha conta/style_configuracao.css">
+  <link rel="stylesheet" href="padrao.css">
   <title>SUDA Brasil</title>
 </head>
 
@@ -21,38 +22,12 @@
   <header>
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid w-100 h-100" s>
-        <a class="navbar-brand mx-auto" href="#"><img id="logo" src="Tela-Minha conta/Imagens/SUDA-Logo.ico" alt=""></a>
+        <a class="navbar-brand mx-auto" href="Home_Usuario.html"><img id="logo"
+            src="Tela-Minha conta/Imagens/SUDA-Logo.ico" alt=""></a>
         <form class="d-flex mx-auto p-2" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
-            <li class="nav-item" id="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"
-                  style="color: #201f6b;"></i>Inicio</a>
-            </li>
-            <li class="nav-item" id="nav-item">
-              <a class="nav-link" href="#"><img src="Tela-Minha conta/Imagens/donation.png" alt="" style="width: 20px;"> Doações</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false"><i class="fa-regular fa-user" style="color: #201f6b;"></i>
-                Perfil
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Meus Pedidos</a></li>
-                <li><a class="dropdown-item" href="#">Chat</a></li>
-                <li><a href="#" class="dropdown-item">Configurações</a></li>
-              </ul>
-            </li>
-          </ul>
-
-        </div>
       </div>
     </nav>
   </header>
@@ -73,7 +48,7 @@
               <div class="card-body">
                 <h5 class="card-title">Pedido Realizado</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                <a href="Meus-Pedidos.html" class="btn btn-primary">Saiba Mais</a>
               </div>
             </div>
             <div class="card col-auto" style="margin: 10px;">
@@ -83,15 +58,15 @@
               <div class="card-body">
                 <h5 class="card-title">Realizar Doações</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                <a href="Busca.html" class="btn btn-primary">Saiba Mais</a>
               </div>
             </div>
             <div class="card col-auto" style="margin: 10px;">
               <img src="https://cdn-icons-png.flaticon.com/512/105/105501.png" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Localizar Doações</h5>
+                <h5 class="card-title">Acompanhar Doações</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                <a href="Acompanhamento.html" class="btn btn-primary">Saiba Mais</a>
               </div>
             </div>
             <div class="card col-auto" style="margin: 10px;">
@@ -115,7 +90,7 @@
                 <li><a href="#" class="item-link" data-target="informacoes">Minhas Informações</a></li>
                 <li><a href="#" class="item-link" data-target="cadastro">Meu Cadastro Social</a></li>
               </ul>
-            </aside> 
+            </aside>
             <div class="conteudo" id="informacoes" style="display: none;">
               <h2 class="cabecalho-Endereco">Meus Dados</h2>
               <section class="informacoes-pessoais">
