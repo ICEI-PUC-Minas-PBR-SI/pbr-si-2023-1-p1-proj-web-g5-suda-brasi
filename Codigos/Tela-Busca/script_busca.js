@@ -295,7 +295,7 @@ function PreencheItem(modo,tipo){
   let k=0;
   if (tamanho_tela < 576){
     for(let i = 0; i < tipo.length; i++){
-      if (k < 1){
+      if (k == 0){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
           <li>
             <a href="Card.html" class="card">
@@ -317,7 +317,7 @@ function PreencheItem(modo,tipo){
         k++;
       }else{
         j++;
-        k=0;
+        k=1;
         $(`#carousel${modo}  #carousel${modo}-inner`).append(`
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
