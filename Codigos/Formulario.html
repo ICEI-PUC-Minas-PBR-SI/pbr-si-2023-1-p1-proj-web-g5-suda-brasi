@@ -47,11 +47,11 @@
       <!--Containe do Formulario-->
       <form class="dados-pessoais">
         <h2>Dados Pessoais</h2>
+          <div class="linha-um">
+            <label for="input-nome">Nome Completo</label>
+            <input type="text" name="input-nome" id="input-nomeCompleto" style="width: auto;">
+          </div>
           <div class="linha-dois">
-            <div class="linha-um">
-              <label for="input-nome">Nome Completo</label>
-              <input type="text" name="input-nome" id="input-nomeCompleto">
-            </div>
             <div class="data-nascimento">
               <label for="input-nascimento">Data de Nascimento</label>
               <input type="date" name="input-nascimento" id="input-nascimento">
@@ -74,13 +74,12 @@
             </div>
             <div class="estado-civil">
               <label for="form-select">Estado Civil</label>
-              <input type="text" name="input-estado_civil" id="input-estado_civil">
+              <input type="text" name="input-estadocivil" id="estadocivil">
             </div>
           </div>
       </form>
-      <br>
-      <h2 class="cabecalho-Endereco">Endereço</h2>
       <form class="endereco">
+        <h2 class="cabecalho-Endereco">Endereço</h2>
         <div class="endereco-dados">
           <div class="rua">
             <label for="input-Rua">Rua</label>
@@ -170,7 +169,6 @@
       </form>
       <button id="botaoEnviar" class="botaoEnviar">Finalizar</button>
     </div>
-
   </main>
   <!--Fim Formulario de Cadastro-->
 
@@ -201,7 +199,7 @@
       </ul>
       <div class="flex-column g-1" id="footer_subscribe">
         <h3>Inscreva-se</h3>
-        <div class="input-group">
+        <div class="oup">
           <p>Digite seu email para enviarmos as novidades: </p>
           <input type="email" id="email" placeholder="Enter your email">
           <button>
@@ -214,7 +212,9 @@
       <p>&#0169 2023 all rights reserved</p>
     </div>
   </footer>
-  <script src="Tela-Formulario/finalizar.js"></script>
+  <script src="Tela-Formulario/formulario.js"></script>
+  <script src="Tela-Formulario/finalizarformulario.js"></script>
 </body>
+
 
 </html>
