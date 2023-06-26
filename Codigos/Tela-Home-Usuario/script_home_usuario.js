@@ -124,7 +124,7 @@ function PreencheFavoritos(){
     })
     for(let i=0; i < 3;i++){
         $('#favoritos').append(` 
-        <a class="col-md-4 col-sm-6 col-xs" href="Card.html">
+        <a class="col-md-4 col-sm-6 col-xs" href="Card.html?id=${filtro_favorito[i].id}">
             <div class="card" data-state="#about">
                 <div class="card-header">
                     <img class="card-avatar" src="${filtro_favorito[i].pictures.medium}"style="width: 100%;" alt="avatar" />
@@ -165,7 +165,7 @@ function PreencheDoadores(){
     });
     for (let i=0; i < 3;i++){
         $("#carouselUltimos .carousel-inner .carousel-item").append(`
-        <a class="col-md-4 col-sm-6 col-xs" href="Card.html">
+        <a class="col-md-4 col-sm-6 col-xs" href="Card.html?id=${ben[i].id}">
         <div class="solucoes">
             <div class="solucoes-content">
                 <div class="personal-image">
