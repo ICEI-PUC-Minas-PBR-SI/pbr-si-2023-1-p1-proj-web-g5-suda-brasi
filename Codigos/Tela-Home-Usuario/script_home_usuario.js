@@ -124,7 +124,7 @@ function PreencheFavoritos(){
     })
     for(let i=0; i < 3;i++){
         $('#favoritos').append(` 
-        <a class="col-md-4 col-sm-6 col-xs" href="#">
+        <a class="col-md-4 col-sm-6 col-xs" href="Card.html">
             <div class="card" data-state="#about">
                 <div class="card-header">
                     <img class="card-avatar" src="${filtro_favorito[i].pictures.medium}"style="width: 100%;" alt="avatar" />
@@ -132,6 +132,7 @@ function PreencheFavoritos(){
                     <p class="card-jobtitle">${filtro_favorito[i].endereco.cidade}</p>
                 </div>
             </div>
+ </a>
     `)
     }
 
