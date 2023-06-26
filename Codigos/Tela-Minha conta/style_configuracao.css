@@ -21,9 +21,12 @@ h1{
   font-size: 30px;
 }
 
-h1,h2,h5,p,label,input {
+h1,h2,h5,p,label{
   
   color: #fefefe;
+}
+input{
+  color: black
 }
 
 #avatar{
