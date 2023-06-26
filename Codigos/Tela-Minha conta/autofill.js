@@ -1,6 +1,6 @@
 //Codigo da barra-lateral
 
-var usuarios = (JSON.parse(localStorage.getItem('db_usuarios')));
+var usuarios = (JSON.parse(localStorage.getItem('db_usuario')));
 var usuario_Logado = JSON.parse(sessionStorage.getItem('usuario'))
 var id = usuario_Logado.id;
 
