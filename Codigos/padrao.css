@@ -40,9 +40,10 @@ body{
 /*-------------------------*/
 
 /* Configurações do footer padrão da pagina*/
+
 #footer_content{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex
+    flex-direction: columns;
     width: 100%;
     background-color: #989898;
     padding: 3rem 3.5rem;
