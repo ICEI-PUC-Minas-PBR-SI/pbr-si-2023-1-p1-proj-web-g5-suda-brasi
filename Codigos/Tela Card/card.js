@@ -11,7 +11,7 @@ function GeraPagina(){
     });
     
     $('.titulos').append(`${atual.nome}`)
-    $('.imagem-perfil'.append)(`
+    $('.imagem-perfil').append(`
         <img src="${atual.pictures.medium}" class="imagem-usuario">
     `)
     $('#detalhes').append(`
