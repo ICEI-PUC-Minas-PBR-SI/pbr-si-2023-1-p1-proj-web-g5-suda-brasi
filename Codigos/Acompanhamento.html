@@ -31,6 +31,83 @@
   </header>
 
   <main>
+    <aside class="sidebar-container">
+      <div class="topo">
+      </div>
+      <div class="toggle">
+        <span class="lines"></span>
+        <span class="lines"></span>
+        <span class="lines"></span>
+      </div>
+      <span class="divisao"></span>
+      <!-- MENU -->
+      <div class="menu">
+        <ul>
+          <li><a href="Home_Usuario.html"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+          <li><a href="CaixadeMensagem.html"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Mensagens</a></li>
+          <li><a href="Busca.html"><img src="Tela-Busca/Imagens/donation.png"> Buscar Doações</a></li>
+          <li><a href="Configuracao.html"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
+        </ul>
+      </div>
+      <span class="divisao"></span>
+      <!--Filtros-->
+      <div class="filtros">
+        <span id="filtros1">Filtros:</span>
+        <div class="categorias">
+          <span id="filtros">Categorias:</span>
+          <ul class="categorias-checkbox">
+            <li>
+              <input type="checkbox" name="categoria1">
+              <label for="categoria1">Sangue</label>
+            </li>
+            <li>
+              <input type="checkbox" name="categoria2"><i class="fa-solid fa-teddy-bear"></i>
+              <label for="categoria2">Brinquedo</label>
+            </li>
+            <li>
+              <input type="checkbox" name="categoria3"><i class="fa-solid fa-pan-food"></i>
+              <label for="categoria3">Mantimentos</label>
+            </li>
+            <li>
+              <input type="checkbox" name="categoria4"><i class="fa-sharp fa-solid fa-shirt"></i>
+              <label for="categoria4">Roupas</label>  
+            </li>
+            <li>
+              <input type="checkbox" name="categoria5"><i class="fa-solid fa-books"></i>
+              <label for="categoria5">Livros</label>  
+            </li>
+          </ul>
+        </div>
+        <div class="avaliacao">
+          <span id="filtros">Avaliação:</span>
+          <ul>
+            <li>
+                <input type="checkbox" name="rating5">
+            <label for="rating5">5.0</label>
+            </li>
+            <li>
+                <input type="checkbox" name="rating4">
+            <label for="rating4">4.0</label>
+            </li>
+            <li>
+                <input type="checkbox" name="rating3">
+            <label for="rating3">3.0</label>
+            </li>
+            <li>
+                <input type="checkbox" name="rating2">
+            <label for="rating2">2.0</label>
+            </li>
+            <li>
+                <input type="checkbox" name="rating1">
+            <label for="rating1">1.0</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="signout">
+        <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
+      </div>
+    </aside> 
     <div class="container-fluid px-1 px-md-4 mx-auto">
       <h2 class="titulo">Acompanhamento de Pedidos</h2>
       <div class="card">
@@ -74,5 +151,6 @@
   </footer>
   <script src="Tela Acompanhamento/script_acompanhamento.js"></script>
   <script src="Tela Acompanhamento/script_tela.js"></script>
+  <script src="padrao.js"></script>
 </body>
 </html>
