@@ -1,3 +1,4 @@
+var user = (JSON.parse(localStorage.getItem("db_usuario")));
 function finalizar(){
 
     var nome = document.getElementById('input-nomeCompleto').value;
@@ -5,7 +6,6 @@ function finalizar(){
     var telefone = document.getElementById('input-telefone').value;
     var cpf = document.getElementById('input-cpf').value;
     var rg = document.getElementById('input-rg').value;
-    var email = document.getElementById('input-email').value;
     var estadocivil = document.getElementById('estadocivil').value;
     var rua = document.getElementById('input-Rua').value;
     var numero = document.getElementById('input-Número').value;
@@ -16,22 +16,24 @@ function finalizar(){
     var rendamensal = document.getElementById('input-RendaMensal').value;
     var numerodependentes = document.getElementById('input-NumeroDependentes').value;
     var profissao = document.getElementById('input-Profissão').value;
+    
 
-    usuarios.dados[usuarios.dados.length] = {
-        id:usuarios.dados.length.id,
+    
+    user[user.length-1] = {
+        id:user[user.length-1].id,
         nome: nome,
         data: data,
         telefone: telefone,
         cpf: cpf,
         rg: rg,
-        email: usuarios.dados.length.email,
-        senha: usuarios.dados.length.senha,
+        email: user[user.length-1].email,
+        senha: user[user.length-1].senha,
         categoria:"",
         tipo:"",
         imagem:"",
         estado_civil: estadocivil,
         endereco: {
-            logradouro: rua + numero,
+            logradouro: rua + "",numero,
             bairro: bairro,
             cep: cep,
             estado: estado,
@@ -44,14 +46,13 @@ function finalizar(){
         }
     }
     console.log(usuarios)
-    localStorage.setItem('db_usuario',JSON.stringify(usuarios));
+    localStorage.setItem('db_usuario',JSON.stringify(user));
 
     document.getElementById('input-nomeCompleto').value = ""; 
     document.getElementById('input-nascimento').value = "";
     document.getElementById('input-telefone').value = "";
     document.getElementById('input-cpf').value = "";
     document.getElementById('input-rg').value = "";
-    document.getElementById('input-email').value = "";
     document.getElementById('estadocivil').value = "";
     document.getElementById('input-Rua').value = "";
     document.getElementById('input-Número').value = "";
@@ -62,8 +63,14 @@ function finalizar(){
     document.getElementById('input-RendaMensal').value = "";
     document.getElementById('input-NumeroDependentes').value = "";
     document.getElementById('input-Profissão').value = "";
-    document.getElementById('input-Complemento').value - "";
+    document.getElementById('input-complemento').value = "";
 
 }
+
+function redirencionar(){
+    window.location.href = "Login.html"
+}
+
 var botaoenviar = document.getElementById('botaoEnviar');
 botaoenviar.addEventListener('click', finalizar);
+botaoenviar.addEventListener('click' , redirencionar)
