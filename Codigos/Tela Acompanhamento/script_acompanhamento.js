@@ -43,4 +43,3 @@
 
 //Codigo da barra-lateral
 
-var usuarios = (JSON.parse(localStorage.getItem('db_usuarios'))).dados;

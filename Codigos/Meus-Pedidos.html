@@ -33,9 +33,7 @@
   <main>
     <!-- SIDEBAR -->
     <aside class="sidebar-container">
-      <div class="topo">
-        <img src="Tela-Pedidos/Imagens/Lucas.jpg" id="perfil">
-        <h5 class="nome">Lucas Braga</h5>
+      <div class="topo" id="topo">
       </div>
       <div class="toggle">
         <span class="lines"></span>
@@ -46,62 +44,75 @@
       <!-- MENU -->
       <div class="menu">
         <ul>
-          <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
-          <li><a href="#"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Historico</a></li>
-          <li><a href="#"><img src="Tela-Pedidos/Imagens/donation.png"> Buscar Doações</a></li>
-          <li><a href="#"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
+          <li><a href="Home_Usuario.html"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+          <li><a href="CaixadeMensagem.html"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i>
+              Mensagens</a></li>
+          <li><a href="Busca.html"><img src="Tela-Busca/Imagens/donation.png"> Buscar Doações</a></li>
+          <li><a href="Configuracao.html"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
         </ul>
       </div>
       <span class="divisao"></span>
       <!--Filtros-->
       <div class="filtros">
         <span id="filtros1">Filtros:</span>
-        <div class="distancia">
-          <span class="distancia" id="filtros">Distancia:</span>
-          <input type="range" name="distance" id="distance">
-          <div class="distancia-label">
-            <label for="distance" class="distancias" id="filtros">0km</label>
-            <label for="distance" class="distancias" id="filtros">300km</label>
-          </div>
-        </div>
         <div class="categorias">
           <span id="filtros">Categorias:</span>
           <ul class="categorias-checkbox">
-            <li><input type="checkbox" name="categoria1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP7bMTxjuVQQa5mONoQRDZPiL14poQBBAKpw&usqp=CAU" alt=""> Sangue</li>
-            <li><input type="checkbox" name="categoria2"><img src="https://www.flaticon.com/free-icon/toys_3081993" alt="" style="width: 48px;height: 48px;"> Brinquedo</li>
-            <li><input type="checkbox" name="categoria3"><img src="https://img.freepik.com/vetores-gratis/cesta-de-compras-com-ilustracao-vetorial-de-comida-carrinho-com-compra-do-produto-no-supermercado-ilustracao-vetorial_1284-47048.jpg?w=2000" alt=""> Mantimentos</li>
-            <li><input type="checkbox" name="categoria4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn6qw9xuIRZSZd9Vu5r1RuqvY0zBBCM84VXd-4un_IZpWETh6T40BU49dDt2xigfgwDNg&usqp=CAU" alt=""> Roupas</li>
+            <li>
+              <input type="checkbox" name="categoria1"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP7bMTxjuVQQa5mONoQRDZPiL14poQBBAKpw&usqp=CAU"
+                alt="">
+              <label for="categoria1">Sangue</label>
+            </li>
+            <li>
+              <input type="checkbox" name="categoria2"><i class="fa-solid fa-teddy-bear"></i>
+              <label for="categoria2">Brinquedo</label>
+            </li>
+            <li>
+              <input type="checkbox" name="categoria3"><i class="fa-solid fa-pan-food"></i>
+              <label for="categoria3">Mantimentos</label>
+            </li>
+            <li>
+              <input type="checkbox" name="categoria4"><i class="fa-sharp fa-solid fa-shirt"></i>
+              <label for="categoria4">Roupas</label>
+            </li>
+            <li>
+              <input type="checkbox" name="categoria5"><i class="fa-solid fa-books"></i>
+              <label for="categoria5">Livros</label>
+            </li>
           </ul>
         </div>
         <div class="avaliacao">
           <span id="filtros">Avaliação:</span>
           <ul>
             <li>
-                <input type="checkbox" name="rating5">
-            <label for="rating5">5.0</label>
+              <input type="checkbox" name="rating5">
+              <label for="rating5">5.0</label>
             </li>
             <li>
-                <input type="checkbox" name="rating4">
-            <label for="rating4">4.0</label>
+              <input type="checkbox" name="rating4">
+              <label for="rating4">4.0</label>
             </li>
             <li>
-                <input type="checkbox" name="rating3">
-            <label for="rating3">3.0</label>
+              <input type="checkbox" name="rating3">
+              <label for="rating3">3.0</label>
             </li>
             <li>
-                <input type="checkbox" name="rating2">
-            <label for="rating2">2.0</label>
+              <input type="checkbox" name="rating2">
+              <label for="rating2">2.0</label>
             </li>
             <li>
-                <input type="checkbox" name="rating1">
-            <label for="rating1">1.0</label>
+              <input type="checkbox" name="rating1">
+              <label for="rating1">1.0</label>
             </li>
           </ul>
         </div>
       </div>
-      <div class="signout">
-        <a href=""><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
-      </div>
+      <button id="Sair">
+        <div class="signout">
+          <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i>Sair</a>
+        </div>
+      </button>
     </aside> 
     <header class="cabecalho" style="text-align: center;">
       <h2 class="cabecalho-titulo"> Cadastro de Pedidos</h2>
@@ -118,6 +129,7 @@
       <label for=""></label>
       <button type="submit">Adicionar Pedido</button>
     </form>
+    <a href="Acompanhamento.html"><button>Acompanhar Pedido</button></a>
     <header class="cabecalho" style="text-align: center;">
       <h2 class="cabecalho-titulo"> Pedidos Realizados</h2>
     </header>
@@ -159,6 +171,5 @@
   </footer>
 <script src="Tela-Pedidos/app_pedidos.js"></script>
 <script src="Tela-Pedidos/CadastroPedidos.js"></script>
-<script src="padrao.js"></script>
 </body>
 </html>

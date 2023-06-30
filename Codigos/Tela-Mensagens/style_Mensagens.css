@@ -12,9 +12,6 @@ html{
   width: 100%;
 }
 
-h1,label,legend{
-color: #FEFEFE;}
-
 body{
   background-color: #E2E2E2;
   width: 100%;
@@ -135,21 +132,8 @@ body{
   margin-bottom: 10px;
 }
 
-#distance{
-  color:black;
-  scale: 1.2;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.distancia-label{
-  display: grid;
-  grid-template-columns: 1fr 1fr;  
-}
-
-.distancias{
-  margin-left: auto;
-  margin-right: auto;
+.categorias-checkbox li i{
+  font-size: 18px;
 }
 
 .avaliacao{
@@ -173,6 +157,7 @@ body{
   width: 48px;
   height: 48px;
 }
+
 
 /*FIM SIDEBAR*/
 

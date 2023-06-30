@@ -1,3 +1,11 @@
+function limpar(){
+    sessionStorage.clear();
+}
+var botao3 = document.getElementById('Sair');
+botao3.addEventListener('click', limpar);
+
+
+
 document.querySelectorAll('.favorite-button').forEach(button => {
     button.addEventListener('click', e => {
         e.preventDefault()
@@ -101,7 +109,6 @@ var pedidos = (JSON.parse(localStorage.getItem('db_pedidos'))).pedidos
 
 $('.usuario').html(`${usuario_logado.tipo}`)
 $(".topo").html(`
-    <img src="${usuario_logado.pictures.medium}" id="perfil">
     <h5 class="nome">${usuario_logado.nome}</h5>
     `)
 PreencheFavoritos()
@@ -124,7 +131,7 @@ function PreencheFavoritos(){
     })
     for(let i=0; i < 3;i++){
         $('#favoritos').append(` 
-        <a class="col-md-4 col-sm-6 col-xs" href="Card.html?id=${filtro_favorito[i].id}">
+        <a class="col-md-4 col-sm-6 col-xs" href="#">
             <div class="card" data-state="#about">
                 <div class="card-header">
                     <img class="card-avatar" src="${filtro_favorito[i].pictures.medium}"style="width: 100%;" alt="avatar" />
@@ -132,7 +139,6 @@ function PreencheFavoritos(){
                     <p class="card-jobtitle">${filtro_favorito[i].endereco.cidade}</p>
                 </div>
             </div>
- </a>
     `)
     }
 
@@ -165,7 +171,6 @@ function PreencheDoadores(){
     });
     for (let i=0; i < 3;i++){
         $("#carouselUltimos .carousel-inner .carousel-item").append(`
-        <a class="col-md-4 col-sm-6 col-xs" href="Card.html?id=${ben[i].id}">
         <div class="solucoes">
             <div class="solucoes-content">
                 <div class="personal-image">
@@ -180,7 +185,6 @@ function PreencheDoadores(){
                 </div>
             </div>
         </div>
-</a>
         `)
     }
 }

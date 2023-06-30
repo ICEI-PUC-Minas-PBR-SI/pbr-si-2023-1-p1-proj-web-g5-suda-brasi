@@ -364,7 +364,15 @@ label{
   width: calc(5% + 170px);
 }
 
-button{
+form button{
+  color: #191e24;
+  background-color: #38B82F;
+  border-radius: 10px;
+  border: solid 2px black;
+  margin-bottom: 5px;
+}
+
+a button{
   color: #191e24;
   background-color: #38B82F;
   border-radius: 10px;
