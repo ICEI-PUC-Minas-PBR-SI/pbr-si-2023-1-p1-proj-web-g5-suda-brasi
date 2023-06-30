@@ -19,21 +19,21 @@ function finalizar(){
     
 
     
-    user[user.length-1] = {
-        id:user[user.length-1].id,
+    user.dados[user.dados.length-1] = {
+        id:user.dados[user.dados.length-1].id,
         nome: nome,
-        data: data,
+        data_nascimento: data,
         telefone: telefone,
         cpf: cpf,
         rg: rg,
-        email: user[user.length-1].email,
-        senha: user[user.length-1].senha,
+        email: user.dados[user.dados.length-1].email,
+        senha: user.dados[user.dados.length-1].senha,
         categoria:"",
-        tipo:"",
+        tipo: "Beneficiario",
         imagem:"",
         estado_civil: estadocivil,
         endereco: {
-            logradouro: rua + "",numero,
+            logradouro: rua + numero,
             bairro: bairro,
             cep: cep,
             estado: estado,
@@ -45,9 +45,8 @@ function finalizar(){
             profissao: profissao
         }
     }
-    console.log(usuarios)
     localStorage.setItem('db_usuario',JSON.stringify(user));
-
+    console.log(user)
     document.getElementById('input-nomeCompleto').value = ""; 
     document.getElementById('input-nascimento').value = "";
     document.getElementById('input-telefone').value = "";
@@ -73,4 +72,4 @@ function redirencionar(){
 
 var botaoenviar = document.getElementById('botaoEnviar');
 botaoenviar.addEventListener('click', finalizar);
-botaoenviar.addEventListener('click' , redirencionar)
+botaoenviar.addEventListener('click' , redirencionar);
