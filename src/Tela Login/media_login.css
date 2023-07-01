@@ -1,0 +1,331 @@
+@media (max-width:1592px) and (min-width:1442px) {
+
+  #logo {
+    width: 220px;
+    height: 100px;
+  }
+
+  i.fa-solid.fa-house {
+    font-size: 40px;
+  }
+
+  .login {
+    align-items: center;
+    margin: 36px 10px;
+  }
+
+  .cards_login {
+    width: 40%;
+    height: 600px;
+    font-size: 16px;
+  }
+
+  .titulo_login{
+    height: auto;
+    font-size: 34px;
+  }
+
+  .label_login{
+    font-size: 20px;
+  }
+
+  i.fa-solid.fa-circle-user {
+    font-size: 160px;
+  }
+
+  .inputs_login{
+    width: 80%;
+  }
+
+  .dados_Login {
+    width: 100%;
+  }
+
+  #btn_arrow {
+    font-size: 38px;
+  }
+
+  #label_description {
+    font-size: 24px;
+    margin: 0px 40px;
+  }
+
+  #cadastrar_Login{
+    display: none;
+  }
+
+  /*Footer*/
+  #logo_footer {
+    display: inline;
+    width: 220px;
+    height: 100px;
+    background: white;
+    font-size: 32px;
+  }
+
+  .title_footer{
+    font-size: 36px;
+  }
+
+  .flex-column{
+    font-size: 16px;
+  }
+
+  #email {
+    padding: 0.85rem;
+  }
+
+  #footer_copyright {
+    font-size: 16px;
+  }
+}
+
+/*Media query Laptop L*/
+@media (max-width:1441px) and (min-width:1241px) {
+
+  .login {
+    align-items: center;
+    margin: 60px 10px;
+  }
+
+  .cards_login {
+    width: 40vw;
+  }
+
+  #cadastrar_Login{
+    display: none;
+    height: 680px;
+  }
+
+  .dados_Login {
+    width: 30vw;
+  }
+}
+
+@media (max-width:1240px)and (min-width:1025px){
+  .login {
+    align-items: center;
+    margin: 60px 10px;
+  }
+
+  .cards_login {
+    width: 40vw;
+  }
+
+  #cadastrar_Login{
+    display: none;
+    height: 680px;
+  }
+
+  .dados_Login {
+    width: 30vw;
+  }
+
+  #btn_cadastro{
+    width: 100%;
+  }
+
+  #btn_Doações{
+    width: 140px;
+    font-size: 16px;
+  }
+
+  #btn_Doar{
+    width: 140px;
+    font-size: 16px;
+  }
+
+  .modal-content{
+    margin: 10% 20%;
+  }
+}
+
+/*Media query main Laptop*/
+@media (max-width: 1024px) and (min-width: 810px) {
+
+  .login {
+    align-items: center;
+    margin: 60px 10px;
+  }
+
+  .ilustration_login {
+    width: 38vw;
+  }
+
+  .cards_login {
+    width: 50vw;
+  }
+
+  #cadastrar_Login{
+    display: none;
+    height: 640px;
+  }
+
+  .dados_Login {
+    width: 36vw;
+  }
+
+  #btn_Doações{
+    width: 140px;
+    font-size: 16px;
+  }
+
+  #btn_Doar{
+    width: 140px;
+    font-size: 16px;
+  }
+
+  #footer_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #000000;
+    padding: 3rem 3.5rem;
+  }
+
+  #footer_contacts{
+    margin: 0px 16px;
+  }
+
+  .flex-column{
+    margin: 0px 16px;
+  }
+}
+
+/*Media query main tablet*/
+@media (max-width: 810px) and (min-width: 611px) {
+
+  .login {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px;
+  }
+
+  #label_description {
+    flex-direction: column;
+    align-items: center;
+    margin: 18px 30px;
+    word-break: normal;
+  }
+
+  #footer_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #000000;
+    padding: 3rem 3.5rem;
+  }
+
+  #footer-socialmedia {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 610px) {
+
+  .login {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px;
+  }
+
+  #cadastrar_Login{
+    display: none;
+    height: 640px;
+  }
+
+  .cards_login {
+    width: 80vw;
+    height: 620px;
+  }
+
+  .dados_Login{
+    width: auto;
+  }
+
+  .btn_Login{
+    font-size: 16px;
+  }
+
+  .inputs_login {
+    display: flex;
+    flex-direction: column;
+    margin: 18px 10% 0px;
+    margin-top: 18px;
+    width: auto;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #btn_Doações{
+    width: 140px;
+  }
+
+  #btn_Doar{
+    width: 140px;
+  }
+
+  #label_description {
+    flex-direction: column;
+    align-items: center;
+    margin: 18px 30px;
+    word-break: normal;
+  }
+
+  #footer_content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #footer-socialmedia {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  #footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+
+  #email_box {
+    justify-content: center;
+  }
+}
