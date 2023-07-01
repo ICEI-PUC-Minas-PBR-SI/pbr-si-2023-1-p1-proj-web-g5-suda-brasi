@@ -26,62 +26,6 @@ body{
   height: 100%;
 }
 
-/*Estilização SIDEBAR*/
-
-.sidebar-container {
-  width: 220px;
-  height: auto;
-  background:linear-gradient(#19CAF0,#6898A3);
-  display: flex;
-  flex-direction: column;
-  box-shadow: 2px 0 10px rgba(128, 128, 128, 0.507);
-  transition: 0.5s;
-  z-index: 10;
-  position: absolute;
-  margin: auto;
-  left: auto;
-}
-
-.topo{
-  display: grid;
-  place-items: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.topo #perfil{
-  width: 150px;
-  height: 150 px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: #7D7D7D;
-}
-
-.topo .nome{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.menu li{
-  margin-bottom: 2px;
-  list-style: none;
-}
-
-.menu li a{
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-.filtros span{
-  display: block;
-}
-
-#distance{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* TOGGLE */
 .toggle {
@@ -162,6 +106,21 @@ body{
 /*FIM SIDEBAR*/
 
 /*ESTILIZAÇÃO DO MAIN*/
+
+.BoxMensagem{
+  display: flex;
+  flex-direction: column;
+  margin: 4% auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 60%;
+  background: green;
+}
+
+.cabecalhoBoxMensagem{
+  display: flex;
+  justify-content: center;
+}
 
 .input-group{
   display: flex;
