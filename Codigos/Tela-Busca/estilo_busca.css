@@ -281,3 +281,16 @@ main{
 }
 
 /*Fim Main*/
+
+@media (max-width: 653px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0px;
+  }
+
+  #header form{
+    margin-right: 0;
+  }
+}

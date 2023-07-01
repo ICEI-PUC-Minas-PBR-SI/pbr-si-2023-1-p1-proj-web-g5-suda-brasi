@@ -424,10 +424,3 @@
     margin-bottom: 0px;
     color: whitesmoke;
   }
-
-  /*Footer*/
-  #footer_subscribe{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }

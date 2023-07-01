@@ -196,6 +196,11 @@
 
 /*Media query main tablet*/
 @media (max-width: 810px) and (min-width: 611px) {
+  .header{
+    display: flex;
+    flex-direction: row;
+    
+  }
 
   .login {
     flex-direction: column;
