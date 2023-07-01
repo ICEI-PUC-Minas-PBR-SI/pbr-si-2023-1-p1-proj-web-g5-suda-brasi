@@ -114,12 +114,24 @@ body{
   padding: 30px;
   border-radius: 20px;
   width: 60%;
-  background: green;
+  background: rgb(177, 177, 177);
 }
 
 .cabecalhoBoxMensagem{
   display: flex;
   justify-content: center;
+}
+
+fieldset input{
+  border-radius: 8px;
+}
+
+fieldset button{
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 6px;
+  background: gray;
+  border-radius: 8px;
 }
 
 .input-group{
@@ -182,6 +194,7 @@ body{
   margin-right: 20px;
 }
 .container { 
+  width: 60%;
   font-family: 'Montserrat', monospace; 
   font-weight: bold;  
 
@@ -328,11 +341,31 @@ textarea{
   margin-top: 10px;
 }
 
+#mensagensContainer{
+  margin: auto;
+  width: 80%;
+}
+
+#cardMensagem{
+  display: none;
+}
+
+.card img{
+  display: flex;
+  flex-direction: row;
+  margin: auto 2px;
+  width: 8%;
+  height: 8%;
+}
+
 .cardMensagem{
   margin-bottom: 14px;
 }
 
 .card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: rgb(106, 105, 110);
 }
 
