@@ -24,19 +24,6 @@ body{
   background: linear-gradient(#030917,#0C2B6E,#0F3780);
   height: 100%;
 }
-
-/* Estilização Header padrão*/
-.navbar{
-  height: 100%;
-}
-
-.nav-item{
-  height: 100%;
-}
-
-#nav-link{
-  color: whitesmoke;
-}
 /*-------------------------*/
 
 /* Estilização Header padrão*/
@@ -55,16 +42,9 @@ body{
   background: white;
 }
 
-i.fa-solid.fa-house:hover {
+.menu i:hover {
   transform: scale(1.025);
   transition-duration: 0.1s;
-}
-
-i.fa-solid.fa-house {
-  display: flex;
-  flex-direction: column;
-  margin-right: 50px;
-  font-size: 26px;
 }
 
 /*Aside Padrão*/
@@ -147,7 +127,7 @@ i.fa-solid.fa-house {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  background-color: #989898;
+  background-color: #000000;
   color: wheat;
   padding: 3rem 3.5rem;
 }
@@ -263,11 +243,16 @@ i.fa-solid.fa-house {
   width: 100%;
   padding: 10px 0px;
   justify-content: center;
-  background-color: #989898;
+  background-color: #000000;
   color: #D9D9D9;
 }
 
 @media (max-width: 642px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+  }
+  
   #footer_content{
     display: flex;
     flex-direction: column;
