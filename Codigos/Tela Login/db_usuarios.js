@@ -148,3 +148,41 @@ $("#btn_Doar").on('click', function (e) {
         }
     }
 })
+
+$("#btn_Doações").on('click', function (e) {
+    console.log('clicou')
+    e.preventDefault()
+
+    var loginValido = false;
+
+    for (let i = 0; i < buscadb.dados.length; i++) {
+        if ((email_Cadastro.value === buscadb.dados[i].email) || (senha_Cadastrada.value === buscadb.dados[i].senha)) {
+            alert("Email já cadastrado!")
+            break;
+        } else {
+            loginValido = true;
+            break;
+        }
+    }
+
+    if (loginValido) {
+        const validarEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (validarEmail.test(email_Cadastro.value)) {
+
+            if ((email_Cadastro.value === confirma_Email.value) && (senha_Cadastrada.value === confirmar_Senha.value)) {
+
+                buscadb.dados.push(dadosCadastrados)
+
+                localStorage.setItem('db_usuario', JSON.stringify(buscadb))
+
+                window.location.href = "Formulario.html";
+
+            } else {
+                alert("Email ou senha invalido")
+            }
+        } else {
+            alert("Valor não é valido como email")
+        }
+    }
+})

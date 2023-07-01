@@ -1,3 +1,5 @@
+
+
 //Codigo da barra-lateral
 
 let toggle = document.querySelector('.toggle');
@@ -67,6 +69,10 @@ function pedidosescrever(){
   }
   localStorage.setItem('db_pedidos',JSON.stringify(pedidos));
 }
+
+
+
+
 
 $('.categorias-checkbox').on('change', 'input', function() {
   let categoria = this.name

@@ -19,24 +19,37 @@ body{
 }
 
 /* Estilização Header padrão*/
-.navbar{
-  height: 100%;
-}
-
-#nav_item{
-  height: 100%;
-}
-
-.nav-link{
-  color: #D9D9D9;
-}
-
-.cabecalho-titulo{
-  color: #D9D9D9;
-  font-size: 36px;
+.header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 5px 0px;
+}
+
+#logo {
+  display: inline;
+  margin: 10px 20px;
+  width: 200px;
+  height: 80px;
+  background: white;
+}
+
+#titulo_Formulario{
+  display: flex;
+  color: white;
+  font-size: 42px;
+}
+
+i.fa-solid.fa-house:hover {
+  transform: scale(1.025);
+  transition-duration: 0.1s;
+}
+
+i.fa-solid.fa-house {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  font-size: 26px;
 }
 
 /*Estilização da Main*/
@@ -63,6 +76,9 @@ input{
 }
 
 .campo-geral{
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -70,8 +86,6 @@ input{
   background-color: #ffffff;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .campo-geral form{
@@ -160,25 +174,36 @@ main input{
 /*Fim da Main*/
 
 /* Configurações do footer padrão da pagina*/
-#footer_content{
+#footer {
+  display: flex;
+  position: absolute;
+  bottom: end;
+}
+
+#footer_content {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   background-color: #989898;
+  color: wheat;
   padding: 3rem 3.5rem;
 }
 
-#footer-socialmedia{
+#footer-socialmedia {
   margin-top: 1.45rem;
   display: flex;
   gap: 1.15rem;
 }
 
-#logo{
-  width: 45%;
+/*Midias Sociais*/
+#logo_footer {
+  display: inline;
+  width: 200px;
+  height: 80px;
+  background: white;
 }
 
-#footer-socialmedia .footer-link{
+#footer-socialmedia .footer-link {
   width: 2.15rem;
   height: 2.15rem;
   border-radius: 3rem;
@@ -189,63 +214,70 @@ main input{
   transition: all 0.4s;
 }
 
-#footer-socialmedia .footer-link i{
+#footer-socialmedia .footer-link i {
   font-size: 1.20rem;
-  color: #DCDCE4 ;
-
-}
-
-#footer-socialmedia .footer-link :hover{
-  opacity: 75%;
-}
-
-#instagram{
-  background: linear-gradient(#7f37e9,#ff2992,#ff9807);
-}
-
-#facebook{
-  background: linear-gradient(#3B91EA,#5777EB);
-}
-
-#whatsapp{
-  background: #38B82F ;
-}
-
-#footer_list{
-  gap: 0.75rem;
-  list-style: none;
-}
-
-#footer_list .footer-link{
-  text-decoration: none;
   color: #DCDCE4;
-  transition: all 0.35s;  
+
 }
 
-#footer_list .footer-link:hover{
+#footer-socialmedia .footer-link :hover {
   opacity: 75%;
-  color: #7f37e9;
 }
 
-#confirmacao{
-  border-radius: 50%;
+#instagram {
+  background: linear-gradient(#7f37e9, #ff2992, #ff9807);
 }
 
-.input-group{
+#facebook {
+  background: linear-gradient(#3B91EA, #5777EB);
+}
+
+#whatsapp {
+  background: #38B82F;
+}
+
+/*Inscreva-se*/
+#footer_subscribe{
   display: flex;
-  border-radius: 4px;
   align-items: center;
+}
+
+#email_box{
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  align-items: start;
   color: #DCDCE4;
 }
 
-.input-group input{
-  height: 100%;
+.input-group p {
+  margin: 20px 0px;
+}
+
+.input-group a {
+  display: flex;
+  align-items: center;
+}
+
+#email {
+  height: 40px;
   border-radius: 5px 0px 0px 5px;
   background: #D9D9D9;
   padding: 0.65rem;
+  font-size: 16px;
 }
 
-.input-group button{
+#email:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.input-group button {
   background-color: #38B82F;
   color: #DCDCE4;
   border: none;
@@ -257,20 +289,29 @@ main input{
   transition: all 0.5s;
 }
 
-.input-group button :hover{
+.input-group button :hover {
   opacity: 80%;
 }
 
-#footer_copyright{
+/*Copyright*/
+
+#footer_copyright {
   display: flex;
+  width: 100%;
+  padding: 10px 0px;
   justify-content: center;
-  background-color: #7D7D7D;
+  background-color: #989898;
   color: #D9D9D9;
 }
 
-@media (max-width: 653px) {
-  .endereco .endereco-dados{
-    width: 100%;
-    
+@media (max-width: 642px) {
+  #footer_content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer_content{
+    display: flex;
+    align-items: center;
   }
 }

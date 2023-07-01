@@ -432,22 +432,22 @@
     position: absolute;
     bottom: end;
   }
-
+  
   #footer_content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    background-color: #020202;
+    background-color: #989898;
     color: wheat;
     padding: 3rem 3.5rem;
   }
-
+  
   #footer-socialmedia {
     margin-top: 1.45rem;
     display: flex;
     gap: 1.15rem;
   }
-
+  
   /*Midias Sociais*/
   #logo_footer {
     display: inline;
@@ -455,7 +455,7 @@
     height: 80px;
     background: white;
   }
-
+  
   #footer-socialmedia .footer-link {
     width: 2.15rem;
     height: 2.15rem;
@@ -466,50 +466,40 @@
     text-decoration: none;
     transition: all 0.4s;
   }
-
+  
   #footer-socialmedia .footer-link i {
     font-size: 1.20rem;
     color: #DCDCE4;
-
+  
   }
-
+  
   #footer-socialmedia .footer-link :hover {
     opacity: 75%;
   }
-
+  
   #instagram {
     background: linear-gradient(#7f37e9, #ff2992, #ff9807);
   }
-
+  
   #facebook {
     background: linear-gradient(#3B91EA, #5777EB);
   }
-
+  
   #whatsapp {
     background: #38B82F;
   }
-
-  /*Sobre*/
-  #footer_list {
-    gap: 0.75rem;
-    list-style: none;
-  }
-
-  #footer_list .footer-link {
-    display: flex;
-    margin: 20px 0px;
-    text-decoration: none;
-    color: #DCDCE4;
-    transition: all 0.35s;
-  }
-
-  #footer_list .footer-link:hover {
-    opacity: 75%;
-    color: #7f37e9;
-  }
-
+  
   /*Inscreva-se*/
-
+  #footer_subscribe{
+    display: flex;
+    align-items: center;
+  }
+  
+  #email_box{
+    display: flex;
+    align-items: center;
+  }
+  
   .input-group {
     display: flex;
     flex-direction: column;
@@ -517,16 +507,16 @@
     align-items: start;
     color: #DCDCE4;
   }
-
+  
   .input-group p {
     margin: 20px 0px;
   }
-
+  
   .input-group a {
     display: flex;
     align-items: center;
   }
-
+  
   #email {
     height: 40px;
     border-radius: 5px 0px 0px 5px;
@@ -534,12 +524,12 @@
     padding: 0.65rem;
     font-size: 16px;
   }
-
+  
   #email:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
   }
-
+  
   .input-group button {
     background-color: #38B82F;
     color: #DCDCE4;
@@ -551,18 +541,30 @@
     cursor: pointer;
     transition: all 0.5s;
   }
-
+  
   .input-group button :hover {
     opacity: 80%;
   }
-
+  
   /*Copyright*/
-
+  
   #footer_copyright {
     display: flex;
     width: 100%;
     padding: 10px 0px;
     justify-content: center;
-    background-color: #000000;
+    background-color: #989898;
     color: #D9D9D9;
+  }
+
+  @media (max-width: 642px) {
+    #footer_content{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #footer_content{
+      display: flex;
+      align-items: center;
+    }
   }

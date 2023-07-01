@@ -19,25 +19,13 @@
 <body>
   <!--Cabeçalho Formulario de Cadastro-->
   <header>
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid w-100 h-100" id="cabecalho">
-        <a class="navbar-brand mx-auto" href="index.html"><img id="logo" src="Tela-Formulario/Imagens/SUDA-Logo.ico" alt=""></a>
-        <span class="cabecalho-titulo">Formulario de Cadastro</span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
-            <li class="nav-item" id="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house" style="color: #d9d9d9;"></i>Inicio</a>
-            </li>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
+    <div>
+      <ul class="header">
+        <img id="logo" src="Tela Login/Imagens/SUDA-Logo.ico" alt="logo_SUDA">
+        <span id="titulo_Formulario">Formulario de Cadastro</span>
+        <a class="icon_home" href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+      </ul>
+    </div>
   </header>
   <!--Fim Cabeçalho Formulario de Cadastro-->
   
@@ -169,13 +157,13 @@
   <!--Fim Formulario de Cadastro-->
 
 
-  <footer>
+  <footer class="footer">
     <div id="footer_content">
       <div id="footer_contacts">
-        <img id="logo" src="Tela-Formulario/Imagens/SUDA-Logo.ico">
+        <img id="logo_footer" src="./Tela Login/Imagens/SUDA-Logo.ico">
         <div id="footer-socialmedia">
           <a href="#" class="footer-link" id="instagram">
-            <i class="fa-brands fa-instagram" style="color: #d9d9d9;"></i>
+            <i class="fa-brands fa-instagram"></i>
           </a>
           <a href="#" class="footer-link" id="facebook">
             <i class="fa-brands fa-facebook-f"></i>
@@ -185,29 +173,23 @@
           </a>
         </div>
       </div>
-      <ul class="flex-column" id="footer_list">
-        <li>
-          <h3>Sobre nós</h3>
-        </li>
-        <li><a href="#" class="footer-link">Quem Somos</a></li>
-        <li><a href="#" class="footer-link">Politicas de privacidade</a></li>
-        <li><a href="#" class="footer-link">Termos de uso</a></li>
-      </ul>
-      <div class="flex-column g-1" id="footer_subscribe">
-        <h3>Inscreva-se</h3>
-        <div class="oup">
+      <div class="flex-column" id="footer_subscribe">
+        <h3 class="title_footer">Inscreva-se</h3>
+        <div class="input-group" id="email_box">
           <p>Digite seu email para enviarmos as novidades: </p>
-          <input type="email" id="email" placeholder="Enter your email">
+          <a>
+            <input type="email" id="email" placeholder="Insira seu e-mail">
           <button>
             <i class="fa-regular fa-envelope"></i>
           </button>
-        </div>
+          </a>
+        </div>          
       </div>
     </div>
     <div id="footer_copyright">
       <p>&#0169 2023 all rights reserved</p>
     </div>
-  </footer>
+</footer>
   <script src="Tela-Formulario/finalizarformulario.js"></script>
 </body>
 

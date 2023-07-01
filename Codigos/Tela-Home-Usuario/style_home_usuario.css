@@ -3,61 +3,6 @@
 /*Estilização do main*/
 
 /*Estilização SIDEBAR*/
-
-.sidebar-container {
-    width: 220px;
-    height: auto;
-    background:linear-gradient(#19CAF0,#6898A3);
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 0 10px rgba(128, 128, 128, 0.507);
-    transition: 0.5s;
-    z-index: 10;
-    position: absolute;
-    margin: auto;
-    left: auto;
-  }
-  
-  .topo{
-    display: grid;
-    place-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  
-  .topo #perfil{
-    width: 150px;
-    height: 150 px;
-    border-radius: 50%;
-    object-fit: cover;
-    background: #7D7D7D;
-  }
-  
-  .topo .nome{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .menu li{
-    margin-bottom: 2px;
-    list-style: none;
-  }
-  
-  .menu li a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-  }
-  
-  .filtros span{
-    display: block;
-  }
-  
-  #distance{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
   /* TOGGLE */
   .toggle {
@@ -155,24 +100,6 @@
 
 
 .favorite-button {
-    --background-default: #313440;
-    --text-color-default: #FAFBFF;
-    --star-color-default: #62677C;
-    --star-face-color-default: #1F2128;
-    --star-color-active: #F6C206;
-    --star-face-color-active: #845901;
-    --star-hole: #16181E;
-    --star-hole-inner: #20232C;
-    --button-y: 0px;
-    --star-y: 0px;
-    --star-scale: 1;
-    --star-rotate: 0deg;
-    --star-hole-scale: 0;
-    --star-face-scale: 1;
-    --text-x: 0px;
-    --text-o: 1;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none;
     outline: none;
     border: none;
     background: none;
