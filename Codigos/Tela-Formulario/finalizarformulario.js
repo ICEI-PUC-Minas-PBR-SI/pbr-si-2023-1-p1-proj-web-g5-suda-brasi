@@ -28,7 +28,7 @@ function finalizar(){
         rg: rg,
         email: user.dados[user.dados.length-1].email,
         senha: user.dados[user.dados.length-1].senha,
-        categoria:"",
+        categoria:"Livros",
         tipo: "Beneficiario",
         imagem:"",
         estado_civil: estadocivil,
