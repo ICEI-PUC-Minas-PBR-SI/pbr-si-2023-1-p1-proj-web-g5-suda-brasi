@@ -39,6 +39,34 @@ body{
 }
 /*-------------------------*/
 
+/* Estilização Header padrão*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+#logo {
+  display: inline;
+  margin: 10px 20px;
+  width: 200px;
+  height: 80px;
+  background: white;
+}
+
+i.fa-solid.fa-house:hover {
+  transform: scale(1.025);
+  transition-duration: 0.1s;
+}
+
+i.fa-solid.fa-house {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  font-size: 26px;
+}
+
 /*Aside Padrão*/
 .sidebar-container {
   width: 220px;
