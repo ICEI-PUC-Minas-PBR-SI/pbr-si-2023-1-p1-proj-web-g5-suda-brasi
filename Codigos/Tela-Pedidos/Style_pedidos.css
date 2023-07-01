@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-body {
+#body{
   background-color: #E2E2E2;
 }
 
@@ -21,6 +21,38 @@ body {
 #nav_item {
   height: 100%;
 }
+
+/*Cabeçalho*/
+
+#AcompanharPedidos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+  background: #B8B8B8;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#AcompanharPedidos p{
+  margin: 12px auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#AcompanharPedidos a{
+  margin: 10px auto;
+}
+
+#btn_Acompanhar{
+  background: #38B82F;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+
 
 /*Estilização SIDEBAR*/
 
@@ -47,7 +79,7 @@ body {
 
 .topo #perfil{
   width: 150px;
-  height: 150 px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   background: #7D7D7D;
@@ -211,6 +243,11 @@ main{
 }
 
 .cabecalho-titulo {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  margin: auto;
+  border-radius: 20px;
   background-color: #B8B8B8;
   border: 1px solid #8492A6;
 }
@@ -228,140 +265,45 @@ main{
 /*FIM da Estilização do Main*/
 
 /* Configurações do footer padrão da pagina*/
-#footer_content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  background-color: #989898;
-  padding: 3rem 3.5rem;
-}
 
-#footer-socialmedia {
-  margin-top: 1.45rem;
-  display: flex;
-  gap: 1.15rem;
-}
-
-#logo {
-  width: 45%;
-}
-
-#footer-socialmedia .footer-link {
-  width: 2.15rem;
-  height: 2.15rem;
-  border-radius: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  transition: all 0.4s;
-}
-
-#footer-socialmedia .footer-link i {
-  font-size: 1.20rem;
-  color: #DCDCE4;
-
-}
-
-#footer-socialmedia .footer-link :hover {
-  opacity: 75%;
-}
-
-#instagram {
-  background: linear-gradient(#7f37e9, #ff2992, #ff9807);
-}
-
-#facebook {
-  background: linear-gradient(#3B91EA, #5777EB);
-}
-
-#whatsapp {
-  background: #38B82F;
-}
-
-#footer_list {
-  gap: 0.75rem;
-  list-style: none;
-}
-
-#footer_list .footer-link {
-  text-decoration: none;
-  color: #DCDCE4;
-  transition: all 0.35s;
-}
-
-#footer_list .footer-link:hover {
-  opacity: 75%;
-  color: #7f37e9;
-}
-
-
-.input-group {
-  display: flex;
-  border-radius: 4px;
-  align-items: center;
-  color: #DCDCE4;
-}
-
-.input-group input {
-  height: 100%;
-  border-radius: 5px 0px 0px 5px;
-  background: #D9D9D9;
-  padding: 0.65rem;
-}
-
-.input-group button {
-  background-color: #38B82F;
-  color: #DCDCE4;
-  border: none;
-  padding: 0.5rem;
-  font-size: 1.25rem;
-  height: 100%;
-  border-radius: 0px 5px 5px 0px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.input-group button :hover {
-  opacity: 80%;
-}
-
-#footer_copyright {
-  display: flex;
-  justify-content: center;
-  background-color: #7D7D7D;
-  color: #D9D9D9;
-}
 
 
 /*css cadastro pedido*/
 
 label{
   font-size: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 10px;
+
 }
 
 
 #pedido-form{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  margin: 20px 30%;
+  padding: 10px;
+  height: 400px;
+  border-radius: 12px;
+  background: #B8B8B8;
   text-align: center;
 }
 
+#select-nomes{
+  width: 80%;
+  margin: 8px auto;
+  border-radius: 4px;
+}
+
+#pedido-form label{
+  display: flex;
+  justify-content: start;
+}
+
 #pedido-form input,textarea{
-  border: solid 2px black;
-  margin-bottom: 10px;
-}
-
-#pedido-form textarea{
-  width: calc(10% + 400px);
-}
-
-#pedido-form input{
-  width: calc(5% + 170px);
+  margin: auto;
+  width: 80%;
+  border-radius: 4px;
 }
 
 form button{
@@ -369,13 +311,7 @@ form button{
   background-color: #38B82F;
   border-radius: 10px;
   border: solid 2px black;
-  margin-bottom: 5px;
+  margin: 5px auto;
+  padding: 3px;
 }
 
-a button{
-  color: #191e24;
-  background-color: #38B82F;
-  border-radius: 10px;
-  border: solid 2px black;
-  margin-bottom: 5px;
-}

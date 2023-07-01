@@ -11,23 +11,23 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="Tela-Pedidos/Style_pedidos.css">
+  <link rel="stylesheet" href="padrao.css">
   <title>SUDA Brasil</title>
 </head>
 
-<body>
+<body id="body">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-  <header>
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid w-100 h-100" s>
-        <a class="navbar-brand mx-auto" href="Home_Usuario.html"><img id="logo" src="Tela-Pedidos/Imagens/SUDA-Logo.ico" alt=""></a>
-        <form class="d-flex mx-auto p-2" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+    <header>
+      <ul class="header">
+        <a href="Home_Usuario.html"><img id="logo" src="Tela Login/Imagens/SUDA-Logo.ico" alt="logo_SUDA"></a>
+        <form class="d-flex me-5 p-2" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-      </div>
-    </nav>
+      </ul>
   </header>
 
   <main>
@@ -59,25 +59,23 @@
           <span id="filtros">Categorias:</span>
           <ul class="categorias-checkbox">
             <li>
-              <input type="checkbox" name="categoria1"><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP7bMTxjuVQQa5mONoQRDZPiL14poQBBAKpw&usqp=CAU"
-                alt="">
+              <input type="checkbox" name="categoria1">
               <label for="categoria1">Sangue</label>
             </li>
             <li>
-              <input type="checkbox" name="categoria2"><i class="fa-solid fa-teddy-bear"></i>
+              <input type="checkbox" name="categoria2">
               <label for="categoria2">Brinquedo</label>
             </li>
             <li>
-              <input type="checkbox" name="categoria3"><i class="fa-solid fa-pan-food"></i>
+              <input type="checkbox" name="categoria3">
               <label for="categoria3">Mantimentos</label>
             </li>
             <li>
-              <input type="checkbox" name="categoria4"><i class="fa-sharp fa-solid fa-shirt"></i>
+              <input type="checkbox" name="categoria4">
               <label for="categoria4">Roupas</label>
             </li>
             <li>
-              <input type="checkbox" name="categoria5"><i class="fa-solid fa-books"></i>
+              <input type="checkbox" name="categoria5">
               <label for="categoria5">Livros</label>
             </li>
           </ul>
@@ -113,10 +111,11 @@
           <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i>Sair</a>
         </div>
       </button>
-    </aside> 
-    <header class="cabecalho" style="text-align: center;">
+    </aside>
+
+    <p class="cabecalho" style="text-align: center;">
       <h2 class="cabecalho-titulo"> Cadastro de Pedidos</h2>
-    </header>
+    </p>
     <form id="pedido-form">
       <label for="titulo">Nome:</label>
       <select name="" id="select-nomes">
@@ -129,10 +128,15 @@
       <label for=""></label>
       <button type="submit">Adicionar Pedido</button>
     </form>
-    <a href="Acompanhamento.html"><button>Acompanhar Pedido</button></a>
-    <header class="cabecalho" style="text-align: center;">
+
+    <div id="AcompanharPedidos">
+      <p>Clique no Botão abaixo para Acompanhar seu pedido</p>
+      <a href="Acompanhamento.html"><button id="btn_Acompanhar">Acompanhar Pedido</button></a>
+    </div>
+
+    <p class="cabecalho" style="text-align: center;">
       <h2 class="cabecalho-titulo"> Pedidos Realizados</h2>
-    </header>
+    </p>
     </div>
     <!-- CARDS DE PEDIDOS -->
     <div id="div-content">
@@ -146,11 +150,10 @@
     </div>
   </main>
 
-
-  <footer>
+  <footer class="footer">
     <div id="footer_content">
       <div id="footer_contacts">
-        <img id="logo" src="Tela-Pedidos/Imagens/SUDA-Logo.ico">
+        <img id="logo_footer" src="./Tela Login/Imagens/SUDA-Logo.ico">
         <div id="footer-socialmedia">
           <a href="#" class="footer-link" id="instagram">
             <i class="fa-brands fa-instagram"></i>
@@ -163,12 +166,24 @@
           </a>
         </div>
       </div>
+      <div class="flex-column" id="footer_subscribe">
+        <h3 class="title_footer">Inscreva-se</h3>
+        <div class="input-group" id="email_box">
+          <p>Digite seu email para enviarmos as novidades: </p>
+          <a>
+            <input type="email" id="email" placeholder="Insira seu e-mail">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+          </a>
+        </div>          
+      </div>
     </div>
     <div id="footer_copyright">
       <p>&#0169 2023 all rights reserved</p>
-
     </div>
-  </footer>
+</footer>
+
 <script src="Tela-Pedidos/app_pedidos.js"></script>
 <script src="Tela-Pedidos/CadastroPedidos.js"></script>
 </body>
