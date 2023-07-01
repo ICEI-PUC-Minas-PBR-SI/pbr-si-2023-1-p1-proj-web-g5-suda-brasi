@@ -19,24 +19,20 @@
 <body onload="GeraBusca()">
   <!--Cabeçalho-->
   <header>
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid w-100 h-100"s>
-        <a class="navbar-brand mx-auto" href="Home_Usuario.html"><img id="logo" src="Tela-Busca/Imagens/SUDA.png" style="background:#706e6e;" alt="">
-        
-        </a>
-          <form class="d-flex mx-auto p-2" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-      </div>
-    </nav>
+      <ul class="header">
+        <a href="Home_Usuario.html"><img id="logo" src="Tela Login/Imagens/SUDA-Logo.ico" alt="logo_SUDA"></a>
+        <form class="d-flex me-5 p-2" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </ul>
   </header>
   <!--Fim do cabeçalho-->
 
   <main>
     <!--Sidebar-->
     <aside class="sidebar-container">
-      <div class="topo">
+      <div class="topo" id="topo">
       </div>
       <div class="toggle">
         <span class="lines"></span>
@@ -48,7 +44,8 @@
       <div class="menu">
         <ul>
           <li><a href="Home_Usuario.html"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
-          <li><a href="CaixadeMensagem.html"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Mensagens</a></li>
+          <li><a href="CaixadeMensagem.html"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i>
+              Mensagens</a></li>
           <li><a href="Busca.html"><img src="Tela-Busca/Imagens/donation.png"> Buscar Doações</a></li>
           <li><a href="Configuracao.html"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
         </ul>
@@ -65,20 +62,20 @@
               <label for="categoria1">Sangue</label>
             </li>
             <li>
-              <input type="checkbox" name="categoria2"><i class="fa-solid fa-teddy-bear"></i>
+              <input type="checkbox" name="categoria2">
               <label for="categoria2">Brinquedo</label>
             </li>
             <li>
-              <input type="checkbox" name="categoria3"><i class="fa-solid fa-pan-food"></i>
+              <input type="checkbox" name="categoria3">
               <label for="categoria3">Mantimentos</label>
             </li>
             <li>
-              <input type="checkbox" name="categoria4"><i class="fa-sharp fa-solid fa-shirt"></i>
-              <label for="categoria4">Roupas</label>  
+              <input type="checkbox" name="categoria4">
+              <label for="categoria4">Roupas</label>
             </li>
             <li>
-              <input type="checkbox" name="categoria5"><i class="fa-solid fa-books"></i>
-              <label for="categoria5">Livros</label>  
+              <input type="checkbox" name="categoria5">
+              <label for="categoria5">Livros</label>
             </li>
           </ul>
         </div>
@@ -86,76 +83,73 @@
           <span id="filtros">Avaliação:</span>
           <ul>
             <li>
-                <input type="checkbox" name="rating5">
-            <label for="rating5">5.0</label>
+              <input type="checkbox" name="rating5">
+              <label for="rating5">5.0</label>
             </li>
             <li>
-                <input type="checkbox" name="rating4">
-            <label for="rating4">4.0</label>
+              <input type="checkbox" name="rating4">
+              <label for="rating4">4.0</label>
             </li>
             <li>
-                <input type="checkbox" name="rating3">
-            <label for="rating3">3.0</label>
+              <input type="checkbox" name="rating3">
+              <label for="rating3">3.0</label>
             </li>
             <li>
-                <input type="checkbox" name="rating2">
-            <label for="rating2">2.0</label>
+              <input type="checkbox" name="rating2">
+              <label for="rating2">2.0</label>
             </li>
             <li>
-                <input type="checkbox" name="rating1">
-            <label for="rating1">1.0</label>
+              <input type="checkbox" name="rating1">
+              <label for="rating1">1.0</label>
             </li>
           </ul>
         </div>
       </div>
-      <div class="signout">
-        <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
-      </div>
-    </aside> 
+      <button id="Sair">
+        <div class="signout">
+          <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i>Sair</a>
+        </div>
+      </button>
+    </aside>
     <!--Cards-->
     <div class="container-fluid" id="cards">
     </div> 
   </main>
 
   <!--Rodapé-->
-  <footer>
-      <div id="footer_content">
-        <div id="footer_contacts">
-          <img id="logo" src="Tela-Busca/Imagens/SUDA-Logo.ico">
-          <div id="footer-socialmedia">
-            <a href="#" class="footer-link" id="instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="footer-link" id="facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="footer-link" id="whatsapp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
-        <ul class="flex-column" id="footer_list">
-          <li><h3>Sobre nós</h3></li>
-          <li><a href="#" class="footer-link">Quem Somos</a></li>
-          <li><a href="#" class="footer-link">Politicas de privacidade</a></li>
-          <li><a href="#" class="footer-link">Termos de uso</a></li>
-        </ul>
-        <div class="flex-column g-1" id="footer_subscribe">
-          <h3>Inscreva-se</h3>
-          <div class="input-group">
-            <p>Digite seu email para enviarmos as novidades: </p>
-            <input type="email" id="email" placeholder="Enter your email">
-            <button>
-              <i class="fa-regular fa-envelope"></i>
-            </button>
-          </div>          
+  <footer class="footer">
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img id="logo_footer" src="./Tela Login/Imagens/SUDA-Logo.ico">
+        <div id="footer-socialmedia">
+          <a href="#" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
       </div>
-      <div id="footer_copyright">
-        <p>&#0169 2023 all rights reserved</p>
-        
+      <div class="flex-column" id="footer_subscribe">
+        <h3 class="title_footer">Inscreva-se</h3>
+        <div class="input-group" id="email_box">
+          <p>Digite seu email para enviarmos as novidades: </p>
+          <a>
+            <input type="email" id="email" placeholder="Insira seu e-mail">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+          </a>
+        </div>          
       </div>
-  </footer>
+    </div>
+    <div id="footer_copyright">
+      <p>&#0169 2023 all rights reserved</p>
+    </div>
+</footer>
 
   <!--Script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

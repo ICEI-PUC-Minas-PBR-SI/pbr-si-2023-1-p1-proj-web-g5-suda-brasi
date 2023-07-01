@@ -123,6 +123,7 @@ body{
 }
 
 fieldset input{
+  width: 60%;
   border-radius: 8px;
 }
 
