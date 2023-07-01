@@ -10,6 +10,7 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="Tela Acompanhamento/style_acompanhamento.css">
+  <link rel="stylesheet" href="padrao.css">
   <title>SUDA Brasil</title>
 </head>
 
@@ -18,16 +19,14 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 
-  <header>
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid w-100 h-100" s>
-        <a class="navbar-brand mx-auto" href="Home_Usuario.html"><img id="logo" src="Tela Acompanhamento/Imagens/SUDA-Logo.ico" alt=""></a>
-        <form class="d-flex mx-auto p-2" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <header>
+      <ul id="header">
+        <a href="Home_Usuario.html"><img id="logo" src="Tela Login/Imagens/SUDA-Logo.ico" alt="logo_SUDA"></a>
+        <form class="d-flex me-5 p-2" role="search" id="formsHeader">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-      </div>
-    </nav>
+      </ul>
   </header>
 
   <main>
@@ -40,10 +39,10 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div id="footer_content">
       <div id="footer_contacts">
-        <img id="logo" src="Tela Acompanhamento/Imagens/SUDA-Logo.ico">
+        <img id="logo_footer" src="./Tela Login/Imagens/SUDA-Logo.ico">
         <div id="footer-socialmedia">
           <a href="#" class="footer-link" id="instagram">
             <i class="fa-brands fa-instagram"></i>
@@ -56,22 +55,24 @@
           </a>
         </div>
       </div>
-      <div class="flex-column g-1" id="footer_subscribe">
-        <h3>Inscreva-se</h3>
-        <div class="input-group">
+      <div class="flex-column" id="footer_subscribe">
+        <h3 class="title_footer">Inscreva-se</h3>
+        <div class="input-group" id="email_box">
           <p>Digite seu email para enviarmos as novidades: </p>
-          <input type="email" id="email" placeholder="Enter your email">
+          <a>
+            <input type="email" id="email" placeholder="Insira seu e-mail">
           <button>
             <i class="fa-regular fa-envelope"></i>
           </button>
-        </div>
+          </a>
+        </div>          
       </div>
     </div>
     <div id="footer_copyright">
       <p>&#0169 2023 all rights reserved</p>
-
     </div>
-  </footer>
+</footer>
+
   <script src="Tela Acompanhamento/script_acompanhamento.js"></script>
   <script src="Tela Acompanhamento/script_tela.js"></script>
 </body>

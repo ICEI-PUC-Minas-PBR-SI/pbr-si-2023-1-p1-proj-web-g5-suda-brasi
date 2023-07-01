@@ -2,6 +2,10 @@
 
 /*Estilização do main*/
 
+#body{
+    background: whitesmoke;
+}
+
 /*Estilização SIDEBAR*/
   
   /* TOGGLE */
@@ -91,7 +95,7 @@
 
 .favoritos .favoritas{
     font-size: 40px;
-    color: aliceblue
+    color: black;
 }
 
 .favoritos #icone-favoritos{
@@ -564,7 +568,7 @@ section {
 
 .titulo{
     font-size: 30px;
-    color: aliceblue;
+    color: black;
 }
 
 .instituicoesFavoritas{

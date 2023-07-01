@@ -1,8 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500&display=swap');
 /* Estilização da Main */
 
-.header input{
-  margin-top: 0px;
+.btn .btn-outline-success {
 }
 
 .endereco{
@@ -47,7 +46,7 @@ div{
   text-align: center;
   border-bottom: solid 2px rgb(153, 153, 153);
   font-weight: bold;
-  width: 12%;
+  width: 20%;
   margin: auto;
 }
 
@@ -112,9 +111,10 @@ button {
   padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
-  border: none;
+  border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -148,4 +148,15 @@ aside ul li{
 
 .input-group button{
   margin-top: 0px -2px;
+}
+
+.card-body a{
+  background: #0b5ed7;
+}
+
+@media (max-width: 600px){
+  #header{
+    display: flex;
+    flex-direction: column;
+  }
 }
