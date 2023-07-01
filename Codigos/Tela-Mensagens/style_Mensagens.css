@@ -131,7 +131,8 @@ fieldset button{
   margin-top: 15px;
   font-size: 20px;
   padding: 6px;
-  background: gray;
+  background: #38B82F;
+  border: 2px solid black;
   border-radius: 8px;
 }
 
