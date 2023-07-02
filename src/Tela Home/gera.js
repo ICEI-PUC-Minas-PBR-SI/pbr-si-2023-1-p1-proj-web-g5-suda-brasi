@@ -16,7 +16,7 @@ function GeraBanco(){
             "email": "clairta.cardoso@example.com",
             "senha": "claire",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/women/79.jpg",
+                "medium": "https://randomuser.me/api/portraits/women/79.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/women/79.jpg"
             },
             "tipo": "Beneficiario",
@@ -45,7 +45,7 @@ function GeraBanco(){
             "email": "francyelle.goncalves@example.com",
             "senha": "ladybug",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/women/81.jpg",
+                "medium": "https://randomuser.me/api/portraits/women/81.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/women/81.jpg"
             },
             "tipo": "Beneficiario",
@@ -74,7 +74,7 @@ function GeraBanco(){
             "email": "teotonio.vieira@example.com",
             "senha": "walmart",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/men/81.jpg",
+                "medium": "https://randomuser.me/api/portraits/men/81.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/men/81.jpg"
             },
             "tipo": "Doador",
@@ -103,7 +103,7 @@ function GeraBanco(){
             "email": "karena.costa@example.com",
             "senha": "q1w2e3r4",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/women/81.jpg",
+                "medium": "https://randomuser.me/api/portraits/women/81.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/women/81.jpg"
             },
             "tipo": "Doador",
@@ -132,7 +132,7 @@ function GeraBanco(){
             "email": "eulogio.darosa@example.com",
             "senha": "tweety",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/men/82.jpg",
+                "medium": "https://randomuser.me/api/portraits/men/82.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/men/82.jpg"
             },
             "tipo": "Instituicao",
@@ -161,7 +161,7 @@ function GeraBanco(){
             "email": "francilene.oliveira@example.com",
             "senha": "florian",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/women/0.jpg",
+                "medium": "https://randomuser.me/api/portraits/women/0.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/women/0.jpg"
             },
             "tipo": "Beneficiario",
@@ -190,7 +190,7 @@ function GeraBanco(){
             "email": "luciele.nascimento@example.com",
             "senha": "catnip",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/women/47.jpg",
+                "medium": "https://randomuser.me/api/portraits/women/47.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/women/47.jpg"
             },
             "tipo": "Doador",
@@ -219,7 +219,7 @@ function GeraBanco(){
             "email": "sandra.campos@example.com",
             "senha": "cyclones",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/women/19.jpg",
+                "medium": "https://randomuser.me/api/portraits/women/19.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/women/19.jpg"
             },
             "tipo": "Beneficiario",
@@ -248,7 +248,7 @@ function GeraBanco(){
             "email": "caroline.rodrigues@example.com",
             "senha": "neptune",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/women/94.jpg",
+                "medium": "https://randomuser.me/api/portraits/women/94.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/women/94.jpg"
             },
             "tipo": "Instituicao",
@@ -277,7 +277,7 @@ function GeraBanco(){
             "email": "zenilda.rocha@example.com",
             "senha": "waterloo",
             "pictures": {
-                "medium": "https://randomuser.me/api/portraits/med/women/70.jpg",
+                "medium": "https://randomuser.me/api/portraits/women/70.jpg",
                 "thumb": "https://randomuser.me/api/portraits/thumb/women/70.jpg"
             },
             "tipo": "Beneficiario",

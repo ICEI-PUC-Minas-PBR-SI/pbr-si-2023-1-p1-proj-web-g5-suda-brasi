@@ -7,29 +7,34 @@ var favoritos = (JSON.parse(localStorage.getItem('db_favoritos'))).favoritos
 var pedidos = (JSON.parse(localStorage.getItem('db_pedidos'))).pedidos
 var tamanho_tela = window.innerWidth
 
-$('.categorias-checkbox').on('change', 'input', function() {
-  let categoria = this.name
-  let filtro =''
-  if (categoria == "categoria1"){
-    console.log("sangue")
-    filtro = "Sangue"
-  }else 
-  if(categoria == "categoria2"){
-          filtro = "Brinquedos"
-      }else if(categoria == "categoria3"){
-          filtro = "Alimentos"
-      }else if(categoria == "categoria4"){
-          filtro = "Roupas"
-      }else if (categoria == "categoria5"){
-        filtro = "Livros"
-      }
-    $('#carouselRecomendados .cards').remove()
-    $('#carouselRecomendados #carouselRecomendados-item0').append(
-      `<ul class="cards">
-      </ul>
-      `
-    )
-  ConstroiRecomendados(filtro)
+$('.categorias-checkbox').on('click', 'input', function() {
+  if(this.checked){
+    let categoria = this.name
+    let filtro =''
+    if (categoria == "categoria1"){
+      console.log("sangue")
+      filtro = "Sangue"
+    }else 
+    if(categoria == "categoria2"){
+            filtro = "Brinquedos"
+        }else if(categoria == "categoria3"){
+            filtro = "Alimentos"
+        }else if(categoria == "categoria4"){
+            filtro = "Roupas"
+        }else if (categoria == "categoria5"){
+          filtro = "Livros"
+        }
+      $('#carouselRecomendados .cards').remove()
+      $('#carouselRecomendados #carouselRecomendados-item0').append(
+        `<ul class="cards">
+        </ul>
+        `
+      )
+      ConstroiRecomendados(filtro)
+  }
+  else{
+    
+  }
 });
 
 function GeraBusca(){
