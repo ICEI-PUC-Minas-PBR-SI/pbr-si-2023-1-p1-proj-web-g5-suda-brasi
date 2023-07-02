@@ -7,10 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Tela Card/style_card.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Fonte Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="padrao.css">
     <title>SUDA Brasil</title>
 </head>
 
-<body>
+<body onload="GeraPagina()">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <header>
     <nav class="navbar navbar-expand-lg ">
@@ -24,14 +28,92 @@
     </nav>
   </header>
 
+  <aside class="sidebar-container">
+    <div class="topo">
+    </div>
+    <div class="toggle">
+      <span class="lines"></span>
+      <span class="lines"></span>
+      <span class="lines"></span>
+    </div>
+    <span class="divisao"></span>
+    <!-- MENU -->
+    <div class="menu">
+      <ul>
+        <li><a href="Home_Usuario.html"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+        <li><a href="CaixadeMensagem.html"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Mensagens</a></li>
+        <li><a href="Busca.html"><img src="Tela-Busca/Imagens/donation.png"> Buscar Doações</a></li>
+        <li><a href="Meus-Pedidos.html"><span class="material-symbols-outlined">task</span> Meus Pedidos</a></li>
+        <li><a href="Configuracao.html"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
+      </ul>
+    </div>
+    <span class="divisao"></span>
+    <!--Filtros-->
+    <div class="filtros">
+      <span id="filtros1">Filtros:</span>
+      <div class="categorias">
+        <span id="filtros">Categorias:</span>
+        <ul class="categorias-checkbox">
+          <li>
+            <input type="checkbox" name="categoria1">
+            <label for="categoria1">Sangue</label>
+          </li>
+          <li>
+            <input type="checkbox" name="categoria2"><i class="fa-solid fa-teddy-bear"></i>
+            <label for="categoria2">Brinquedo</label>
+          </li>
+          <li>
+            <input type="checkbox" name="categoria3"><i class="fa-solid fa-pan-food"></i>
+            <label for="categoria3">Mantimentos</label>
+          </li>
+          <li>
+            <input type="checkbox" name="categoria4"><i class="fa-sharp fa-solid fa-shirt"></i>
+            <label for="categoria4">Roupas</label>  
+          </li>
+          <li>
+            <input type="checkbox" name="categoria5"><i class="fa-solid fa-books"></i>
+            <label for="categoria5">Livros</label>  
+          </li>
+        </ul>
+      </div>
+      <div class="avaliacao">
+        <span id="filtros">Avaliação:</span>
+        <ul>
+          <li>
+              <input type="checkbox" name="rating5">
+          <label for="rating5">5.0</label>
+          </li>
+          <li>
+              <input type="checkbox" name="rating4">
+          <label for="rating4">4.0</label>
+          </li>
+          <li>
+              <input type="checkbox" name="rating3">
+          <label for="rating3">3.0</label>
+          </li>
+          <li>
+              <input type="checkbox" name="rating2">
+          <label for="rating2">2.0</label>
+          </li>
+          <li>
+              <input type="checkbox" name="rating1">
+          <label for="rating1">1.0</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="signout">
+      <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
+    </div>
+  </aside> 
   <main>
     <div class="row">
-      <div class="col-4">
-        <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/images_icon-icons.com_50365.png" class="imagem-usuario">
+      <div class="col-4 imagem-perfil">
+        <!-- <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/images_icon-icons.com_50365.png" class="imagem-usuario"> -->
       </div>
       <div class="col-8" id="dados-detalhes">
         <div class="dados">
-          <span class="titulos">Fernando</span>
+          <span class="titulos"></span>
           <!-- Avaliação da comunidade -->
           <span class="nota">Nota da comunidade: 4.8/5</span>
           <!-- Rating com estrelas -->
@@ -54,7 +136,9 @@
     <div class="row">
       <div class="conteudo">
         <h1 class="titulo-detalhes">Informação:</h1>
-        <span id="detalhes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium qui minus inventore voluptates consequatur, rerum, id quaerat sequi ex earum similique. Sed repudiandae recusandae voluptatum vel minus libero amet tempore quia quas nostrum suscipit, perferendis, illo consequuntur ad fuga? Iure numquam consequatur repellat perferendis maxime laboriosam nemo, eum consequuntur cupiditate quos, facere perspiciatis aspernatur dolor ullam praesentium aliquam, similique sed commodi saepe vero? Non expedita maiores iure blanditiis ullam laudantium ex magni explicabo temporibus illum beatae eos sequi nesciunt, officiis architecto est enim accusantium nam voluptates necessitatibus. Unde veritatis quod expedita laudantium porro aut laboriosam itaque beatae doloribus? Perferendis, ipsa dolore recusandae distinctio corporis facere voluptatum labore ullam quis deleniti adipisci maiores, ab vel itaque nesciunt delectus fuga esse animi iure inventore amet iusto. Error, minima ullam! Atque aperiam qui facere cum eius, ab, porro at animi, possimus veritatis laborum? Eum eligendi ipsum nemo quia nobis. Tempora error vitae animi? Adipisci quae qui corporis necessitatibus laboriosam sit quam aspernatur porro possimus amet odit libero quia consectetur, autem suscipit repellendus quas error sapiente itaque ut at cum! Ea, iusto soluta ducimus, nemo hic ex quibusdam optio quasi sunt suscipit, nihil animi minima blanditiis. Fugiat voluptatibus nobis provident assumenda neque, deserunt numquam ad ratione. Est ad dolorum id deserunt blanditiis eaque, distinctio mollitia commodi voluptates, voluptate corporis totam inventore, autem animi natus quod perferendis vel ratione aperiam. Natus in accusantium nihil illo ullam a nesciunt. Animi vitae dolores illo in sit? Quas ab qui et facere impedit ratione cumque eligendi minus ipsam!</span>
+        <span id="detalhes">
+          <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium qui minus inventore voluptates consequatur, rerum, id quaerat sequi ex earum similique. Sed repudiandae recusandae voluptatum vel minus libero amet tempore quia quas nostrum suscipit, perferendis, illo consequuntur ad fuga? Iure numquam consequatur repellat perferendis maxime laboriosam nemo, eum consequuntur cupiditate quos, facere perspiciatis aspernatur dolor ullam praesentium aliquam, similique sed commodi saepe vero? Non expedita maiores iure blanditiis ullam laudantium ex magni explicabo temporibus illum beatae eos sequi nesciunt, officiis architecto est enim accusantium nam voluptates necessitatibus. Unde veritatis quod expedita laudantium porro aut laboriosam itaque beatae doloribus? Perferendis, ipsa dolore recusandae distinctio corporis facere voluptatum labore ullam quis deleniti adipisci maiores, ab vel itaque nesciunt delectus fuga esse animi iure inventore amet iusto. Error, minima ullam! Atque aperiam qui facere cum eius, ab, porro at animi, possimus veritatis laborum? Eum eligendi ipsum nemo quia nobis. Tempora error vitae animi? Adipisci quae qui corporis necessitatibus laboriosam sit quam aspernatur porro possimus amet odit libero quia consectetur, autem suscipit repellendus quas error sapiente itaque ut at cum! Ea, iusto soluta ducimus, nemo hic ex quibusdam optio quasi sunt suscipit, nihil animi minima blanditiis. Fugiat voluptatibus nobis provident assumenda neque, deserunt numquam ad ratione. Est ad dolorum id deserunt blanditiis eaque, distinctio mollitia commodi voluptates, voluptate corporis totam inventore, autem animi natus quod perferendis vel ratione aperiam. Natus in accusantium nihil illo ullam a nesciunt. Animi vitae dolores illo in sit? Quas ab qui et facere impedit ratione cumque eligendi minus ipsam! -->
+        </span>
       </div>
     </div>
     <div class="informacoes">
@@ -63,8 +147,12 @@
       </div>
       <div id="contato">
         <span class="contato-titulo">Contato:</span>
-        <p>Contato:(31) 3917-4721</p>
-        <p>E-mail: adelfina8923@uorak.com</p>
+        <p id="telefone">
+          <!-- Contato:(31) 3917-4721 -->
+        </p>
+        <p id="email">
+          <!-- E-mail: adelfina8923@uorak.com -->
+        </p>
           <div id="footer-socialmedia">
             <a href="#" class="footer-link" id="instagram">
               <i class="fa-brands fa-instagram"></i>
@@ -75,42 +163,47 @@
             <a href="#" class="footer-link" id="whatsapp">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
+            
           </div>
       </div>
      </div>     
   </main>
 
-  <footer>
-      <div id="footer_content">
-        <div id="footer_contacts">
-          <img id="logo" src="Tela Card/Imagens/SUDA-Logo.ico">
-          <div id="footer-socialmedia">
-            <a href="#" class="footer-link" id="instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="footer-link" id="facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="footer-link" id="whatsapp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
+  <footer class="footer">
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img id="logo_footer" src="./Tela Login/Imagens/SUDA-Logo.ico">
+        <div id="footer-socialmedia">
+          <a href="#" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
-        <div class="flex-column g-1" id="footer_subscribe">
-          <h3>Inscreva-se</h3>
-          <div class="input-group">
-            <p>Digite seu email para enviarmos as novidades: </p>
-            <input type="email" id="email" placeholder="Enter your email">
+      </div>
+      <div class="flex-column" id="footer_subscribe">
+        <h3 class="title_footer">Inscreva-se</h3>
+        <div class="input-group" id="email_box">
+          <p>Digite seu email para enviarmos as novidades: </p>
+          <a>
+            <input type="email" id="email" placeholder="Insira seu e-mail">
             <button>
               <i class="fa-regular fa-envelope"></i>
             </button>
-          </div>          
+          </a>
         </div>
       </div>
-      <div id="footer_copyright">
-        <p>&#0169 2023 all rights reserved</p>
-      </div>
+    </div>
+    <div id="footer_copyright">
+      <p>&#0169 2023 all rights reserved</p>
+    </div>
   </footer>
+  <script src="Tela Card/card.js"></script>
+  <script src="padrao.js"></script>
 </body>
 
 </html>

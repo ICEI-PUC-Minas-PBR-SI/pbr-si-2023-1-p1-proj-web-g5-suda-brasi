@@ -1,7 +1,8 @@
-var pedidos = JSON.parse(localStorage.getItem('pedidos'));
-var usuarios =(JSON.parse(localStorage.getItem('db_usuario')));
+var pedidos = JSON.parse(localStorage.getItem('db_pedidos')).pedidos;
+var usuarios = JSON.parse(localStorage.getItem('db_usuario'));
 var iguais = [];
-usuarios.dados.forEach(elemento => {
+
+usuarios.forEach(elemento => {
     pedidos.forEach(element => {
         if(elemento.nome == element.titulo){
             iguais.push(elemento.endereco.logradouro)
@@ -52,6 +53,7 @@ function exibirAcompanhamento() {
         </div>
         <div class="delivery-details">
             <p><strong>Detalhes da Entrega:</strong></p>
+            <p>Transportadora: Nome da Transportadora</p>
             <p>Data de Entrega: ${pedidos[i].data_entrega}</p>
             <p>Endereço: ${iguais[i]}</p>
         </div>

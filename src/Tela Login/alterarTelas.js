@@ -1,7 +1,6 @@
 var cadastrarSe = document.getElementById("link_cadastrarSe");
 var btnArrow = document.getElementById("btn_arrow");
 
-
 cadastrarSe.addEventListener("click",function(){
     var telaCadastrar = document.getElementById("cadastrar_Login");
     var telaLogin = document.getElementById("entrar_Login");

@@ -40,6 +40,3 @@
   updateProgress("progress2", 50);
   updateProgress("progress3", 75);
 */
-
-//Codigo da barra-lateral
-

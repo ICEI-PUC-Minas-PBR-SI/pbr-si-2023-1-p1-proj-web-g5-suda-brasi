@@ -1,6 +1,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500&display=swap');
 /* Estilização da Main */
 
+.btn .btn-outline-success {
+}
 
 .endereco{
   display: flex;
@@ -25,45 +27,56 @@ h1,h2,h5,p,label {
   
   color: #fefefe;
 }
+
 input{
-  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
 }
 
 #avatar{
   width: 55px;
   height: 50px;
 }
+
 div{
   display: block;
 }
 #text-cabeçalho{
   text-align: center;
-  background: #989898;
-  border-bottom: solid 2px rgb(19, 14, 14);
+  border-bottom: solid 2px rgb(153, 153, 153);
   font-weight: bold;
-  width: 100%;
+  width: 20%;
+  margin: auto;
 }
+
 #text-cabeçalho-2{
   text-align: start;
-  border-bottom: solid 2px rgb(19, 14, 14);
+  border-bottom: solid 2px rgb(153, 153, 153);
   font-weight: bold;
   width: 100%;
 }
+
+#linhaCards{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .row img{
   width: 200px;
 }
 .card{
+  display: flex;
   background-color: #E2E2E2;
 }
 
-input{
-  margin-top: 10px;
-  margin-bottom: 10px;
+aside li {
+  margin: 12px 2px;
 }
 
-
 aside li a{
-  color: black;
+  color: white;
 }
 
 /* Estilos do formulário de cadastro */
@@ -85,13 +98,23 @@ select {
   border-radius: 4px;
 }
 
+#botao-alterar1{
+  margin-right: 8px;
+}
+
+#botao-alterar2{
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
 button {
   padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
-  border: none;
+  border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -102,6 +125,7 @@ button:hover {
 .informacoes-pessoais{
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
 }
 
 .informacoes-pessoais input{
@@ -120,4 +144,28 @@ button:hover {
 aside ul li{
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-group button{
+  margin-top: 0px -2px;
+}
+
+.card-body a{
+  background: #0b5ed7;
+}
+
+@media (max-width: 600px){
+  #header{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item-link{
+  color: whitesmoke;
+}
+
+.item-link:hover{
+  color: rgb(231, 16, 8);
+  transition: 0.4s;
 }

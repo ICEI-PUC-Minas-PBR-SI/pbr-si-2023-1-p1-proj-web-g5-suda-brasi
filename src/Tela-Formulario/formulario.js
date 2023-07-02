@@ -1,9 +1,12 @@
-fetch("https://mocki.io/v1/06fe26cb-e261-496a-8f7c-547ef92a9390")
-.then(res => res.json())
-.then(dados =>{
-  localStorage.setItem('db_usuarios', JSON.stringify(dados))
-})
-
-var usuarios=(JSON.parse(localStorage.getItem('db_usuarios')));
-
-
+$('#btn-cep').on('click', function (e){
+  e.preventDefault()
+  let cep = $('#input-CEP').val();
+  fetch(`https://api.postmon.com.br/v1/cep/${cep}`)
+  .then(res => res.json())
+  .then(resultado =>{
+    $('#input-Rua').val(resultado.logradouro);
+    $('#input-Bairro').val(resultado.bairro)
+    $('#input-Estado').val(resultado.estado)
+    $('#input-Cidade').val(resultado.cidade)
+  })
+});
