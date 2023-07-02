@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="Tela-Home-Usuario/style_home_usuario.css">
+    <!-- Padrao -->
+    <link rel="stylesheet" href="padrao.css">
+    <!-- Fonte Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Bootstrap icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>SUDA Brasil</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid w-100 h-100" s>
+                <a class="navbar-brand mx-auto" href="Home_Usuario.html">
+                    <img id="logo" src="Tela-Busca/Imagens/SUDA.png" alt=""></a>
+                <form class="d-flex mx-auto p-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar-container">
+            <div class="topo">
+            </div>
+            <div class="toggle">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </div>
+            <span class="divisao"></span>
+            <!-- MENU -->
+            <div class="menu">
+                <ul>
+                    <li><a href="Home_Usuario.html"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="CaixadeMensagem.html"><i class="fa-solid fa-clock-rotate-left"
+                                style="color: #000000;"></i> Mensagens</a></li>
+                    <li><a href="Busca.html"><img src="Tela-Busca/Imagens/donation.png"> Buscar Doações</a></li>
+                    <li><a href="Meus-Pedidos.html"><span class="material-symbols-outlined">task</span> Meus Pedidos</a>
+                    </li>
+                    <li><a href="Configuracao.html"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
+                </ul>
+            </div>
+            <span class="divisao"></span>
+            <!--Filtros-->
+            <div class="filtros">
+                <span id="filtros1">Filtros:</span>
+                <div class="categorias">
+                    <span id="filtros">Categorias:</span>
+                    <ul class="categorias-checkbox">
+                        <li>
+                            <input type="checkbox" name="categoria1">
+                            <label for="categoria1">Sangue</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="categoria2"><i class="fa-solid fa-teddy-bear"></i>
+                            <label for="categoria2">Brinquedo</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="categoria3"><i class="fa-solid fa-pan-food"></i>
+                            <label for="categoria3">Mantimentos</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="categoria4"><i class="fa-sharp fa-solid fa-shirt"></i>
+                            <label for="categoria4">Roupas</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="categoria5"><i class="fa-solid fa-books"></i>
+                            <label for="categoria5">Livros</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="avaliacao">
+                    <span id="filtros">Avaliação:</span>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="rating5">
+                            <label for="rating5">5.0</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="rating4">
+                            <label for="rating4">4.0</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="rating3">
+                            <label for="rating3">3.0</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="rating2">
+                            <label for="rating2">2.0</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="rating1">
+                            <label for="rating1">1.0</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="Sair">
+                <div class="signout">
+                  <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i>Sair</a>
+                </div>
+              </button>
+        </aside>
+
+        <section class="image"></section>
+        <section class="text">
+            <h2 class="usuario">
+                <!-- Beneficiario -->
+            </h2>
+            <p>
+                É com grande satisfação que nos dirigimos a você neste momento para expressar nossa gratidão e
+                compartilhar
+                algumas informações importantes. Sabemos que você é um beneficiário valioso e desejamos reforçar nosso
+                compromisso em fornecer o melhor suporte
+                possível.
+            </p>
+            <p>
+                Primeiramente, gostaríamos de expressar nossa sincera gratidão por sua confiança em nossos serviços.
+                Sabemos
+                que existem várias opções disponíveis, e é uma honra para nós ter sido escolhidos como seu parceiro.
+                Nosso
+                objetivo sempre foi garantir sua satisfação
+                e atender às suas necessidades com eficiência e dedicação.
+            </p>
+        </section>
+        <section class="image image-2"></section>
+        <div class="container-fluid">
+            <div class="instituicoesFavoritas">
+                <div class="favoritos" style="text-align:center">
+                    <img id="icone-favoritos" src="https://cdn-icons-png.flaticon.com/512/3349/3349221.png" alt="">
+                    <span class="favoritas">Suas Instituições Favoritas</span>
+                </div>
+                <!--Fim Barra de Pesquisa-->
+                <div class="row" id="favoritos">
+                </div>
+            </div>
+        </div>
+        <div class="ultimos">
+            <div class="titulo" style="text-align:center">
+                <img id="icone-favoritos" src="https://cdn-icons-png.flaticon.com/512/3349/3349221.png" alt="">
+                <span class="titulo">Ultimos Doadores escolhidos</span>
+            </div>
+            <div class="row" id="ultimos">
+                <div id="carouselUltimos" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselUltimos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselUltimos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img id="logo_footer" src="./Tela Login/Imagens/SUDA-Logo.ico">
+                <div id="footer-socialmedia">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-column" id="footer_subscribe">
+                <h3 class="title_footer">Inscreva-se</h3>
+                <div class="input-group" id="email_box">
+                    <p>Digite seu email para enviarmos as novidades: </p>
+                    <a>
+                        <input type="email" id="email" placeholder="Insira seu e-mail">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            <p>&#0169 2023 all rights reserved</p>
+        </div>
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js'></script>
+    <script src="Tela-Home-Usuario/script_home_usuario.js"></script>
+    <script src="padrao.js"></script>
+</body>
+
+</html>

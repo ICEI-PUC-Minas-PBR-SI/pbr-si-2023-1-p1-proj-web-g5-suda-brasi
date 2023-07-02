@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500&display=swap');
+
+/*Cabeçalho*/
+
+#AcompanharPedidos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  background: #B8B8B8;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#AcompanharPedidos p{
+  margin: 12px auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#AcompanharPedidos a{
+  margin: 10px auto;
+}
+
+#btn_Acompanhar{
+  background: #38B82F;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+@media screen and (max-width:768px) {
+  #AcompanharPedidos{
+    width: 60%;
+  }
+  
+  #btn_Acompanhar{
+    font-size: 14px;
+  }
+
+  .imagem-usuario{
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+    width: 10vh;
+  }
+}
+
+
+/*Estilização do Main*/
+main{
+  width: 100%;
+  height: 100%;
+}
+
+.card{
+  border-radius: 20px;
+}
+
+#topo-card {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #B8B8B8;
+  border: 6px solid #8492A6;
+  border-radius: 20px;
+}
+
+#div-content{
+  height: 70%;
+  width: 70%;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: scroll;
+  
+}
+
+.texto-card{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.imagem-usuario{
+  width: 10vw;
+  width: 10vh;
+  margin-left: 30px;
+}
+
+.cabecalho-titulo {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #B8B8B8;
+  border: 1px solid #8492A6;
+}
+
+
+/*css cadastro pedido*/
+
+label{
+  font-size: 20px;
+  margin: 10px;
+
+}
+
+#pedido-form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px 15%;
+  padding: 10px;
+  height: 400px;
+  border-radius: 12px;
+  background: #B8B8B8;
+  text-align: center;
+}
+
+#select-nomes{
+  width: 80%;
+  margin: 8px auto;
+  border-radius: 4px;
+}
+
+#pedido-form label{
+  display: flex;
+  justify-content: start;
+}
+
+#pedido-form input,textarea{
+  margin: auto;
+  width: 80%;
+  border-radius: 4px;
+}
+
+form button{
+  color: #191e24;
+  background-color: #38B82F;
+  border-radius: 10px;
+  border: solid 2px black;
+  margin: 5px auto;
+  padding: 3px;
+}
+
