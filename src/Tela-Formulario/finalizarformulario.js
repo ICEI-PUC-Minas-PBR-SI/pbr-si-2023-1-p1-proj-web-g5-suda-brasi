@@ -1,11 +1,9 @@
 var user = (JSON.parse(localStorage.getItem("db_usuario")));
 function finalizar(){
-
     var nome = document.getElementById('input-nomeCompleto').value;
     var data= document.getElementById('input-nascimento').value;
     var telefone = document.getElementById('input-telefone').value;
     var cpf = document.getElementById('input-cpf').value;
-    var rg = document.getElementById('input-rg').value;
     var estadocivil = document.getElementById('estadocivil').value;
     var rua = document.getElementById('input-Rua').value;
     var numero = document.getElementById('input-Número').value;
@@ -13,27 +11,30 @@ function finalizar(){
     var cep= document.getElementById('input-CEP').value;
     var estado = document.getElementById('input-Estado').value;
     var cidade = document.getElementById('input-Cidade').value;
+    var categoria = $('#categorias').val()
+    var descricao = $('#description').val()
     var rendamensal = document.getElementById('input-RendaMensal').value;
     var numerodependentes = document.getElementById('input-NumeroDependentes').value;
     var profissao = document.getElementById('input-Profissão').value;
 
     //Modifica as informações do usuario previamente criado
-    user[user.length - 1].nome = nome;
-    user[user.length - 1].data = data;
-    user[user.length - 1].telefone = telefone;
-    user[user.length - 1].cpf = cpf;
-    user[user.length - 1].rg = rg;
-    // user[user.length-1].categoria = categoria;
-    // user[user.length-1].imagem:"";
-    user[user.length - 1].estado_civil = estadocivil;
-    user[user.length - 1].endereco.logradouro = rua + numero;
-    user[user.length - 1].endereco.bairro = bairro;
-    user[user.length - 1].endereco.cep = cep;
-    user[user.length - 1].endereco.estado = estado;
-    user[user.length - 1].endereco.cidade = cidade;
-    user[user.length - 1].sociais.renda = rendamensal;
-    user[user.length - 1].sociais.dependentes = numerodependentes;
-    user[user.length - 1].sociais.profissao = profissao;
+    user[(user.length) - 1].nome = nome;
+    user[(user.length) - 1].data_nascimento = data;
+    user[(user.length) - 1].telefone = telefone;
+    user[(user.length) - 1].cpf = cpf;
+    user[(user.length) -1].categoria = categoria;
+    user[(user.length) -1].descricao = descricao;
+    user[(user.length) - 1].estado_civil = estadocivil;
+    user[(user.length) - 1].endereco.logradouro = rua + numero;
+    user[(user.length) - 1].endereco.bairro = bairro;
+    user[(user.length) - 1].endereco.cep = cep;
+    user[(user.length) - 1].endereco.estado = estado;
+    user[(user.length) - 1].endereco.cidade = cidade;
+    user[(user.length) - 1].sociais.renda = rendamensal;
+    user[(user.length) - 1].sociais.dependentes = numerodependentes;
+    user[(user.length) - 1].sociais.profissao = profissao;
+
+    console.log(user[user.length-1])
 
     localStorage.setItem('db_usuario',JSON.stringify(user));
 

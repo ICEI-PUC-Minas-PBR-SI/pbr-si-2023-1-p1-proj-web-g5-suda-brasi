@@ -6,13 +6,11 @@ var SenhaNova = document.getElementById("ModalSenhaNova")
 
 function TrocarSenha() {
 
-        modal.style.display = 'block';
-
+    modal.style.display = 'block';
     // Fecha o modal quando o botão "X" é clicado
     closeModalBtn.addEventListener('click', function () {
         modal.style.display = 'none';
     });
-
     // Fecha o modal quando o usuário clica fora dele
     window.addEventListener('click', function (event) {
         if (event.target === modal) {

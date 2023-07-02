@@ -17,7 +17,7 @@
   crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <link rel="icon" href="Tela-Busca/Imagens/SUDA.png">
-
+  <link rel="stylesheet" href="padrao.css">
   <title>SUDA Brasil</title>
 </head>
 
@@ -42,33 +42,26 @@
   <main class="principal">
     <div class="campo-geral">
       <!--Containe do Formulario-->
-      <input type="file" accept="image/*" onchange="handleFileUpload(this.files)">
-      <br>
-      <img id="uploaded-image" src="#" alt="Imagem Enviada" style="max-width: 300px;">
       <form class="dados-pessoais">
         <h2>Dados Pessoais</h2>
           <div class="linha-um">
             <label for="input-nome">Nome Completo</label>
             <input type="text" name="input-nome" id="input-nomeCompleto" style="width: auto;">
           </div>
-          <div class="linha-dois">
-            <div class="data-nascimento">
+          <div class="row linha-dois">
+            <div class="col-md-3 col-sm-6 data-nascimento">
               <label for="input-nascimento">Data de Nascimento</label>
               <input type="date" name="input-nascimento" id="input-nascimento">
             </div>
-            <div class="telefone">
+            <div class="col-md-3 col-sm-6 telefone">
               <label for="input-telefone">Telefone de Contato</label>
               <input type="tel" name="input-telefone" id="input-telefone" pattern="[(0,99)]{1}-[0-9]{5}-[0-9]{4}" placeholder="(00)98756-4321">
             </div>
-            <div class="CPF">
+            <div class="col-md-3 col-sm-6 CPF">
               <label for="input-cpf">CPF</label>
               <input type="text" name="input-cpf" id="input-cpf" placeholder="000.000.000-00">
             </div>
-            <div class="RG">
-              <label for="input-rg">RG</label>
-              <input type="text" name="input-rg" id="input-rg" >
-            </div>
-            <div class="estado-civil">
+            <div class="col-md-2 col-sm-6 estado-civil">
               <label for="estadocivil">Estado Civil</label>
               <select name="estadocivil" id="estadocivil">
                 <option value="Solteiro(a)">Solteiro(a)</option>
@@ -83,50 +76,46 @@
       </form>
       <form class="endereco">
         <h2 class="cabecalho-Endereco">Endereço</h2>
-        <div class="endereco-dados">
-          <div id="cep">
+        <div class="row g-3 endereco-dados">
+          <div class="col-md-4 col-sm-6" id="cep">
             <label for="input-cep">CEP</label>
             <input type="text" name="input-cep" id="input-CEP">
             <button id="btn-cep">Pesquisar</button>
           </div>
-          <div class="rua">
+          <div class="col-md-4 col-sm-6 rua">
             <label for="input-Rua">Rua</label>
             <input type="text" name="input-Rua" id="input-Rua">
           </div>
-          <div class="numero">
+          <div class="col-md-4 col-sm-6 numero">
             <label for="input-numero">Número</label>
             <input type="text" name="input-numero" id="input-Número">
           </div>    
-        </div>
-        <div class="endereco-dados">
-          <div class="bairro">
+          <div class="col-md-4 col-sm-6 bairro">
             <label for="input-bairro">Bairro</label>
             <input type="text" name="input-bairro" id="input-Bairro">
             
           </div>
-          <div class="estado">
+          <div class="col-md-4 col-sm-6 estado">
             <label for="input-estado">Estado</label>
             <input type="text" name="input-estado" id="input-Estado">
           </div>
-          <div class="cidade">
+          <div class="col-md-4 col-sm-6 cidade">
             <label for="imput-nome">Cidade</label>
             <input type="text" id="input-Cidade">
           </div>
         </div>
-        <div class="endereco-dados">
-          <div class="complemento">
-            <label for="input-complemento">Complemento</label>
-            <input type="text" name="input-complemento" id="input-Complemento">
-          </div>
-        </div>
+      </form>
+      <form class="categoria">
+        <h2 class="categoria-titulo">Categoria de doação</h2>
+        <select name="categoria" id="categorias">
+          <option value="Sangue">Sangue</option>
+          <option value="Alimentos">Alimentos</option>
+          <option value="Roupas">Roupas</option>
+          <option value="Livros">Livros</option>
+          <option value="Brinquedos">Brinquedos</option>
+        </select>
       </form>
       <form class="informacoes-adicionais">
-        <select name="categoria" id="">
-          <option value="">Sangue</option>
-          <option value="">Alimentos</option>
-          <option value="">Roupas</option>
-          <option value=""></option>
-        </select>
         <h2 class="cabecalho-InfAdicionais">Informações Adicionais</h2>
         <div>
           <label for="input-renda">Renda Familia Mensal</label>
@@ -177,19 +166,25 @@
           </label>
           <input type="text" name="pergunta4" id="input-1texto">
         </div>
+        <div class="descricao">
+          <label for="descricao">
+            <h2>Descrição:</h2>
+          </label>
+          <textarea name="descricao" id="description" cols="20" rows="5" placeholder="Digite aqui sua descrição" ></textarea>
+        </div>
       </form>
       <button id="botaoEnviar" class="botaoEnviar">Finalizar</button>
     </div>
   </main>
   <!--Fim Formulario de Cadastro-->
 
-  <footer>
+  <footer class="footer">
     <div id="footer_content">
       <div id="footer_contacts">
-        <img id="logo" src="Tela-Formulario/Imagens/SUDA-Logo.ico">
+        <img id="logo_footer" src="./Tela Login/Imagens/SUDA-Logo.ico">
         <div id="footer-socialmedia">
           <a href="#" class="footer-link" id="instagram">
-            <i class="fa-brands fa-instagram" style="color: #d9d9d9;"></i>
+            <i class="fa-brands fa-instagram"></i>
           </a>
           <a href="#" class="footer-link" id="facebook">
             <i class="fa-brands fa-facebook-f"></i>
@@ -199,23 +194,17 @@
           </a>
         </div>
       </div>
-      <ul class="flex-column" id="footer_list">
-        <li>
-          <h3>Sobre nós</h3>
-        </li>
-        <li><a href="#" class="footer-link">Quem Somos</a></li>
-        <li><a href="#" class="footer-link">Politicas de privacidade</a></li>
-        <li><a href="#" class="footer-link">Termos de uso</a></li>
-      </ul>
-      <div class="flex-column g-1" id="footer_subscribe">
-        <h3>Inscreva-se</h3>
-        <div class="oup">
+      <div class="flex-column" id="footer_subscribe">
+        <h3 class="title_footer">Inscreva-se</h3>
+        <div class="input-group" id="email_box">
           <p>Digite seu email para enviarmos as novidades: </p>
-          <input type="email" id="email" placeholder="Enter your email">
+          <a>
+            <input type="email" id="email" placeholder="Insira seu e-mail">
           <button>
             <i class="fa-regular fa-envelope"></i>
           </button>
-        </div>
+          </a>
+        </div>          
       </div>
     </div>
     <div id="footer_copyright">

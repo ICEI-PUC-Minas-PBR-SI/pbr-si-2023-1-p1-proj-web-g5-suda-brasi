@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Tela Card/style_card.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- Fonte Google -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="padrao.css">
-    <link rel="icon" href="Tela-Busca/Imagens/SUDA.png">
-    <title>SUDA Brasil</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Tela Card/style_card.css">
+  <!-- Fonte Google -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="padrao.css">
+  <link rel="icon" href="Tela-Busca/Imagens/SUDA.png">
+  <title>SUDA Brasil</title>
 </head>
 
 <body onload="GeraPagina()">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
   <header>
     <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid w-100 h-100" s>
-            <a class="navbar-brand mx-auto" href="Home_Usuario.html">
-                <img id="logo" src="Tela-Busca/Imagens/SUDA.png" alt=""></a>
-            <form class="d-flex mx-auto p-2" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
+      <div class="container-fluid w-100 h-100" s>
+        <a class="navbar-brand mx-auto" href="Home_Usuario.html">
+          <img id="logo" src="Tela-Busca/Imagens/SUDA.png" alt=""></a>
+        <form class="d-flex mx-auto p-2" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
     </nav>
-</header>
+  </header>
 
   <aside class="sidebar-container">
     <div class="topo">
@@ -44,7 +49,8 @@
     <div class="menu">
       <ul>
         <li><a href="Home_Usuario.html"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
-        <li><a href="CaixadeMensagem.html"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i> Mensagens</a></li>
+        <li><a href="CaixadeMensagem.html"><i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i>
+            Mensagens</a></li>
         <li><a href="Busca.html"><img src="Tela-Busca/Imagens/donation.png"> Buscar Doações</a></li>
         <li><a href="Meus-Pedidos.html"><span class="material-symbols-outlined">task</span> Meus Pedidos</a></li>
         <li><a href="Configuracao.html"><i class="fa-solid fa-gear"></i> Conf. de Perfil</a></li>
@@ -71,11 +77,11 @@
           </li>
           <li>
             <input type="checkbox" name="categoria4"><i class="fa-sharp fa-solid fa-shirt"></i>
-            <label for="categoria4">Roupas</label>  
+            <label for="categoria4">Roupas</label>
           </li>
           <li>
             <input type="checkbox" name="categoria5"><i class="fa-solid fa-books"></i>
-            <label for="categoria5">Livros</label>  
+            <label for="categoria5">Livros</label>
           </li>
         </ul>
       </div>
@@ -83,24 +89,24 @@
         <span id="filtros">Avaliação:</span>
         <ul>
           <li>
-              <input type="checkbox" name="rating5">
-          <label for="rating5">5.0</label>
+            <input type="checkbox" name="rating5">
+            <label for="rating5">5.0</label>
           </li>
           <li>
-              <input type="checkbox" name="rating4">
-          <label for="rating4">4.0</label>
+            <input type="checkbox" name="rating4">
+            <label for="rating4">4.0</label>
           </li>
           <li>
-              <input type="checkbox" name="rating3">
-          <label for="rating3">3.0</label>
+            <input type="checkbox" name="rating3">
+            <label for="rating3">3.0</label>
           </li>
           <li>
-              <input type="checkbox" name="rating2">
-          <label for="rating2">2.0</label>
+            <input type="checkbox" name="rating2">
+            <label for="rating2">2.0</label>
           </li>
           <li>
-              <input type="checkbox" name="rating1">
-          <label for="rating1">1.0</label>
+            <input type="checkbox" name="rating1">
+            <label for="rating1">1.0</label>
           </li>
         </ul>
       </div>
@@ -108,8 +114,9 @@
     <div class="signout">
       <a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
     </div>
-  </aside> 
+  </aside>
   <main>
+    
     <div class="row">
       <div class="col-4 imagem-perfil">
         <!-- <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/images_icon-icons.com_50365.png" class="imagem-usuario"> -->
@@ -121,21 +128,33 @@
           <span class="nota">Nota da comunidade: 4.8/5</span>
           <!-- Rating com estrelas -->
           <div class="rate">
-            <input type="radio" id="star5" name="rate" value="5"/>
+            <input type="radio" id="star5" name="rate" value="5" />
             <label for="star5" title="text">5 stars</label>
-            <input type="radio" id="star4" name="rate" value="4"/>
+            <input type="radio" id="star4" name="rate" value="4" />
             <label for="star4" title="text">4 stars</label>
-            <input type="radio" id="star3" name="rate" value="3"/>
+            <input type="radio" id="star3" name="rate" value="3" />
             <label for="star3" title="text">3 stars</label>
-            <input type="radio" id="star2" name="rate" value="2"/>
+            <input type="radio" id="star2" name="rate" value="2" />
             <label for="star2" title="text">2 stars</label>
-            <input type="radio" id="star1" name="rate" value="1"/>
+            <input type="radio" id="star1" name="rate" value="1" />
             <label for="star1" title="text">1 star</label>
           </div>
           <button class="btn-doacao">Solicitar Doação</button>
         </div>
       </div>
-    </div>   
+    </div>
+    <!--Tela Modal - Trocar Senha-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close">&times;</span>
+        <span id="estado">Pedido gerado com sucesso!!</span>
+        <span class="titulo-modal">Criar Pedido de Doação</span>
+        <span class="subtitulo-modal">Descrição do pedido de doação</span>
+        <textarea name="descricao-doacao" id="descricao-doacao" cols="50" rows="5"></textarea>
+        <button class="submit-pedido">Realizar Pedido</button>
+      </div>
+    </div>
+
     <div class="row">
       <div class="conteudo">
         <h1 class="titulo-detalhes">Informação:</h1>
@@ -146,7 +165,10 @@
     </div>
     <div class="informacoes">
       <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.75506044489!2d-44.0258627!3d-19.9768006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6be0ca199edef%3A0x135bb091da4cc25e!2sPUC%20Minas%20Barreiro!5e0!3m2!1spt-BR!2sbr!4v1685664753390!5m2!1spt-BR!2sbr" width="200" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.75506044489!2d-44.0258627!3d-19.9768006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6be0ca199edef%3A0x135bb091da4cc25e!2sPUC%20Minas%20Barreiro!5e0!3m2!1spt-BR!2sbr!4v1685664753390!5m2!1spt-BR!2sbr"
+          width="200" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div id="contato">
         <span class="contato-titulo">Contato:</span>
@@ -156,20 +178,20 @@
         <p id="email">
           <!-- E-mail: adelfina8923@uorak.com -->
         </p>
-          <div id="footer-socialmedia">
-            <a href="#" class="footer-link" id="instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="footer-link" id="facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="footer-link" id="whatsapp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            
-          </div>
+        <div id="footer-socialmedia">
+          <a href="#" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+        </div>
       </div>
-     </div>     
+    </div>
   </main>
 
   <footer class="footer">
@@ -205,6 +227,7 @@
       <p>&#0169 2023 all rights reserved</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="Tela Card/card.js"></script>
   <script src="padrao.js"></script>
 </body>
