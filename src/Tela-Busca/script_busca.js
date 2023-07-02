@@ -1,72 +1,11 @@
-//Codigo da barra-lateral
-
-let toggle = document.querySelector('.toggle');
-let sideBar = document.querySelector('.sidebar-container');
-
-localStorage.setItem('',JSON.stringify)
-
-toggle.addEventListener('click', () => {
-  sideBar.classList.toggle('toggle-function');
-});
 
 //Geração da tela Busca
 
 var usuarios = (JSON.parse(localStorage.getItem('db_usuario')))
 var usuario_logado = JSON.parse(sessionStorage.getItem('usuario'))
-var favoritos = (JSON.parse(localStorage.getItem('db_favoritos')))
-var pedidos = (JSON.parse(localStorage.getItem('db_pedidos')))
+var favoritos = (JSON.parse(localStorage.getItem('db_favoritos'))).favoritos
+var pedidos = (JSON.parse(localStorage.getItem('db_pedidos'))).pedidos
 var tamanho_tela = window.innerWidth
-
-function favoritosescrever(){
-  favoritos.favoritos[favoritos.favoritos.length] = {
-    "id":(favoritos.favoritos[favoritos.favoritos.length-1].id)+1,
-    "favoritos": [
-      5,
-      3,
-      9
-    ]
-  }
-  localStorage.setItem('db_favoritos',JSON.stringify(favoritos));
-}
-
-// Verifica se a função já foi executada anteriormente
-if (!sessionStorage.getItem('funcaoExecutada1')) {
-  // Chama a função aqui
-  favoritosescrever();
-  
-
-  // Define o valor no sessionStorage indicando que a função já foi executada
-  sessionStorage.setItem('funcaoExecutada1', true);
-}
-
-if (!sessionStorage.getItem('funcaoExecutada2')) {
-  // Chama a função aqui
-  pedidosescrever();
-  
-
-  // Define o valor no sessionStorage indicando que a função já foi executada
-  sessionStorage.setItem('funcaoExecutada2', true);
-}
-
-function pedidosescrever(){
-  pedidos.pedidos[pedidos.pedidos.length] = {
-    "pedido": (pedidos.pedidos[pedidos.pedidos.length - 1].pedido) + 1,
-    "solicitante": usuario_logado.nome,
-    "solicitado": "Eulógio da Rosa",
-    "produtos": "",
-    "tipo": "Roupas",
-    "data": "17/03/2023",
-    "status": "",
-    "Endereco": {
-      "Rua": usuario_logado.endereco.logradouro,
-      "Bairro": usuario_logado.endereco.Cardoso,
-      "Cidade": usuario_logado.endereco.Cidade,
-      "Estado": usuario_logado.endereco.estado,
-      "CEP": usuario_logado.endereco.cep
-    }
-  }
-  localStorage.setItem('db_pedidos',JSON.stringify(pedidos));
-}
 
 $('.categorias-checkbox').on('change', 'input', function() {
   let categoria = this.name
@@ -94,9 +33,6 @@ $('.categorias-checkbox').on('change', 'input', function() {
 });
 
 function GeraBusca(){
-  $(".topo").html(`
-    <h5 class="nome">${usuario_logado.nome}</h5>
-  `)
   if(usuario_logado.tipo === "Beneficiario"){
     $("#cards").html(`
     <div class="doadores-favoritos">
@@ -270,7 +206,7 @@ function PreencherCardDoador(){
 function ConstroiRecomendados(filtro){
   var outros = []
   if (usuario_logado.tipo == "Beneficiario"){
-    (usuarios.dados).forEach(element => {
+    usuarios.forEach(element => {
       if((element.tipo == "Doador")||(element.tipo == "Instituicao")){
         if ((usuario_logado.categoria == element.categoria)||(element.categoria == filtro)){
           outros.push(element)
@@ -278,9 +214,9 @@ function ConstroiRecomendados(filtro){
       }
     });
   }else{
-    usuarios.dados.forEach(element => {
+    usuarios.forEach(element => {
     
-      if ((element.tipo == 'Beneficiario')){
+      if ((element.tipo == "Beneficiario")){
         if ((usuario_logado.categoria == element.categoria)||(element.categoria == filtro)){
           outros.push(element)
         }}})
@@ -290,14 +226,14 @@ function ConstroiRecomendados(filtro){
 
 function ConstroiFavoritos(){
   var filtro_favoritos =[]
-  favoritos.favoritos.forEach(element => {
+  favoritos.forEach(element => {
     if (usuario_logado.id == element.id) {
       filtro_favoritos = element.favoritos;
     }
   });
   var filtro_favorito = []
   filtro_favoritos.forEach(element => {
-    usuarios.dados.forEach(elemento => {
+    usuarios.forEach(elemento => {
       if (elemento.id == element) {
         filtro_favorito.push(elemento)
       }
@@ -308,7 +244,7 @@ function ConstroiFavoritos(){
 
 function ConstroiRecentes(){
   var filtro_recentes = []
-  pedidos.pedidos.forEach(element => {
+  pedidos.forEach(element => {
     if (usuario_logado.tipo === "Beneficiario"){
       if (element.solicitante == usuario_logado.nome){
         filtro_recentes.push(element.solicitado)
@@ -320,7 +256,7 @@ function ConstroiRecentes(){
     }
   })
   var ben =[]
-  usuarios.dados.forEach(element =>{
+  usuarios.forEach(element =>{
     filtro_recentes.forEach(elemento => {
       if (element.nome == elemento){
         ben.push(element)
@@ -342,7 +278,7 @@ function PreencheItem(modo,tipo){
       if (k == 0){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
           <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
@@ -366,15 +302,15 @@ function PreencheItem(modo,tipo){
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
             <li>
-            <a href="Card.html" class="card">
-            <img src="${usuarios.dados[i].pictures.medium}" class="card__image" alt="" />
+            <a href="Card.html?id=${tipo[i].id}" class="card">
+            <img src="${usuarios[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
                   <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path/></svg>                     
-                  <img class="card__thumb" src="${usuarios.dados[i].pictures.thumb}" alt="" />
+                  <img class="card__thumb" src="${usuarios[i].pictures.thumb}" alt="" />
                   <div class="card__header-text">
-                    <h3 class="card__title"> ${usuarios.dados[i].nome} </h3>            
-                    <span class="card__status">${usuarios.dados[i].categoria} </span>
+                    <h3 class="card__title"> ${usuarios[i].nome} </h3>            
+                    <span class="card__status">${usuarios[i].categoria} </span>
                   </div>
                 </div>
                 <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
@@ -392,7 +328,7 @@ function PreencheItem(modo,tipo){
       if (k < 2){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
           <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
@@ -416,7 +352,7 @@ function PreencheItem(modo,tipo){
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
             <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
@@ -442,7 +378,7 @@ function PreencheItem(modo,tipo){
       if (k < 3){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
           <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">
@@ -466,7 +402,7 @@ function PreencheItem(modo,tipo){
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
             <li>
-            <a href="Card.html" class="card">
+            <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
                 <div class="card__header">

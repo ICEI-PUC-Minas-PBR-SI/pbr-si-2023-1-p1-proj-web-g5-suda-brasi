@@ -16,20 +16,20 @@ function salvarInformacoes() {
     var dependentes = document.getElementById('input-NumeroDependentes').value;
     var profissao = document.getElementById('input-Profissão').value;
 
-    usuarios.dados[id].nome = nome;
-    usuarios.dados[id].estado_civil = estadoCivil;
-    usuarios.dados[id].telefone = telefone;
-    usuarios.dados[id].data_nascimento = data;
-    usuarios.dados[id].cpf = cpf;
-    usuarios.dados[id].email = email;
-    usuarios.dados[id].endereco.logradouro = logradouro;
-    usuarios.dados[id].endereco.bairro = bairro;
-    usuarios.dados[id].endereco.cep = cep;
-    usuarios.dados[id].endereco.estado = estado;
-    usuarios.dados[id].endereco.cidade = cidade;
-    usuarios.dados[id].sociais.renda = renda;
-    usuarios.dados[id].sociais.dependentes = dependentes;
-    usuarios.dados[id].sociais.profissao = profissao;
+    usuarios[id].nome = nome;
+    usuarios[id].estado_civil = estadoCivil;
+    usuarios[id].telefone = telefone;
+    usuarios[id].data_nascimento = data;
+    usuarios[id].cpf = cpf;
+    usuarios[id].email = email;
+    usuarios[id].endereco.logradouro = logradouro;
+    usuarios[id].endereco.bairro = bairro;
+    usuarios[id].endereco.cep = cep;
+    usuarios[id].endereco.estado = estado;
+    usuarios[id].endereco.cidade = cidade;
+    usuarios[id].sociais.renda = renda;
+    usuarios[id].sociais.dependentes = dependentes;
+    usuarios[id].sociais.profissao = profissao;
 
     // Construir o objeto com os dados atualizados
 

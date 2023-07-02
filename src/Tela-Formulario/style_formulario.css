@@ -59,7 +59,6 @@ input{
 
 .campo-geral input,select{
   background-color: #d4d4d4;
-  border-color: black;
 }
 
 .campo-geral{
@@ -84,7 +83,7 @@ input{
   align-items: center;
 }
 
-main input{
+main input,select{
   border-radius: 15px;
   line-height: 2.5rem;
 }
@@ -135,6 +134,23 @@ main input{
   gap: 0.5rem;
 }
 
+#cep{
+  display: flex;
+  flex-direction: row;
+}
+
+#btn-cep{
+  background-color: #29b31f;
+  color: #FEFEFE;
+  padding: 0.4rem;
+  border-radius: 15px;
+}
+
+#btn-cep:hover{
+  scale: 0.9;
+  transition: 0.3s;
+}
+
 .informacoes-adicionais div{
   display: flex;
   flex-direction: column;
@@ -155,6 +171,11 @@ main input{
   border-radius: 15px;
   background-color: #29b31f;
   color: white;
+}
+
+#estadocivil{
+  height: 100%;
+  width: 100%;
 }
 
 /*Fim da Main*/

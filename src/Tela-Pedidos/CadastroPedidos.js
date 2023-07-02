@@ -1,11 +1,11 @@
-var usuarios = (JSON.parse(localStorage.getItem('db_usuario')));
+var usuarios = (JSON.parse(localStorage.getItem('db_usuarios')))
 
 function opcoes(){
   let str = ''
-  for (let i = 1; i < usuarios.dados.length;i++) {
+  for (let i = 1; i < usuarios.length;i++) {
     str += 
     `
-      <option value="${usuarios.dados[i].nome}">${usuarios.dados[i].nome}</option>
+      <option value="${usuarios[i].nome}">${usuarios[i].nome}</option>
     `
   }
   document.getElementById('select-nomes').innerHTML = str;
@@ -34,13 +34,13 @@ function salvarPedido(event) {
     data_entrega: new Date().toLocaleString()
   };
 
-  let pedidos = JSON.parse(localStorage.getItem('pedidos'));
+  let pedidos = JSON.parse(sessionStorage.getItem('pedidos'));
   if (!pedidos) {
     pedidos = [];
   }
 
   pedidos.push(pedido);
-  localStorage.setItem('pedidos', JSON.stringify(pedidos));
+  sessionStorage.setItem('pedidos', JSON.stringify(pedidos));
 
   tituloInput.value = '';
   descricaoInput.value = '';
@@ -53,7 +53,7 @@ function exibirPedidos() {
   let str = ''
 
   
-  var pedidos = JSON.parse(localStorage.getItem('pedidos'));
+  var pedidos = JSON.parse(sessionStorage.getItem('pedidos'));
   if (pedidos) {
     pedidos.forEach((pedido) => {
       str += 

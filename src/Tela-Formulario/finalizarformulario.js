@@ -16,37 +16,27 @@ function finalizar(){
     var rendamensal = document.getElementById('input-RendaMensal').value;
     var numerodependentes = document.getElementById('input-NumeroDependentes').value;
     var profissao = document.getElementById('input-Profissão').value;
-    
 
-    
-    user.dados[user.dados.length-1] = {
-        id:user.dados[user.dados.length-1].id,
-        nome: nome,
-        data_nascimento: data,
-        telefone: telefone,
-        cpf: cpf,
-        rg: rg,
-        email: user.dados[user.dados.length-1].email,
-        senha: user.dados[user.dados.length-1].senha,
-        categoria:"Livros",
-        tipo: "Beneficiario",
-        imagem:"",
-        estado_civil: estadocivil,
-        endereco: {
-            logradouro: rua + numero,
-            bairro: bairro,
-            cep: cep,
-            estado: estado,
-            cidade: cidade,
-        },
-        sociais: {
-            renda: rendamensal,
-            dependentes: numerodependentes,
-            profissao: profissao
-        }
-    }
+    //Modifica as informações do usuario previamente criado
+    user[user.length - 1].nome = nome;
+    user[user.length - 1].data = data;
+    user[user.length - 1].telefone = telefone;
+    user[user.length - 1].cpf = cpf;
+    user[user.length - 1].rg = rg;
+    // user[user.length-1].categoria = categoria;
+    // user[user.length-1].imagem:"";
+    user[user.length - 1].estado_civil = estadocivil;
+    user[user.length - 1].endereco.logradouro = rua + numero;
+    user[user.length - 1].endereco.bairro = bairro;
+    user[user.length - 1].endereco.cep = cep;
+    user[user.length - 1].endereco.estado = estado;
+    user[user.length - 1].endereco.cidade = cidade;
+    user[user.length - 1].sociais.renda = rendamensal;
+    user[user.length - 1].sociais.dependentes = numerodependentes;
+    user[user.length - 1].sociais.profissao = profissao;
+
     localStorage.setItem('db_usuario',JSON.stringify(user));
-    console.log(user)
+
     document.getElementById('input-nomeCompleto').value = ""; 
     document.getElementById('input-nascimento').value = "";
     document.getElementById('input-telefone').value = "";
@@ -72,4 +62,4 @@ function redirencionar(){
 
 var botaoenviar = document.getElementById('botaoEnviar');
 botaoenviar.addEventListener('click', finalizar);
-botaoenviar.addEventListener('click' , redirencionar);
+botaoenviar.addEventListener('click' , redirencionar)

@@ -1,7 +1,7 @@
 function GeraPagina(){
     var id = location.search.slice(1).split('=')
     id = id[1]
-    var usuarios = (JSON.parse(localStorage.getItem('db_usuario'))).dados
+    var usuarios = (JSON.parse(localStorage.getItem('db_usuario')))
     var atual;
     
     usuarios.forEach(element => {
