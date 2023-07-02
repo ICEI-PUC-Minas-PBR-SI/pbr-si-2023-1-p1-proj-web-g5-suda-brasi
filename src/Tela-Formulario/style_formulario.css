@@ -95,15 +95,13 @@ main input,select{
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .endereco{
   text-align: center;
 }
 
 .dados-pessoais .linha-dois{
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(2,1fr);
   gap: 0.8rem;
 }
 
@@ -119,7 +117,7 @@ main input,select{
   text-align: center;
 }
 
-.endereco .endereco-dados{
+/* .endereco .endereco-dados{
   width: 45%;
   display: inline-block;
   flex-direction: column;
@@ -128,15 +126,20 @@ main input,select{
   gap: 1.5rem;
 }
 
-.endereco .endereco-dados div{
+.endereco .endereco-dados div{  
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+} */
+
+#description{
+  background-color: #d4d4d4;
+  border-radius: 0.8rem;
 }
 
 #cep{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
 #btn-cep{
@@ -144,6 +147,20 @@ main input,select{
   color: #FEFEFE;
   padding: 0.4rem;
   border-radius: 15px;
+}
+
+#categorias{
+  line-height: 2.5rem;
+  height: 100%;
+  padding: 0.8rem;
+  font-weight: 500;
+}
+
+.categoria{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #btn-cep:hover{

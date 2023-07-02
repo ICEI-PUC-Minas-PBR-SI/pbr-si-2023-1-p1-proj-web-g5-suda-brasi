@@ -21,6 +21,7 @@ function GeraBanco(){
             },
             "tipo": "Beneficiario",
             "categoria": "Livros",
+            "descricao":"",
             "endereco": {
                 "bairro": "Santa Efigênia",
                 "cidade": "Belo Horizonte",
@@ -49,6 +50,7 @@ function GeraBanco(){
             },
             "tipo": "Beneficiario",
             "categoria": "Alimentos",
+            "descricao":"",
             "endereco": {
                 "bairro": "Santa Maria",
                 "cidade": "Belo Horizonte",
@@ -77,6 +79,7 @@ function GeraBanco(){
             },
             "tipo": "Doador",
             "categoria": "Livros",
+            "descricao":"",
             "endereco": {
                 "bairro": "Céu Azul",
                 "cidade": "Belo Horizonte",
@@ -105,6 +108,7 @@ function GeraBanco(){
             },
             "tipo": "Doador",
             "categoria": "Brinquedos",
+            "descricao":"",
             "endereco": {
                 "bairro": "Copacabana",
                 "cidade": "Belo Horizonte",
@@ -133,6 +137,7 @@ function GeraBanco(){
             },
             "tipo": "Instituicao",
             "categoria": "Roupas",
+            "descricao":"",
             "endereco": {
                 "bairro": "São Tomáz",
                 "cidade": "Belo Horizonte",
@@ -161,6 +166,7 @@ function GeraBanco(){
             },
             "tipo": "Beneficiario",
             "categoria": "Brinquedos",
+            "descricao":"",
             "endereco": {
                 "bairro": "Jardim Guanabara",
                 "cidade": "Belo Horizonte",
@@ -189,6 +195,7 @@ function GeraBanco(){
             },
             "tipo": "Doador",
             "categoria": "Alimentos",
+            "descricao":"",
             "endereco": {
                 "bairro": "Itatiaia",
                 "cidade": "Belo Horizonte",
@@ -217,6 +224,7 @@ function GeraBanco(){
             },
             "tipo": "Beneficiario",
             "categoria": "Roupas",
+            "descricao":"",
             "endereco": {
                 "bairro": "Havaí",
                 "cidade": "Belo Horizonte",
@@ -245,6 +253,7 @@ function GeraBanco(){
             },
             "tipo": "Instituicao",
             "categoria": "Livros",
+            "descricao":"",
             "endereco": {
                 "bairro": "Coqueiros",
                 "cidade": "Belo Horizonte",
@@ -273,6 +282,7 @@ function GeraBanco(){
             },
             "tipo": "Beneficiario",
             "categoria": "Livros",
+            "descricao":"",
             "endereco": {
                 "bairro": "Milionários (Barreiro)",
                 "cidade": "Belo Horizonte",
@@ -294,12 +304,171 @@ function GeraBanco(){
     //     .then(retorno => {
     //         localStorage.setItem('db_usuario',JSON.stringify(retorno))
     //     })
-    
-    fetch('https://my-json-server.typicode.com/Okitemuri/fakePedidos/db')
-        .then(res => res.json())
-        .then(retorno => {
-            localStorage.setItem('db_pedidos',JSON.stringify(retorno))
-        })
+    let pedidos =[
+               {
+                   "pedido": 1,
+                   "solicitante": "Sandra Campos",
+                   "solicitado": "Eulógio da Rosa",
+                   "tipo": "Roupas",
+                   "data": "17/03/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Jacinto Ferreira",
+                       "Bairro": "Havaí",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "30570290"
+                   }
+               },
+               {
+                   "pedido": 2,
+                   "solicitante": "Francyelle Gonçalves",
+                   "solicitado": "Luciele Nascimento",
+                   "tipo": "Alimentos",
+                   "data":"29/05/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Ubaia",
+                       "Bairro": "Santa Maria",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "30525110"
+                   }
+               },
+               {
+                   "pedido": 3,
+                   "solicitante": "Zenilda Rocha",
+                   "solicitado": "Teotónio Vieira",
+                   "tipo": "Livros",
+                   "data":"11/06/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Paranan",
+                       "Bairro": "Milionários (Barreiro)",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "30620610"
+                   }
+               },
+               {
+                   "pedido": 4,
+                   "solicitante": "Clairta Cardoso",
+                   "solicitado": "Teotónio Vieira",
+                   "tipo": "Livros",
+                   "data":"27/03/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Itaberá",
+                       "Bairro": "Santa Efigênia",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "30260320"
+                   }
+               },
+               {
+                   "pedido": 5,
+                   "solicitante": "Zenilda Rocha",
+                   "solicitado": "Teotónio Vieira",
+                   "tipo": "Livros",
+                   "data":"08/05/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Paranan",
+                       "Bairro": "Milionários (Barreiro)",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "30620610"
+                   }
+               },
+               {
+                   "pedido": 6,
+                   "solicitante": "Francilene Oliveira",
+                   "solicitado": "Karena Costa",
+                   "tipo": "Brinquedos",
+                   "data":"11/06/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Alga Dourada",
+                       "Bairro": "Jardim Guanabara",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "31742263"
+                   }
+               },
+               {
+                   "pedido": 7,
+                   "solicitante": "Francilene Oliveira",
+                   "solicitado": "Karena Costa",
+                   "tipo": "Brinquedos",
+                   "data":"21/04/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Alga Dourada",
+                       "Bairro": "Jardim Guanabara",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "31742263"
+                   }
+               },
+               {
+                   "pedido": 8,
+                   "solicitante": "Sandra Campos",
+                   "solicitado": "Eulógio da Rosa",
+                   "tipo": "Roupas",
+                   "data":"31/05/2023",
+                   "Endereco": {
+                       "Rua": "Rua Jacinto Ferreira",
+                       "Bairro": "Havaí",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "30570290"
+                   }
+               },
+               {
+                   "pedido": 9,
+                   "solicitante": "Francilene Oliveira",
+                   "solicitado": "Karena Costa",
+                   "tipo": "Brinquedos",
+                   "data":"28/01/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Alga Dourada",
+                       "Bairro": "Jardim Guanabara",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "31742263"
+                   }
+               },
+               {
+                   "pedido": 10,
+                   "solicitante": "Francilene Oliveira",
+                   "solicitado": "Karena Costa",
+                   "tipo": "Brinquedos",
+                   "data":"06/02/2023",
+                   "status": "",
+                   "descricao":"",
+                   "Endereco": {
+                       "Rua": "Rua Alga Dourada",
+                       "Bairro": "Jardim Guanabara",
+                       "Cidade": "Belo Horizonte",
+                       "Estado": "MG",
+                       "CEP": "31742263"
+                   }
+    }]
+    localStorage.setItem('db_pedidos',JSON.stringify(pedidos))
+    // fetch('https://my-json-server.typicode.com/Okitemuri/fakePedidos/db')
+    //     .then(res => res.json())
+    //     .then(retorno => {
+    //         localStorage.setItem('db_pedidos',JSON.stringify(retorno))
+    //     })
     
     fetch('https://my-json-server.typicode.com/Okitemuri/fakeMensagens/db')
         .then(res => res.json())
