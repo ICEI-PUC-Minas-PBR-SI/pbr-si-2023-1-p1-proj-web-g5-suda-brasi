@@ -3,8 +3,8 @@
 
 var usuarios = (JSON.parse(localStorage.getItem('db_usuario')))
 var usuario_logado = JSON.parse(sessionStorage.getItem('usuario'))
-var favoritos = (JSON.parse(localStorage.getItem('db_favoritos'))).favoritos
-var pedidos = (JSON.parse(localStorage.getItem('db_pedidos'))).pedidos
+var favoritos = (JSON.parse(localStorage.getItem('db_favoritos')))
+var pedidos = (JSON.parse(localStorage.getItem('db_pedidos')))
 var tamanho_tela = window.innerWidth
 
 $('.categorias-checkbox').on('click', 'input', function() {
@@ -33,7 +33,7 @@ $('.categorias-checkbox').on('click', 'input', function() {
       ConstroiRecomendados(filtro)
   }
   else{
-    
+    $('#carouselRecomendados .cards #li1').remove()
   }
 });
 
@@ -282,7 +282,7 @@ function PreencheItem(modo,tipo){
     for(let i = 0; i < tipo.length; i++){
       if (k == 0){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
-          <li>
+          <li id="li${i}">
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -306,7 +306,7 @@ function PreencheItem(modo,tipo){
         $(`#carousel${modo}  #carousel${modo}-inner`).append(`
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
-            <li>
+            <li id="li${i}">
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${usuarios[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -332,7 +332,7 @@ function PreencheItem(modo,tipo){
     for(let i = 0; i < tipo.length; i++){
       if (k < 2){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
-          <li>
+          <li id="li${i}">
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -356,7 +356,7 @@ function PreencheItem(modo,tipo){
         $(`#carousel${modo}  #carousel${modo}-inner`).append(`
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
-            <li>
+            <li id="li${i}">
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -382,7 +382,7 @@ function PreencheItem(modo,tipo){
     for(let i = 0; i < tipo.length; i++){
       if (k < 3){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
-          <li>
+          <li id="li${i}">
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -406,7 +406,7 @@ function PreencheItem(modo,tipo){
         $(`#carousel${modo}  #carousel${modo}-inner`).append(`
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
-            <li>
+            <li id="li${i}">
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">

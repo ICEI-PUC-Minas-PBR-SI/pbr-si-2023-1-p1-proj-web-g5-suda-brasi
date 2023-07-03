@@ -127,18 +127,14 @@
           <!-- Avaliação da comunidade -->
           <span class="nota">Nota da comunidade: 4.8/5</span>
           <!-- Rating com estrelas -->
-          <div class="rate">
-            <input type="radio" id="star5" name="rate" value="5" />
-            <label for="star5" title="text">5 stars</label>
-            <input type="radio" id="star4" name="rate" value="4" />
-            <label for="star4" title="text">4 stars</label>
-            <input type="radio" id="star3" name="rate" value="3" />
-            <label for="star3" title="text">3 stars</label>
-            <input type="radio" id="star2" name="rate" value="2" />
-            <label for="star2" title="text">2 stars</label>
-            <input type="radio" id="star1" name="rate" value="1" />
-            <label for="star1" title="text">1 star</label>
-          </div>
+          <label class="star-toggle">
+              <input type="checkbox" id="favoritos" />
+              <div class="icon">
+                  <div class="star">
+                      <div class="eye"></div>
+                  </div>
+              </div>
+          </label>
           <button class="btn-doacao">Solicitar Doação</button>
         </div>
       </div>

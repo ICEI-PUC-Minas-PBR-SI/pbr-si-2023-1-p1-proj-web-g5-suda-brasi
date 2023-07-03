@@ -21,7 +21,7 @@ function submitForm(event) {
 
 var usuario_logado = JSON.parse(sessionStorage.getItem('usuario'))
 var usuarios = (JSON.parse(localStorage.getItem('db_usuario')))
-var favoritos = (JSON.parse(localStorage.getItem('db_favoritos'))).favoritos
+var favoritos = (JSON.parse(localStorage.getItem('db_favoritos')))
 var pedidos = (JSON.parse(localStorage.getItem('db_pedidos')))
 
 $('.usuario').html(`${usuario_logado.tipo}`)
