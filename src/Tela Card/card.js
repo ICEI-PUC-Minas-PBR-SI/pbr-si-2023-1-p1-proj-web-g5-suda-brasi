@@ -22,10 +22,11 @@ function GeraPagina(){
     `)
 
     favoritos.forEach(element=>{
-        if(element.id == id){
+        if(element.id == usuario_logado.id){
             bancoFavoritos = element;
         }
     })
+
     bancoFavoritos.favoritos.forEach(element=>{
         if(element == parseInt(id)){
             $('#favoritos').prop('checked',true)
@@ -129,7 +130,7 @@ var bancoFavoritos;
 
 $('#favoritos').on('click',function(){
     favoritos.forEach(element=>{
-        if(element.id == id){
+        if(element.id == usuario_logado.id){
             bancoFavoritos = element
         }
     })
