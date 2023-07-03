@@ -17,6 +17,6 @@ Esse fluxo mostra como será o caminho do usuario ao utilizar a aplicação Web,
 
 ## Wireframes
 
-Para projetarmos a estrutura basica da nossa aplicação web, utilizamos inicialmente a ferramenta Marvel App, devido a sua facilidade de utilização. Posteriormente a interface será passado para a ferramenta Figma para uma melhor visualização. 
+Para projetarmos a estrutura basica da nossa aplicação web, utilizamos inicialmente a ferramenta Marvel App, devido a sua facilidade de utilização.
 
 Link para os Wireframes da Aplicação Web: https://marvelapp.com/prototype/9g4h3b5
