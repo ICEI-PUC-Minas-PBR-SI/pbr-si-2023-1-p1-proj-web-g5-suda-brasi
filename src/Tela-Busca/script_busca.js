@@ -236,15 +236,27 @@ function ConstroiFavoritos(){
       filtro_favoritos = element.favoritos;
     }
   });
-  var filtro_favorito = []
-  filtro_favoritos.forEach(element => {
-    usuarios.forEach(elemento => {
-      if (elemento.id == element) {
-        filtro_favorito.push(elemento)
-      }
-    });
-  })
-  PreencheItem("Favoritos",filtro_favorito)
+  if ((filtro_favoritos == undefined)||filtro_favoritos.length == 0){
+    $(`#carouselFavoritos  #carouselFavoritos-inner #carouselFavoritos-item0 .cards`).append(`
+          <li id="li0">
+            <div class="card" id="favoritos-cartao" style="width: 18rem;heigth: 12rem">
+                <div class="card-body">
+                <h5 class="card-title">Nenhum favorito encontrado</h5>
+                <p class="card-text"> Você ainda não escolheu nenhum favorito.</p>
+                </div>
+            </div>
+          </li>`)
+  }else{
+    var filtro_favorito = []
+    filtro_favoritos.forEach(element => {
+      usuarios.forEach(elemento => {
+        if (elemento.id == element) {
+          filtro_favorito.push(elemento)
+        }
+      });
+    })
+    PreencheItem("Favoritos",filtro_favorito)
+  }
 }
 
 function ConstroiRecentes(){
@@ -260,19 +272,31 @@ function ConstroiRecentes(){
       }    
     }
   })
-  var ben =[]
-  usuarios.forEach(element =>{
-    filtro_recentes.forEach(elemento => {
-      if (element.nome == elemento){
-        ben.push(element)
-      }
+  if(filtro_recentes.length ==0){
+    $(`#carouselRecentes  #carouselRecentes-inner #carouselRecentes-item0 .cards`).append(`
+          <li id="li0">
+            <div class="card" id="favoritos-cartao" style="width: 18rem;heigth: 12rem">
+            <div class="card-body">
+            <h5 class="card-title">Nenhum favorito encontrado</h5>
+            <p class="card-text"> Você ainda não escolheu nenhum favorito.</p>
+          </div>
+      </div>
+          </li>`)
+  }else{
+    var ben =[]
+    usuarios.forEach(element =>{
+      filtro_recentes.forEach(elemento => {
+        if (element.nome == elemento){
+          ben.push(element)
+        }
+      });
+    })
+    ben = ben.filter(function(elem, index, self) {
+      return index === self.indexOf(elem);
     });
-  })
-  ben = ben.filter(function(elem, index, self) {
-    return index === self.indexOf(elem);
-  });
-  console.log(ben)
-  PreencheItem("Recentes",ben)
+    console.log(ben)
+    PreencheItem("Recentes",ben)
+  }
 }
 
 function PreencheItem(modo,tipo){
