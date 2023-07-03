@@ -56,11 +56,11 @@ i.fa-solid.fa-house:hover {
   margin-right: 20px;
 }
 
-.btn{
+#btn_Search{
   background: #38B82F;
 }
 
-.btn i{
+#btn_Search i{
  color: #000;
 }
 /*-------------------------*/
