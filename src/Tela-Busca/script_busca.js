@@ -3,8 +3,8 @@
 
 var usuarios = (JSON.parse(localStorage.getItem('db_usuario')))
 var usuario_logado = JSON.parse(sessionStorage.getItem('usuario'))
-var favoritos = (JSON.parse(localStorage.getItem('db_favoritos')))
-var pedidos = (JSON.parse(localStorage.getItem('db_pedidos')))
+var favoritos = (JSON.parse(localStorage.getItem('db_favoritos'))).favoritos
+var pedidos = (JSON.parse(localStorage.getItem('db_pedidos'))).pedidos
 var tamanho_tela = window.innerWidth
 
 $('.categorias-checkbox').on('click', 'input', function() {
@@ -33,7 +33,7 @@ $('.categorias-checkbox').on('click', 'input', function() {
       ConstroiRecomendados(filtro)
   }
   else{
-    $('#carouselRecomendados .cards #li1').remove()
+    
   }
 });
 
@@ -236,27 +236,15 @@ function ConstroiFavoritos(){
       filtro_favoritos = element.favoritos;
     }
   });
-  if ((filtro_favoritos == undefined)||filtro_favoritos.length == 0){
-    $(`#carouselFavoritos  #carouselFavoritos-inner #carouselFavoritos-item0 .cards`).append(`
-          <li id="li0">
-            <div class="card" id="favoritos-cartao" style="width: 18rem;heigth: 12rem">
-                <div class="card-body">
-                <h5 class="card-title">Nenhum favorito encontrado</h5>
-                <p class="card-text"> Você ainda não escolheu nenhum favorito.</p>
-                </div>
-            </div>
-          </li>`)
-  }else{
-    var filtro_favorito = []
-    filtro_favoritos.forEach(element => {
-      usuarios.forEach(elemento => {
-        if (elemento.id == element) {
-          filtro_favorito.push(elemento)
-        }
-      });
-    })
-    PreencheItem("Favoritos",filtro_favorito)
-  }
+  var filtro_favorito = []
+  filtro_favoritos.forEach(element => {
+    usuarios.forEach(elemento => {
+      if (elemento.id == element) {
+        filtro_favorito.push(elemento)
+      }
+    });
+  })
+  PreencheItem("Favoritos",filtro_favorito)
 }
 
 function ConstroiRecentes(){
@@ -272,31 +260,19 @@ function ConstroiRecentes(){
       }    
     }
   })
-  if(filtro_recentes.length ==0){
-    $(`#carouselRecentes  #carouselRecentes-inner #carouselRecentes-item0 .cards`).append(`
-          <li id="li0">
-            <div class="card" id="favoritos-cartao" style="width: 18rem;heigth: 12rem">
-            <div class="card-body">
-            <h5 class="card-title">Nenhum favorito encontrado</h5>
-            <p class="card-text"> Você ainda não escolheu nenhum favorito.</p>
-          </div>
-      </div>
-          </li>`)
-  }else{
-    var ben =[]
-    usuarios.forEach(element =>{
-      filtro_recentes.forEach(elemento => {
-        if (element.nome == elemento){
-          ben.push(element)
-        }
-      });
-    })
-    ben = ben.filter(function(elem, index, self) {
-      return index === self.indexOf(elem);
+  var ben =[]
+  usuarios.forEach(element =>{
+    filtro_recentes.forEach(elemento => {
+      if (element.nome == elemento){
+        ben.push(element)
+      }
     });
-    console.log(ben)
-    PreencheItem("Recentes",ben)
-  }
+  })
+  ben = ben.filter(function(elem, index, self) {
+    return index === self.indexOf(elem);
+  });
+  console.log(ben)
+  PreencheItem("Recentes",ben)
 }
 
 function PreencheItem(modo,tipo){
@@ -306,7 +282,7 @@ function PreencheItem(modo,tipo){
     for(let i = 0; i < tipo.length; i++){
       if (k == 0){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
-          <li id="li${i}">
+          <li>
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -330,7 +306,7 @@ function PreencheItem(modo,tipo){
         $(`#carousel${modo}  #carousel${modo}-inner`).append(`
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
-            <li id="li${i}">
+            <li>
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${usuarios[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -356,7 +332,7 @@ function PreencheItem(modo,tipo){
     for(let i = 0; i < tipo.length; i++){
       if (k < 2){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
-          <li id="li${i}">
+          <li>
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -380,7 +356,7 @@ function PreencheItem(modo,tipo){
         $(`#carousel${modo}  #carousel${modo}-inner`).append(`
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
-            <li id="li${i}">
+            <li>
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -406,7 +382,7 @@ function PreencheItem(modo,tipo){
     for(let i = 0; i < tipo.length; i++){
       if (k < 3){
         $(`#carousel${modo}  #carousel${modo}-inner #carousel${modo}-item${j} .cards`).append(`
-          <li id="li${i}">
+          <li>
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">
@@ -430,7 +406,7 @@ function PreencheItem(modo,tipo){
         $(`#carousel${modo}  #carousel${modo}-inner`).append(`
         <div class="carousel-item" id="carousel${modo}-item${j}">
           <ul class='cards'>
-            <li id="li${i}">
+            <li>
             <a href="Card.html?id=${tipo[i].id}" class="card">
             <img src="${tipo[i].pictures.medium}" class="card__image" alt="" />
               <div class="card__overlay">

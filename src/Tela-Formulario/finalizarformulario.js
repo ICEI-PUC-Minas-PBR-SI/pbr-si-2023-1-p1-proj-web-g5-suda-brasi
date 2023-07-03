@@ -1,5 +1,4 @@
 var user = (JSON.parse(localStorage.getItem("db_usuario")));
-var fav = (JSON.parse(localStorage.getItem("db_favoritos")))
 function finalizar(){
     var nome = document.getElementById('input-nomeCompleto').value;
     var data= document.getElementById('input-nascimento').value;
@@ -37,12 +36,6 @@ function finalizar(){
 
     console.log(user[user.length-1])
 
-    var favoritos = {
-        "id": user.length-1,
-        "favoritos": []}
-    fav.push(favoritos)
-
-    localStorage.setItem('db_favoritos',JSON.stringify(fav));
     localStorage.setItem('db_usuario',JSON.stringify(user));
 
     document.getElementById('input-nomeCompleto').value = ""; 
