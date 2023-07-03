@@ -49,7 +49,11 @@ btn_Entrar.addEventListener('click', (e) => {
     }
 
     if (loginValido) {
-        window.location.href = "Home_Usuario.html";
+        if(email_Logar.value === buscadb[0].email){
+            window.location.href = "./Tela-Administrador/Admin.html";
+        }else{
+            window.location.href = "Home_Usuario.html";
+        }
     }
 })
 
@@ -151,7 +155,6 @@ $("#btn_Doar").on('click', function (e) {
 })
 
 $("#btn_Doacoes").on('click', function (e) {
-    console.log('clicou')
     e.preventDefault()
 
     var loginValido = false;
