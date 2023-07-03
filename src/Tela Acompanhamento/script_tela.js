@@ -217,7 +217,7 @@ function exibirAcompanhamento() {
                     </div>
                 </div>
                 <div class="progress-bar-image icon-image">
-                    <img class="icon" src="Tela Acompanhamento/Imagens/Pedido chegou colorido.png">
+                    <img class="icon" src="Tela Acompanhamento/Imagens/pedido chegou colorido.png">
                     <div class="d-flex flex-column">
                     <p class="font-weight-bold">Pedido<br>Chegou</p>
                     </div>
@@ -314,7 +314,7 @@ function exibirAcompanhamento() {
                     </div>
                 </div>
                 <div class="progress-bar-image icon-image">
-                    <img class="icon" src="Tela Acompanhamento/Imagens/Pedido chegou colorido.png">
+                    <img class="icon" src="Tela Acompanhamento/Imagens/pedido chegou colorido.png">
                     <div class="d-flex flex-column">
                     <p class="font-weight-bold">Pedido<br>Chegou</p>
                     </div>
