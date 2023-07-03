@@ -1,4 +1,4 @@
-var pedidos = JSON.parse(localStorage.getItem('db_pedidos')).pedidos;
+var pedidos = JSON.parse(localStorage.getItem('db_pedidos'));
 var usuarios = JSON.parse(localStorage.getItem('db_usuario'));
 var iguais = [];
 
