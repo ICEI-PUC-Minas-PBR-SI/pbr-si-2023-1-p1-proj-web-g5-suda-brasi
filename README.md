@@ -27,6 +27,8 @@ Esse projeto visa aproximar as instituições e ONG's dos apoiadores, doadores a
 * Fabio Leandro
 * Franciele Cristina
 
+Link para o site : https://sudabrasil.vercel.app/
+
 # Planejamento
 
 | Etapa         | Atividades |
