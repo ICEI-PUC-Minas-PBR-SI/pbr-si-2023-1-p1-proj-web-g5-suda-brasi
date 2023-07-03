@@ -21,7 +21,7 @@ if (typeof(Storage) !== "undefined") {
     };
 
     // Adiciona a nova mensagem ao array de mensagens
-    db_mensagens.mensagens.push(novaMensagem);
+    db_mensagens.push(novaMensagem);
 
     // Atualiza o banco de dados no Local Storage
     localStorage.setItem("db_mensagens", JSON.stringify(db_mensagens));
@@ -40,12 +40,12 @@ if (typeof(Storage) !== "undefined") {
     var containerMensagens = document.getElementById("mensagensContainer");
   
     var mensagens = obterTodasMensagens();
-    for (var i = 0; i < mensagens.length; i++) {
-      var mensagem = mensagens[i];
-      var remetente = mensagem.remetente;
-      var conteudo = mensagem.conteudo;
-      var destinatario = mensagem.destinatario;
-      var dataEnvio = mensagem.data_envio;
+    for (var i = 0; i < db_mensagens.length; i++) {
+      var mensagens = db_mensagens[i];
+      var remetente = db_mensagens[i].remetente;
+      var conteudo = db_mensagens[i].conteudo;
+      var destinatario = db_mensagens[i].destinatario;
+      var dataEnvio = db_mensagens[i].data_envio;
   
       // Clona o card personalizado para cada mensagem
       var cardMensagem = document.getElementById("cardMensagem").cloneNode(true);
