@@ -42,6 +42,35 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 ## Casos de Uso
 
 ![image](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2023-1-p1-proj-web-g5-suda-brasi/assets/105471632/f5f416fa-3ca5-4138-ba26-5bbb58644171)
+|Nome|Atores|Resumo|Pré Condições|Pós-Condições	|
+|----------------------|--------------------------|-------------------|----------------------------|--------------------|
+Acessar o sistema |	Doador, beneficiário |	Permite ao usuario acessar o sistema de doações |	Usuario estar cadastrado| N/A
+
+# Fluxo Principal
+|   Ações do Ator  |	Ações do Sistema|
+|------------------|------------------|
+|1. Informar o email e senha|	2. Verificar se o usuario se encontra cadastrado|
+|3. Acessar o sistema|
+
+# Fluxo Alternativo	
+Cliente não cadastrado, enviar para cadastro	
+Nome	Solicitar Doação
+Atores	Beneficiario, Doador
+Resumo	Mostra ao usuario, quais doadores ou beneficiários disponíveis de acordo com a categoria informada
+Pré Condições	Estar logado no sistema e ter disponivel o item a ser doado
+Pós Condições	Doação ser aprovada pelo doador
+Fluxo Principal	
+Ações do Ator	Ações do Sistema
+1. Procura a doação	
+	2. Filtra os usuários compatíveis com o a necessidade do ator
+	3. Apresenta ao ator o resultado do filtro
+4. Acessa os dados referentes a doação	
+5. Solicita a doação	
+	6. Envia a solicitação para o doador
+	7. Retorna a resposta do doador ao beneficiário
+Fluxo Alternativo	
+Informa que no momento não há doador disponivel	
+![image](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2023-1-p1-proj-web-g5-suda-brasi/assets/105471632/f4f5ceb8-6359-44c3-b41e-ebc52bed9a67)
 
 
 ## Requisitos
