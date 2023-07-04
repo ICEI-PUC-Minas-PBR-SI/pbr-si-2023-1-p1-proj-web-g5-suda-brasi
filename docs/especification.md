@@ -39,6 +39,21 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Jorge(Usuário Instituição)|Utilizar a função de gerenciamento de doações do sistema | Para ter rastreabilidade das doações realizada pela minha instituição.| 
 |Administrador       |Alterar permissões                   |Gerenciar o Sistema de Doações           |
 
+## Casos de Uso
+
+![image](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2023-1-p1-proj-web-g5-suda-brasi/assets/105471632/f5f416fa-3ca5-4138-ba26-5bbb58644171)
+
+|Nome|	Acompanhar Doação
+|Atores|Beneficiário, Doador
+|Resumo|	Mostra ao usuario a atualização do status da doação
+|Pré Condições|	Ter sido realizada a solicitação de uma doação
+|Pós Condições	 |
+|Fluxo Principal|
+|Ações do Ator	|Ações do Sistema|
+|1. Filtra no banco de dados as doações relativas ao usuario e apresenta a ele|
+|Fluxo Alternativo|
+|Informar que não foi realizada nenhuma doação até o momento|
+
 
 ## Requisitos
 
